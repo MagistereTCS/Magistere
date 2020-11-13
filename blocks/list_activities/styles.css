@@ -1,0 +1,241 @@
+.block_list_activities .searchform {text-align: center;}
+.block_list_activities .searchform img {vertical-align: middle;}
+.block_list_activities .searchform img.resize {width: 1em;height: 1.1em;}
+.block_list_activities .invisiblefieldset {display: block;}
+
+/* parcours section */
+
+/*
+.block_list_activities .header .title h2{
+    background-color: green !important;
+    padding-left: 21px;
+}
+
+.block_list_activities .header .title h2:before{
+    background: url([[pix:theme|blocks/recherche-forum]]) no-repeat left;
+    content: " "!important;
+    padding: 0 !important;
+    height: 1.3em !important;
+    margin-left: -0.05em !important;
+    margin-right: 0.35em !important;
+}
+.format-topics .block_summary .content ul li ul>li,
+.format-topics .block_summary .content ul.editbutton li,
+.format-modular .block_summary .content ul.editbutton li{
+    border:none;
+}
+
+.format-topics .block_summary .content ul.editbutton,
+.format-modular .block_summary .content ul.editbutton{
+    margin: 0;
+    padding: 0 25px 10px 25px;
+}
+
+.format-topics .block_summary .content ul.editbutton li,
+.format-modular .block_summary .content ul.editbutton li{
+    padding: 0;
+    text-align: right;
+}
+
+.format-topics .block_summary .content ul.editbutton li a,
+.format-modular .block_summary .content ul.editbutton li a {
+    color: #0095db;
+}
+
+.format-topics .block_summary .content ul.editbutton a:before,
+.format-modular .block_summary .content ul.editbutton a:before {
+    font-family: "Font Awesome 5 Free";
+    content:"\f303" !important;
+    padding-right: 5px;
+    font-weight: 900;
+}
+.format-flexpage .block_summary .editbutton
+{
+    background-color: #8cb05b;
+    text-align:center;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+*/
+
+/* Block HEADER */
+
+.block_list_activities .header .title h2,
+.block_list_activities .header .title h2{
+    background: #0095db !important;
+    color: #fff !important;
+    height: 1.5em !important;
+}
+
+.block_list_activities .header .title h2::before{
+    height: inherit;
+}
+
+.block_list_activities .header {
+    margin-bottom: 15px;
+}
+
+.block_list_activities .header .title h2:before,
+.block_list_activities .header .title h2:before{
+    content:"\f0a4";
+}
+
+.block_list_activities .header {
+    margin-bottom: 0px;
+}
+
+.block_list_activities .moduletitle{
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-right: 10px;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Block Content */
+
+.block_list_activities .content ul{
+    margin: 0 25px 10px 25px;
+}
+
+.block_list_activities .content ul li{
+    padding-top: 10px;
+}
+
+.block_list_activities .content ul li .arrow_noexpand:before,
+.block_list_activities .content ul li .arrow_expand:before,
+.block_list_activities .content ul li a:not(.summary_arrow):before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    color: #999999;
+    font-size: 20px;
+    padding-right: 5px;
+    padding-top: 0;
+    vertical-align: bottom;
+    font-weight: 900;
+}
+
+.block_list_activities .content .arrow:hover {
+    cursor: pointer;
+}
+
+.block_list_activities .content .arrow {
+    font-size: 20px;
+    color: #999;
+    margin-right: 5px;
+    float: left;
+}
+
+.block_list_activities .content b .arrow{
+    color: black;
+}
+
+.block_list_activities .content ul li:first-child {
+    padding-top: 15px;
+}
+
+.block_list_activities .content a {
+    display: block;
+    padding-left: 14px;
+}
+
+.block_list_activities .content a.hideClass{
+    color: #888;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1301px) {
+    .block_list_activities .module {
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+
+
+*/
+.format-topics .block_summary .content ul li a.summary_arrow + a:before{
+    content: "" !important;
+    padding: 0;
+}
+ .block_list_activities .content p.block_summary_current, .block_list_activities .content p.is_active_block_summary, .block_list_activities .content p.block_summary_current a:before, .block_list_activities .content p.is_active_block_summary a:before{
+    font-weight: bold;
+    color: #000 !important;
+}
+ .block_list_activities .content p {
+    position: relative;
+}
+ .block_list_activities .content ul li{
+    border-bottom: solid 1px #E6E6E6;
+}
+
+ .block_list_activities .content ul li ul>li, .block_list_activities .content ul.editbutton li,
+.block_list_activities  .content ul.editbutton li{
+    border:none;
+}
+ .block_list_activities .content ul.editbutton,
+.block_list_activities  .content ul.editbutton{
+    margin: 0;
+    padding: 0 25px 10px 25px;
+}
+ .block_list_activities .content ul.editbutton li,
+.block_list_activities  .content ul.editbutton li{
+    padding: 0;
+    text-align: right;
+}
+ .block_list_activities .content ul.editbutton li a,
+.block_list_activities  .content ul.editbutton li a {
+    color: #0095db;
+}
+ .block_list_activities .content ul.editbutton a:before,
+.block_list_activities  .content ul.editbutton a:before {
+    font-family: "Font Awesome 5 Free";
+    content:"\f303" !important;
+    padding-right: 5px;
+    font-weight: 900;
+}
+
+.format-topics .block_summary_current_hidden a{
+    color: #BBBBBB;
+}
+
+.format-topics .block_summary_hidden a{
+    color: #BBBBBB;
+}
+
+#region-main .block_summary .editinput {
+    height: 24px;
+    padding: 0 6px;
+    width: 450px !important;
+}
+
+.format-modular .block_summary .header .title h2 a {
+    color: white;
+}
+
+#region-main .block_summary .hideClass,
+#region-main .block_summary .hideClass button,
+#region-main .block_summary .hideClass .dd-handle {
+    color: #BBB !important;
+}
+
+.format-topics .block_summary .header .title {
+    position: relative;
+}
+
+.format-topics .block_summary .header .title h2 a {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 35px;
+    padding-top: 11px;
+    padding-left: 57px;
+    color: white;
+}
+*/

@@ -1,0 +1,39 @@
+/*
+	STYLE PLUGIN LOCAL MAGISTERE OFFERS
+*/
+
+.offerpage #detailModal .modal {
+  width: 50%;
+}
+
+.offerpage #detailModal .modal .modal-dialog {
+  width: 100%;
+  position: initial;
+}
+
+.offerpage .search{
+  margin-left: -50px;
+}
+
+.offerpage .search .icon{
+  padding: 0 10px 0 45px;
+}
+
+.offerpage .header .buttons_filter button.domain::after,
+.offerpage .header .buttons_filter button.origin::after,
+.offerpage .header .buttons_filter button.nature::after,
+.offerpage .header .buttons_filter button.duration::after,
+.offerpage .header .buttons_filter button.public::after,
+.offerpage .mform fieldset.collapsible legend a.fheader::after,
+.offerpage .mform fieldset.collapsible.collapsed legend a.fheader::after,
+.offerpage .mform .domain-checkbox:checked + label::before,
+.offerpage #detailModal .modal .modal-header .close::before,
+.offerpage #detailModal .modal .modal-header .btn::before,
+.offerpage #detailModal .modal .modal-footer .btn::before,
+.offerpage #detailModal .modal .modal-header .link::before,
+.offerpage #detailModal .modal .modal-footer .link::before,
+.offerpage #detailModal .modal .modal-body .notes .itemtitle:before,
+.offerpage #detailModal .modal .modal-body .statistics .itemtitle.main:before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}

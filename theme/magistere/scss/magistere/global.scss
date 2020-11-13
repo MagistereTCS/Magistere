@@ -1,0 +1,345 @@
+body{
+	padding-top: 0;
+}
+
+.container-fluid {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.activity .moodle-actionmenu[data-enhanced].show .menu.align-tr-br {
+	right: auto;
+}
+
+.empty-region-side-post #region-bs-main-and-pre {
+	width: 100%;
+}
+
+.navbar-inner{
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+/********************************************/
+/**************** General *******************/
+/********************************************/
+
+a {
+	color: #333333;
+	text-decoration: none;
+}
+
+img.icon{
+	vertical-align: middle;
+}
+
+.userloggedinas .usermenu .userbutton .avatars .avatar img{
+	height: 35px; /* Mantis 1741 : Correction graphique sur le logo du user dans le header en mode "connecte sous le nom" /*/
+}
+
+.pagelayout-incourse #region-main .mform fieldset.collapsible legend a.fheader,
+.pagelayout-mydashboard  #region-main .mform fieldset.collapsible legend a.fheader{
+	margin-left: -5px;
+}
+
+.ui-dialog.ui-widget{
+	position:fixed;
+	margin-top: 50px; /* Marge à cause du nav en haut de page */
+}
+
+.btn-edit-mode,
+.btn-workflow-mode{
+	color: #fff;
+	padding: 8px 10px;
+	background-color: #95a5a6;
+	height: 44px;
+}
+
+.btn-workflow-mode{
+	padding: 10px;
+}
+
+.btn-workflow-mode img{
+	padding-right: 10px;
+}
+
+/****** Liste de parcours dans "se former" ******/
+
+.block_mycourselist  .home-course .desc p {
+	font-size: 13px;
+}
+
+.block_mycourselist  .home-course .desc p.mycourselist_detail {
+	font-size: 14px;
+}
+
+.block_mycourselist  .home-course .desc .post-title {
+	font-size: 16px;
+}
+
+div.desc > div.origine {
+	font-size: 13px;
+}
+
+/****** Module quizz ******/
+
+input[type="radio"], input[type="checkbox"] {
+	margin-top: 0;
+}
+
+
+/********* Bloc MES FORMATEURS *********/
+
+.block_messageteacher .header .title h2 {
+	color: white;
+	background-color: #95a5a6;
+}
+
+.block_messageteacher .header .title h2:before {
+	content: "\f0c0" !important;
+}
+
+
+/***************************************/
+/************* Code autre **************/
+/***************************************/
+
+@media (max-width: 979px) {
+	body#page-lib-editor-atto-plugins-managefiles-manage.content-only.jsenabled{
+		padding-top: 60px !important; /* Mantis 1726 */
+	}
+}
+
+/* Hook table RecordingsBN */
+.yui3-skin-sam #recordingsbn_yui_table .yui3-datatable-odd .yui3-datatable-cell {
+	background-color: #BBBBBB;
+}
+
+.yui3-skin-sam #recordingsbn_yui_table .yui3-datatable-even .yui3-datatable-cell {
+	background-color: #DDDDDD;
+}
+
+/* atto poodll iframe size */
+.atto_poodll_iframe_container iframe {
+	width: 100%;
+}
+
+/* ul, ol in atto editor */
+
+.editor_atto_content ul li,
+.format-topics .contentafterlink ul li,
+.format-topics .main-content ul li,
+#page-mod-wiki-view .text_to_html ul li{
+	list-style: disc outside none;
+}
+.editor_atto_content ol,
+.format-topics .main-content ol,
+.editor_atto_content ol,
+#page-mod-wiki-view .text_to_html ol{
+	margin: 0 0 10px 25px;
+}
+
+/*
+ * local supervision
+ */
+#supervision_content #group_school,
+#supervision_content #school_name,
+#supervision_content #stagiaire_select{
+	width: 100%;
+}
+
+#page-local-supervision-index #page-content{
+	margin-top: 5px;
+}
+
+/*
+ * local metaadmin
+ */
+#page-local-metaadmin-view_statsparticipants #region-main ul li{
+	list-style-type: disc !important;
+}
+
+
+.block_html .no-overflow
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*******************************************/
+/**************** Global *******************/
+/*******************************************/
+
+.activity .main-content .contentafterlink a,
+.activity .main-content .contentwithoutlink a,
+.block_html a,
+.block_educationalbloc a,
+.block_flexpagemod a,
+.forumpost .maincontent .content a,
+#page-mod-page-view .generalbox a,
+form #id_manageq .qn-question a,
+#page-mod-questionnaire-complete .generalbox a,
+.path-mod #intro a{
+	color: #0095db;
+}
+
+#page-mod-questionnaire-complete .generalbox .mceToolbar a,
+#page-mod-questionnaire-complete .generalbox .moodleSkin .mceStatusbar a{
+	color: inherit;
+}
+
+.activity .main-content .contentafterlink a:visited,
+.activity .main-content .contentwithoutlink a:visited,
+.block_html a:visited,
+.block_educationalbloc a:visited,
+.path-mod #intro a:visited{
+	color: #551a8b;
+}
+
+.atto_menu .dropdown-menu > li > a:hover,
+.atto_menu .dropdown-menu > li > a:focus,
+.atto_menu .dropdown-submenu:hover > a,
+.atto_menu .dropdown-submenu:focus > a {
+	background-color: #0095db;
+	color: #fff;
+}
+
+.atto_menu .dropdown-menu {
+	background-color: #fff;
+}
+
+.atto_menu .dropdown-menu > li > a {
+	color: #0095db;
+}
+
+.feditor a {
+	color: #0095db;
+}
+
+#page-mod-viaassign-view .felement.fgroup, #page-mod-via-mod .felement.fgroup {
+	min-width: unset;
+}
+
+/*
+ * MAINTENANCE PAGE
+ */
+#page-maintenance-message #page {
+	background-color: #FFFFFF !important;
+}
+
+#page-maintenance-message #page #page-header {
+	top:0px !important;
+}
+
+.resource_block_scorm.embed{
+	padding-top: 75%;
+	position: relative;
+}
+
+.resource_block_scorm.embed iframe{
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+/* Custom css for select in quiz activity */
+.formulation table select {
+	width: 100%;
+}
+
+/* Taille tags dans nuage de tags */
+.tag_cloud .s20 {font-size: 1.9em;}
+.tag_cloud .s19 {font-size: 1.65em;}
+.tag_cloud .s18 {font-size: 1.60em;}
+.tag_cloud .s17 {font-size: 1.55em;}
+.tag_cloud .s16 {font-size: 1.50em;}
+.tag_cloud .s15 {font-size: 1.45em;}
+.tag_cloud .s14 {font-size: 1.40em;}
+.tag_cloud .s13 {font-size: 1.35em;}
+.tag_cloud .s12 {font-size: 1.30em;}
+.tag_cloud .s11 {font-size: 1.25em;}
+.tag_cloud .s10 {font-size: 1.20em;}
+.tag_cloud .s9 {font-size: 1.15em;}
+.tag_cloud .s8 {font-size: 1.10em;}
+.tag_cloud .s7 {font-size: 1.05em;}
+.tag_cloud .s6 {font-size: 1.00em;}
+.tag_cloud .s5 {font-size: 0.95em;}
+.tag_cloud .s4 {font-size: 0.90em;}
+.tag_cloud .s3 {font-size: 0.85em;}
+.tag_cloud .s2 {font-size: 0.80em;}
+.tag_cloud .s1 {font-size: 0.75em;}
+.tag_cloud .s0 {font-size: 0.70em;}
+
+.avatar.current {
+	left: 21px !important;
+	width: 25px !important;
+	height: 25px !important;
+}
+
+.avatar.current.isotheruser img {
+	margin-top: -17px !important;
+	height: inherit !important;
+}
+
+
+.dimmed_text {
+	opacity: 0.5;
+}
+
+/*
+ * Formatage des listes à puce
+ */
+#block-region-side-pre div.block ul li,
+#block-region-side-post div.block ul li{
+	list-style: none;
+}
+
+#indexation_form .row .column .field ul.radio li,
+#indexation_form .row .column .field ul.checkbox li,
+.resource-search .field ul.radio li,
+.resource-search .field ul.checkbox li,
+#offer-filter ul.checkbox li{
+	list-style: none;
+}
+
+/* patch for link in quiz mod */
+.path-mod-quiz .formulation.clearfix a,
+.path-mod-quiz .feedback a{
+	color: #0070a8;
+}
+
+.dropdown-toggle:hover {
+	cursor: pointer;
+}
+
+.section .activity .activityinstance,
+.section .activity .activityinstance div {
+	display: table-cell;
+}
+
+
+#btn_sco, #btn_sup, #btn_sco:hover, #btn_sup:hover {
+  text-shadow:none;
+}
+
+.col-6, .col-xs-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+.availability-dialogue li {
+  display: flex;
+}
+
+.availability-dialogue label {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+.availability-dialogue .btn.w-100 {
+  width: 90%;
+  margin-left: 0px;
+  margin-bottom: 4px;
+}

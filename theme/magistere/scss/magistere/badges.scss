@@ -1,0 +1,285 @@
+
+/*
+	STYLE BADGES
+*/
+
+/* Page badge */
+
+#page-badges-badge #badge-image-content {
+  width: 80%;
+  margin: 0 auto;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#page-badges-badge #badge-image-content #badge-img-src {
+  margin: 0 auto;
+  width: 70%;
+  padding: 0 0 10px 0;
+  position: relative;
+}
+
+#page-badges-badge #badge-image-content #badge-img-src img#badge-img {
+  width: 100%;
+}
+
+#page-badges-badge #badge-image-content #badge-visible {
+  text-align: right;
+  color: #727272;
+  padding: 5px;
+  font-size: 12px;
+}
+
+#page-badges-badge #badge-image-content #badge-visible i.visible,
+#page-badges-mybadges #issued-badge-table i.visible {
+  color: #77D185;
+  font-size: 10px;
+}
+
+#page-badges-badge #badge-image-content #badge-visible i.hide,
+#page-badges-mybadges #issued-badge-table i.hide {
+  color: #C33C6A;
+  font-size: 10px;
+}
+
+#page-badges-badge #badge-image-content #badge-visible span,
+#page-badges-mybadges #issued-badge-table .jt_visibility span {
+  padding: 0 5px;
+}
+
+#page-badges-badge #badge-image-content .singlebutton {
+  padding: 0;
+}
+
+#page-badges-badge #badge-image-content .singlebutton form div {
+  margin: 0;
+  display: block;
+}
+
+#page-badges-badge #badge-image-content .singlebutton form div input[type="submit"]{
+  margin: 0;
+}
+
+#page-badges-badge .badge-action {
+  border-top: 1px solid #E6E6E6;
+}
+
+#page-badges-badge .badge-action .print-button,
+#page-badges-badge .badge-action button,
+#page-badges-badge .badge-action input[type="submit"]{
+  color: #0095DB;
+  background-color: #fff;
+  text-shadow: none;
+  border: none;
+  border-radius: 0px;
+  width: 90%;
+  text-align: left;
+  padding: 5%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+#page-badges-badge .badge-action button,
+#page-badges-badge .badge-action input[type="submit"]{
+  width: 100%;
+  box-shadow: none;
+  margin: 0;
+}
+
+#page-badges-badge .badge-action .print-button:hover,
+#page-badges-badge .badge-action button:hover,
+#page-badges-badge .badge-action input[type="submit"]:hover {
+  background: #E6F4FD;
+  outline: 0;
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position 0.1s linear;
+  -moz-transition: background-position 0.1s linear;
+  -o-transition: background-position 0.1s linear;
+  transition: background-position 0.1s linear;
+}
+
+#page-badges-badge .badge-action input[type="submit"] {
+  font-family: "Open Sans", sans-serif, "Font Awesome 5 Free";
+}
+
+#page-badges-badge .badge-action i.fas {
+  padding-right: 10px;
+  width: 18px;
+  text-align: center;
+}
+
+#page-badges-badge #badge-details dl {
+  margin: 0 0 25px 0;
+}
+
+#page-badges-badge #badge-details dl dt {
+  font-size: 15px;
+}
+
+#page-badges-badge #badge-details .border-line {
+  width: 100%;
+  border-bottom: 1px solid #DDDDDD;
+  margin: 10px 0;
+}
+
+/* Page badge avant impression */
+
+#page-badges-prettyview {
+  width: 96% !important;
+}
+
+#page-badges-prettyview .printicon {
+  background: url([[pix:t/print]]) no-repeat scroll 2px center transparent;
+  padding-left: 20px;
+}
+
+#page-badges-prettyview .displayprinticon {
+  text-align: right;
+}
+
+/* Page Mybadges */
+
+#page-badges-mybadges #issued-badge-table table {
+  border: none;
+}
+
+#page-badges-mybadges #issued-badge-table thead th {
+  color: #333333;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  background: #ECF0F1;
+}
+
+#page-badges-mybadges #issued-badge-table tbody {
+  color: #727272;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+#page-badges-mybadges #issued-badge-table tbody tr:hover{
+  background: #E6F4FD;
+}
+
+#page-badges-mybadges #issued-badge-table tbody tr td {
+  padding: 15px 5px;
+  border: none;
+  border-bottom: 1px solid #ECF0F1;
+}
+
+#page-badges-mybadges #issued-badge-table tbody tr:last-child td {
+  border: none;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_name {
+  padding-left: 12px;
+  font-size: 15px;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_name .badge-img {
+  width: 59px;
+  display: table-cell;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_name .badge-img img {
+  width: 100%;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_name .badge-link {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_name .badge-link a {
+  color: #333333;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_description p.show-read-more {
+  margin: 0;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_description .view-more {
+  color: #0095DB;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_description .more-description {
+  display: none;
+}
+
+#page-badges-mybadges #issued-badge-table .jt_visibility {
+  width: 10%;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .badge-link {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .badge-link a[title]{
+  background-color: #333333;
+  color: #ffffff;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .fa-stack {
+  width: 2em;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .fas.fa-circle.fa-stack-2x {
+  color: rgba(0, 149, 219, 0.15);
+  opacity: 0;
+  z-index: 2;
+  transition: opacity .5s ease-out;
+  -moz-transition: opacity .5s ease-out;
+  -webkit-transition: opacity .5s ease-out;
+  -o-transition: opacity .5s ease-out;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .fas.fa-circle.fa-stack-2x:hover {
+  color: rgba(0, 149, 219, 0.15);
+  opacity: 1;
+}
+
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions i{
+  color: #0095DB;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .span-title {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility .5s, opacity .5s ease-out;
+  -moz-transition: visibility .5s, opacity .5s ease-out;
+  -webkit-transition: visibility .5s, opacity .5s ease-out;
+  -o-transition: visibility .5s, opacity .5s ease-out;
+  position: absolute;
+  z-index: 2;
+  font-size: 12px;
+  color: #ffffff;
+  background: #333333;
+  width: auto;
+  text-decoration: none;
+  padding: 4px 7px;
+  margin: 0;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .fa-icon-link:hover .span-title {
+  visibility: visible;
+  opacity: 1;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions button {
+  background: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+#page-badges-mybadges #issued-badge-table tbody .jt_actions .change-visibility {
+  margin: 0;
+}

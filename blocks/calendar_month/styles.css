@@ -1,0 +1,8 @@
+/* parcours section */
+.block_calendar_month .header .title h2{
+    background-color: #9b58b7 !important;
+}
+
+.block_calendar_month .header .title h2:before{
+    content: "\f073" !important;
+}

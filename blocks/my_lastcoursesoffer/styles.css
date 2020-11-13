@@ -1,0 +1,88 @@
+
+.block_my_lastcoursesoffer .header
+{
+	background-color: #9c59bd;
+}
+.block_my_lastcoursesoffer .header h2
+{
+	background-color: #9c59bd !important;
+	color: #ffffff !important;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .collectionlogo
+{
+	float: left;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .collectionlogo img
+{
+	height: 24px;
+	width: 24px;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation
+{
+	border-bottom:1px solid #E6E6E6;
+	margin-bottom: 10px;
+	padding-bottom:10px;
+	padding-left: 30px;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation.last
+{
+	border:none;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .collection
+{
+	font-size:13px;
+	color: #0095db;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .fullname
+{
+	color: #333333;
+	font-size:16px;
+	line-height: 17pt;
+	margin-bottom: 0px;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .fullname a
+{
+	color: #000000;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .fullname a:hover
+{
+	color: #555555;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .subscription
+{
+	margin-bottom:0px;
+	font-size:13px;
+	color: #999999;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .subscription .maxparticipant
+{
+	color: #7B7B7B;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .duration
+{
+	margin-bottom:0px;
+	color: #7B7B7B;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .provider
+{
+	margin-bottom: 3px;
+	color: #333333;
+	font-size:14px;
+}
+
+.block_my_lastcoursesoffer .mycourseoffer .courseformation .locked
+{
+	color: #7B7B7B;
+}

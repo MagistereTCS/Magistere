@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/list_activities/db" VERSION="20190711" COMMENT="XMLDB file for Moodle blocks/list_activities"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_list_activities" COMMENT="block_list_activities">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="courseid"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="weight"/>
+        <FIELD NAME="weight" TYPE="text" NOTNULL="true" SEQUENCE="false" NEXT="notdisplay"/>
+        <FIELD NAME="notdisplay" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="weight"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

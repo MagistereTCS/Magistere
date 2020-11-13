@@ -1,0 +1,21 @@
+/* parcours section */
+.block_news_items .header .title h2{
+    background-color: #9b58b7 !important;
+    color: #fff !important;
+}
+
+.block_news_items .header .title h2:before {
+    content: "\f1ea" !important;
+    color: #fff;
+    height: 0.5em !important;
+    padding-top: 0.3em !important;
+}
+
+/* parcours flexpage */
+.format-flexpage .block_news_items .header .title h2{
+    color: #3d3d3d !important;
+}
+
+.format-flexpage #block-region-side-post .block_news_items .header .title h2, .format-flexpage #block-region-side-pre .block_news_items .header .title h2{
+    color: #fff !important;
+}

@@ -1,0 +1,70 @@
+/*********************************************************/
+/**************** Parcours en général  *******************/
+/*********************************************************/
+
+#courseheader {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+#courseheader h1{
+  display: inline;
+  margin-top: 0;
+}
+
+/****** Icone de collection des parcours format section ******/
+
+#courseheader i.collection-icon{
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  display: inline-block;
+  background-position:center;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  -moz-box-shadow: 0px 1px 5px #9F9F9F;
+  -webkit-box-shadow: 0px 1px 5px #9F9F9F;
+  box-shadow: 0px 1px 5px #9F9F9F;
+  vertical-align: top;
+}
+
+#courseheader i.action{         background-image: url('[[pix:theme|collections/action_32x32_gris]]'); }
+#courseheader i.analyse{        background-image: url('[[pix:theme|collections/analyse_32x32_gris]]'); }
+#courseheader i.autoformation{  background-image: url('[[pix:theme|collections/autoformation_32x32_gris]]'); }
+#courseheader i.collaboratif{   background-image: url('[[pix:theme|collections/collaboratif_32x32_gris]]'); }
+#courseheader i.decouverte{     background-image: url('[[pix:theme|collections/decouverte_32x32_gris]]'); }
+#courseheader i.distant{        background-image: url('[[pix:theme|collections/volet_distant_32x32_gris]]'); }
+#courseheader i.encadrement{    background-image: url('[[pix:theme|collections/encadrement_32x32_gris]]'); }
+#courseheader i.qualif{         background-image: url('[[pix:theme|collections/qualification_32x32_gris]]'); }
+#courseheader i.reseau{         background-image: url('[[pix:theme|collections/reseau_32x32_gris]]'); }
+#courseheader i.simulation{     background-image: url('[[pix:theme|collections/simulation_32x32_gris]]'); }
+
+/* Bug affichage etiquette sur parcours topic et modulaire en mode edition (Mantis 3283) */
+.editing .section .activity .contentwithoutlink,
+.editing .section .activity .activityinstance {
+  padding-right: 0;
+}
+
+.section .activity .contentwithoutlink,
+.section .activity .activityinstance {
+  display: block;
+}
+
+.editingfield {
+  width: 330px; // magical constant from moodle
+}
+
+.archivedcourse {
+  margin : 20px 40px;
+  i {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .archivedcourse {
+    margin : 20px 0;
+  }
+}

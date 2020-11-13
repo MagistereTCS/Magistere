@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/myindex/db" VERSION="2020033100" COMMENT="XMLDB file for Moodle local/index"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_myindex_courseprogress" COMMENT="local_myindex_courseprogress table">
+      <FIELDS>
+		<FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="true" NEXT="courseid"/>
+		<FIELD NAME="courseid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="courseid" PREVIOUS="id" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="userid" PREVIOUS="courseid" NEXT="progress"/>
+        <FIELD NAME="progress" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="progress" PREVIOUS="userid"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="courseid_userid" TYPE="unique" FIELDS="courseid, userid"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,279 @@
+/***********************************************************************************/
+/**************** Blocs & Activités pour parcours format Section *******************/
+/***********************************************************************************/
+
+/* Blocs & Activités pour parcours format Section */
+body {
+  background-color: #ecf0f1;
+  width: 100% !important;
+}
+
+.block .header .title h2:before{
+  margin-left: -0.2em;
+  font-size: 1.5em;
+  height: 1.5em;
+  font-weight: 900;
+}
+
+.block .header .block_action{
+  padding: 10px 15px !important;
+}
+
+.section li.activity {
+  margin-bottom: 40px;
+}
+
+.course-content ul.topics li.section {
+  padding-bottom: 0;
+}
+
+.aardvark-activity-section .mod-indent-outer{
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.course-content ul.topics li.section .summary ul li{
+  list-style: disc;
+}
+
+.editing .aardvark-activity-section.activity.label .mod-indent-outer {
+  padding-left: 32px !important;
+}
+.aardvark-activity-section.activity.label .mod-indent-outer {
+  padding-left: 0px !important;
+}
+
+.aardvark-activity-section .header-editing,
+.aardvark-activity-section .noheader{
+  background-color: #cfebf9;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.aardvark-activity-section .noheader {
+  min-height: 40px;
+}
+
+.aardvark-activity-section .main-content{
+  background-color: #e6f5fc;
+}
+
+.modtype_resource.aardvark-activity-section .header-editing,
+.modtype_resource.aardvark-activity-section .noheader,
+.modtype_resource.aardvark-activity-section .main-content,
+.modtype_url.aardvark-activity-section .header-editing,
+.modtype_url.aardvark-activity-section .noheader,
+.modtype_url.aardvark-activity-section .main-content{
+  background: none;
+  padding-bottom: 0;
+}
+
+.modtype_resource.aardvark-activity-section .noheader > a:hover,
+.modtype_url.aardvark-activity-section .noheader > a:hover{
+  text-decoration: underline;
+}
+
+.modtype_url.aardvark-activity-section .custom-content p{
+  margin-top: 0;
+}
+
+.modtype_resource.aardvark-activity-section .header-editing,
+.modtype_url.aardvark-activity-section .header-editing {
+  min-height: 0;
+}
+
+.aardvark-activity-section .activityinstance {
+  width: 100%;
+  padding: 0;
+  display: block;
+}
+
+.course-content .section .modtype_resource.activity.aardvark-activity-section .activityinstance,
+.course-content .section .modtype_url.activity.aardvark-activity-section .activityinstance {
+  display: none;
+}
+
+.aardvark-activity-section .activityicon {
+  display: block;
+  float:left;
+}
+
+.aardvark-activity-section .instancename {
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 100px;
+  padding-top: 7px;
+  display: block;
+  color: #0095db;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  min-height: 32px;
+  background-size: 32px 32px;
+}
+
+.modtype_resource.aardvark-activity-section .instancename,
+.modtype_url.aardvark-activity-section .instancename {
+  font-weight: 400;
+}
+
+.modtype_resource.aardvark-activity-section .resourcelinkdetails {
+  color: #999;
+  font-size: 0.9em;
+  padding-left: 45px;
+}
+
+.modtype_url.aardvark-activity-section .urldetails {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.modtype_resource.aardvark-activity-section .contentafterlink{
+  padding-left: 45px;
+  margin-top: 0;
+}
+
+.modtype_url.aardvark-activity-section .custom-content {
+  padding: 0 0 0 45px;
+  margin-top: 0;
+  margin-left: 5px;
+}
+
+.aardvark-activity-section .filler{
+  display: none;
+}
+
+.aardvark-activity-section .actions {
+  position: static !important;
+  text-align: right;
+}
+
+.aardvark-activity-section .editing .section .activity:hover,
+.aardvark-activity-section .editing .section .activity.action-menu-shown{
+  background-color: white !important;
+}
+
+.aardvark-activity-section .button {
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: white;
+  background-color: #0095db;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  top: 8px;
+  right: 25px;
+}
+
+.aardvark-activity-section .custom-content {
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.aardvark-activity-section .button i {
+  margin-right: 10px;
+}
+
+.aardvark-activity-section .quickeditlink {
+  position: absolute;
+  top: 44px;
+  right: 25px;
+}
+
+.aard_section_forumheaderlist {
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.aard_section_forumheaderlist tr {
+  border-top: 1px solid #cfebf9;
+}
+
+.aard_section_forumheaderlist .picture,
+.aard_section_forumheaderlist .picture-header {
+  padding-left: 5px;
+  width: 50px;
+}
+
+.aard_section_forumheaderlist .replies,
+.aard_section_forumheaderlist .replies-header,
+.aard_section_forumheaderlist .popularities,
+.aard_section_forumheaderlist .favorites
+{
+  text-align: center;
+}
+
+.aard_section_forumheaderlist tr td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.aard_section_forumheaderlist td:last-child {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.aard_section_forumheaderlist thead tr {
+  border: none;
+}
+
+.aard_section_forumheaderlist thead th {
+  font-weight: lighter;
+}
+
+.aard_section_forumheaderlist .author {
+  color: black;
+}
+
+.aard_section_forumheaderlist .subject-title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.aardvark-activity-section .blog-post .author,
+.aard_section_forumheaderlist .author-field {
+  color: #0095db;
+}
+
+.aardvark-activity-section .blog-post .picture {
+  float: left;
+}
+
+.aardvark-activity-section .blog-post .author-encart,
+.aardvark-activity-section .blog-post .author
+{
+  font-size: 12px;
+}
+
+.aardvark-activity-section .blog-post .title {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.aardvark-activity-section .blog-post .replies {
+  border-top: 1px solid #cfebf9;
+  padding-top: 8px;
+  margin-top: 15px;
+}
+
+.aardvark-activity-section .blog-post .replies a {
+  color: #0095db;
+}
+
+.aardvark-activity-section .blog-post .replies .fa-comments {
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+
+.aardvark-activity-section .blog-post .message {
+  margin-top: 15px;
+}
+
+.aardvark-activity-section .blog-post .post {
+  padding-left: 50px;
+  margin-top: 20px;
+}

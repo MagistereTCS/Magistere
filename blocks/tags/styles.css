@@ -1,0 +1,10 @@
+/* parcours section */
+.block_tags .header .title h2{
+    background-color: #95a5a6 !important;
+    color: #fff;
+}
+
+.block_tags .header .title h2:before {
+    content: "\f02c" !important;
+    color: #fff;
+}

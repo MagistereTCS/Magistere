@@ -1,0 +1,208 @@
+/*
+ * SPECIFIC CSS FORM FORMAT_MODULAR
+ */
+.format-modular .activity.assign .instancename{                      background-image: url('[[pix:theme|activities/assign]]'); }
+.format-modular .activity.book .instancename {                       background-image: url('[[pix:theme|activities/book]]'); }
+.format-modular .activity.centralizedresources .instancename {       background-image: url('[[pix:theme|activities/centralizedresources]]'); }
+.format-modular .activity.chat .instancename {                       background-image: url('[[pix:theme|activities/chat]]'); }
+.format-modular .activity.choice .instancename {                     background-image: url('[[pix:theme|activities/choice]]'); }
+.format-modular .activity.choicegroup .instancename {                background-image: url('[[pix:theme|activities/choicegroup]]'); }
+.format-modular .activity.coursebadges .instancename {               background-image: url('[[pix:theme|activities/coursebadges]]'); }
+.format-modular .activity.data .instancename {                       background-image: url('[[pix:theme|activities/data]]'); }
+.format-modular .activity.educationallabel .instancename {           background-image: url('[[pix:theme|activities/educationallabel]]'); }
+.format-modular .activity.etherpadlite .instancename {               background-image: url('[[pix:theme|activities/etherpadlite]]'); }
+.format-modular .activity.folder .instancename {                     background-image: url('[[pix:theme|activities/folder]]'); }
+.format-modular .activity.forum .instancename {                      background-image: url('[[pix:theme|activities/forum]]'); }
+.format-modular .activity.glossary .instancename {                   background-image: url('[[pix:theme|activities/glossary]]'); }
+.format-modular .activity.hvp .instancename {                        background-image: url('[[pix:theme|activities/hvp]]'); }
+.format-modular .activity.imscp .instancename {                      background-image: url('[[pix:theme|activities/imscp]]'); }
+.format-modular .activity.label .instancename {                      background-image: url('[[pix:theme|activities/label]]'); }
+.format-modular .activity.lesson .instancename {                     background-image: url('[[pix:theme|activities/lesson]]'); }
+.format-modular .activity.lti .instancename {                        background-image: url('[[pix:theme|activities/lti]]'); }
+.format-modular .activity.nanogong .instancename {                   background-image: url('[[pix:theme|activities/nanogong]]'); }
+.format-modular .activity.oublog .instancename {                     background-image: url('[[pix:theme|activities/oublog]]'); }
+.format-modular .activity.page .instancename {                       background-image: url('[[pix:theme|activities/page]]'); }
+.format-modular .activity.publication .instancename {                background-image: url('[[pix:theme|activities/publication]]'); }
+.format-modular .activity.questionnaire .instancename {              background-image: url('[[pix:theme|activities/questionnaire]]'); }
+.format-modular .activity.quiz .instancename {                       background-image: url('[[pix:theme|activities/quiz]]'); }
+.format-modular .activity.resource .instancename {                   background-image: url('[[pix:theme|activities/resource]]'); }
+.format-modular .activity.resource.restexte .instancename {          background-image: url('[[pix:theme|activities/resources/document_24x24]]'); }
+.format-modular .activity.resource.respresentation .instancename {   background-image: url('[[pix:theme|activities/resources/tableur_24x24]]'); }
+.format-modular .activity.resource.restableau .instancename {        background-image: url('[[pix:theme|activities/resources/presentation_24x24]]'); }
+.format-modular .activity.resource.resmedia .instancename {          background-image: url('[[pix:theme|activities/resources/media_24x24]]'); }
+.format-modular .activity.scorm .instancename {                      background-image: url('[[pix:theme|activities/scorm]]'); }
+.format-modular .activity.socialforum .instancename {                background-image: url('[[pix:theme|activities/socialforum]]'); }
+.format-modular .activity.survey .instancename {                     background-image: url('[[pix:theme|activities/survey]]'); }
+.format-modular .activity.tracker .instancename {                    background-image: url('[[pix:theme|activities/tracker]]'); }
+.format-modular .activity.url .instancename {                        background-image: url('[[pix:theme|activities/resources/lien_24x24]]'); }
+.format-modular .activity.via .instancename {                        background-image: url('[[pix:theme|activities/via]]'); }
+.format-modular .activity.viaassign .instancename {                  background-image: url('[[pix:theme|activities/viaassign]]'); }
+.format-modular .activity.wiki .instancename {                       background-image: url('[[pix:theme|activities/wiki]]'); }
+.format-modular .activity.workshop .instancename {                   background-image: url('[[pix:theme|activities/workshop]]'); }
+.format-modular .activity.jupyternotebook .instancename {            background-image: url('[[pix:theme|activities/jupyternotebook]]'); }
+
+
+/*css de l'activité coursebadges*/
+.format-modular .activity.coursebadges .instancename {
+  background-size: 25px 32px;
+  background-position-x: 5px;
+}
+
+/*css de l'activité folder*/
+.format-modular .folder .contentwithoutlink {
+  margin-top: .5em;
+  margin-left: 30px;
+  display: block;
+}
+
+/* taille spécifique pour les pix resources + url */
+.format-modular .activity.resource.restexte .instancename,
+.format-modular .activity.resource.respresentation .instancename,
+.format-modular .activity.resource.restableau .instancename,
+.format-modular .activity.resource.resmedia .instancename,
+.format-modular .activity.url .instancename {
+  background-size: 24px 24px;
+  background-position-x: 4px;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost{
+  padding: 10px 0 0 0;
+  margin: 1px 0 0 0;
+  background-color: #FFFFFF;
+  border: none;
+  box-shadow: none;
+  border-bottom: #E6E6E6 1px solid;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost .maincontent .posting.fullpost {
+  padding-right: 10px;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost .header,
+.format-modular#page-mod-forum-view #region-main .forumpost .header,
+.format-modular#page-mod-forum-search #region-main .forumpost .header,
+.format-modular#page-mod-forum-post #region-main .forumpost .header{
+  width: 48px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost .author {
+  color: #333;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost .author a{
+  color: #0095db;
+  font-weight: normal;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost.firstpost{
+  padding: 15px 0 0 0;
+  margin: 1px 0 0 0;
+  margin-bottom: 0px;
+  background-color: #E6F5FC;
+  border-top: #E6E6E6 1px solid;
+  border-bottom: #E6E6E6 1px solid;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost .side .options .commands {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  line-height: 50px;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumpost .side .options .commands a {
+  border-radius: 4px;
+  background-color: #0095db;
+  color: #FFFFFF;
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+
+.format-modular#page-mod-forum-discuss #region-main
+{
+  position: relative;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumheader
+{
+  background-color: #FAFAFA;
+  position: relative;
+  top: -22px;
+  left: -10px;
+  margin-right: -20px;
+  padding: 0 10px 10px 10px;
+  border-bottom: #E6E6E6 1px solid;
+}
+
+
+.format-modular#page-mod-forum-discuss #region-main .forumheader h3
+{
+  padding: 15px 0 10px 0;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumheader .mlinks .mlink_backtocourse
+{
+  float: left;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumheader .mlinks .mlink_backtocourse a
+{
+  color: #0095db;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumheader .mlinks .mlink_seeother
+{
+  float: right;
+}
+
+.format-modular#page-mod-forum-discuss #region-main .forumheader .mlinks .mlink_seeother a
+{
+  color: #0095db;
+}
+
+.format-modular .label .contentwithoutlink {
+  margin-right: unset;
+  padding-right: unset;
+}
+
+.format-modular .contentafterlink {
+  margin-left: 5px !important;
+  margin-right: 5px;
+}
+
+.format-modular .activity.label .main-content{
+  background-color: initial;
+}
+
+/* CSS pour les activites H5P */
+.format-modular .activity.modtype_hvp iframe {
+  width: 100%;
+}
+
+/* CSS pour les ressources centralisees videos */
+.format-modular .activity.modtype_centralizedresources video {
+  width: 100%;
+}
+
+/* CSS pour les bloc sommaire */
+.format-modular .block_summary .moduletitle {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.format-modular .block_summary .homereturn {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.format-modular .block_summary .jumpto {
+  margin: 10px 20px;
+}

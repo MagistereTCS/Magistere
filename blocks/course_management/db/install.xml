@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/course_management/db" VERSION="20130625" COMMENT="XMLDB file for Moodle blocks/course_management"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="indexation_moodle" COMMENT="indexation_moodle table" NEXT="indexation_level">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="course_id"/>
+        <FIELD NAME="course_id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="course_id" PREVIOUS="id" NEXT="nom_parcours"/>
+        <FIELD NAME="nom_parcours" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="nom_parcours" PREVIOUS="course_id" NEXT="objectifs"/>
+        <FIELD NAME="objectifs" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="objectifs" PREVIOUS="nom_parcours" NEXT="description"/>
+        <FIELD NAME="description" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="description" PREVIOUS="objectifs" NEXT="collection"/>
+        <FIELD NAME="collection" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="collection" PREVIOUS="description" NEXT="tps_a_distance"/>
+        <FIELD NAME="tps_a_distance" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="tps_a_distance" PREVIOUS="collection" NEXT="tps_en_presence"/>
+        <FIELD NAME="tps_en_presence" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="tps_en_presence" PREVIOUS="tps_a_distance" NEXT="accompagnement"/>
+        <FIELD NAME="accompagnement" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="accompagnement" PREVIOUS="tps_en_presence" NEXT="origine"/>
+        <FIELD NAME="origine" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="origine" PREVIOUS="accompagnement" NEXT="liste_auteurs"/>
+        <FIELD NAME="liste_auteurs" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="liste_auteurs" PREVIOUS="origine" NEXT="validation"/>
+        <FIELD NAME="validation" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="validation" PREVIOUS="liste_auteurs" NEXT="derniere_maj"/>
+        <FIELD NAME="derniere_maj" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" COMMENT="derniere_maj" PREVIOUS="validation" NEXT="keywords"/>
+        <FIELD NAME="keywords" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="derniere_maj" NEXT="department"/>
+        <FIELD NAME="department" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="keywords" NEXT="origin_espe"/>
+        <FIELD NAME="origin_espe" SEQUENCE="false" TYPE="int" NOTNULL="true" LENGTH="11" PREVIOUS="department" NEXT="shared_offer"/>
+        <FIELD NAME="shared_offer" SEQUENCE="false" TYPE="int" LENGTH="1" NOTNULL="true" PREVIOUS="origin_espe" NEXT="contact_auteurs" />
+        <FIELD NAME="contact_auteurs" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="shared_offer" NEXT="academy"/>
+        <FIELD NAME="academy" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="contact_auteurs"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+	  <INDEXES>
+		 <INDEX NAME="course_unicity" UNIQUE="true" FIELDS="course_id" COMMENT="course_unicity" />
+	  </INDEXES>
+    </TABLE>
+
+    <TABLE NAME="indexation_level" COMMENT="niveau indexation" PREVIOUS="indexation_moodle" NEXT="indexation_domain">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="name"/>
+        <FIELD NAME="name" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="name" PREVIOUS="id"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+
+    <TABLE NAME="indexation_domain" COMMENT="indexation domain" PREVIOUS="indexation_level" NEXT="indexation_target">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="name"/>
+        <FIELD NAME="name" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="name" PREVIOUS="id"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+
+    <TABLE NAME="indexation_target" COMMENT="indexation domain" PREVIOUS="indexation_domain" NEXT="indexation_index_domain">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="name"/>
+        <FIELD NAME="name" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="name" PREVIOUS="id"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+
+    <TABLE NAME="indexation_index_domain" COMMENT="" PREVIOUS="indexation_target" NEXT="indexation_index_level">
+        <FIELDS>
+            <FIELD NAME="indexation_id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="domain_id"/>
+            <FIELD NAME="domain_id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="indexation_id"/>
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+
+    <TABLE NAME="indexation_index_level" COMMENT="" PREVIOUS="indexation_index_domain" NEXT="indexation_index_target">
+        <FIELDS>
+            <FIELD NAME="indexation_id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="level_id"/>
+            <FIELD NAME="level_id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="indexation_id"/>
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+
+    <TABLE NAME="indexation_index_target" COMMENT="" PREVIOUS="indexation_index_level" NEXT="t_origine_espe">
+        <FIELDS>
+            <FIELD NAME="indexation_id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="target_id"/>
+            <FIELD NAME="target_id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="indexation_id"/>
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+
+    <TABLE NAME="t_origine_espe" COMMENT="" PREVIOUS="indexation_index_target" NEXT="course_trash_category">
+        <FIELDS>
+            <FIELD NAME="id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="name"/>
+            <FIELD NAME="name" SEQUENCE="false" TYPE="char" NOTNULL="true" LENGTH="255" PREVIOUS="id"/>
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+    
+    <TABLE NAME="course_trash_category" COMMENT="" PREVIOUS="t_origine_espe">
+        <FIELDS>
+            <FIELD NAME="id" SEQUENCE="true" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="course_id"/>
+            <FIELD NAME="course_id" SEQUENCE="false" TYPE="int" NOTNULL="true" PREVIOUS="id" NEXT="category_id"/>
+            <FIELD NAME="category_id" SEQUENCE="false" TYPE="int" NOTNULL="true" PREVIOUS="course_id"/>
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

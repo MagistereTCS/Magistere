@@ -1,0 +1,180 @@
+/** Resource Search form specific */
+#region-main .resource-search {
+  fieldset {
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 1em 0;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+  }
+
+  fieldset > .fcontainer {
+    margin: 0 0 0 30%;
+  }
+
+  fieldset legend {
+    float: left;
+    width: auto;
+    margin: 0;
+    font-size: 1em;
+    text-transform: uppercase;
+    border-bottom: none !important;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  input[type="checkbox"] {
+    margin: 3px 5px 0 0 !important;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  ul.input-list.checkbox{
+    padding-left: 0;
+    margin: 0;
+  }
+
+  #fitem_id_datepicker {
+    margin-top: 10px;
+
+    label, .felement {
+      float: left;
+    }
+  }
+
+  #id_types-ressearch li {
+    float: left;
+    width: 33%;
+  }
+
+  #id_buttons-ressearch {
+    .fcontainer.clearfix {
+      margin: 0;
+    }
+
+    .field.button{
+      float: left;
+    }
+
+    #id_cr_reset {
+      background-color: transparent;
+      color: #0382D4;
+      font-weight: normal;
+      box-shadow: none;
+    }
+
+    #id_cr_reset:hover {
+      text-decoration: underline;
+    }
+  }
+
+}
+
+#fitem_id_creator_search label,
+#fitem_id_datepicker label,
+#fitem_id_field_search label {
+  font-weight: bold;
+}
+
+#region-main #search_result {
+  background-color: #fff;
+}
+
+// Repository
+.repository_centralizedresources {
+
+  .fp-iconview {
+    .fp-filename-field {
+      overflow: visible;
+    }
+  }
+
+  .fp-toolbar .fp-tb-search
+  {
+    width: 90%;
+    height: 265px;
+  }
+
+  .fp-toolbar .fp-tb-search input
+  {
+    width: initial;
+    height: initial;
+    background:none;
+    color:#555;
+    padding: 2px 5px 1px 5px;
+    border: 1px solid #BBBBBB;
+  }
+
+  .fp-toolbar .fp-tb-search input[type="text"]
+  {
+    border: 1px solid #BBBBBB;
+    background-color: #FFFFFF;
+    height:20px;
+    width: 100px;
+    margin:0;
+    margin-left: 10px;
+  }
+
+  .fp-toolbar .fp-tb-search input[type="checkbox"]
+  {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #BBBBBB;
+  }
+
+  .fp-content
+  {
+    height: 250px;
+  }
+  .fp-toolbar div {
+    float: none;
+  }
+
+
+  .title {
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 11px;
+  }
+
+  #datepicker_after_img {
+    height: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: 6px;
+  }
+
+  .creatorpart,
+  .datepart,
+  .domainpart {
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .firsthundredmessages {
+    margin-left: 80px;
+    font-size: 11px;
+  }
+
+  .buttonbar {
+    margin-top: 5px;
+  }
+
+  .linkpart {
+    position: absolute;
+    top: 33px;
+    right: 150px;
+  }
+}
+
+div[id^="canoplayer_"]
+{
+  width: 100%;
+  height: auto;
+}

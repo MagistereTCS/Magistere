@@ -1,0 +1,275 @@
+.block_mycourselist .home-course .collection-title {
+    color: #0095db;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.block_mycourselist.se-former .element.block{
+	padding: 15px 25px;
+	margin-bottom: 45px;
+}
+
+.block_mycourselist .home-course .origine {
+    background-color: #d6eaf8;
+	padding: 0px 6px;
+    display: inline-block;
+    box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.block_mycourselist.se-former .home-course .post-img {
+    min-width: 48px;
+	width: auto;
+}
+
+.block_mycourselist.se-former .home-course .desc{
+	padding-left: 60px;
+}
+
+.block_mycourselist  .home-course .origine img {
+    padding-bottom: 3px;
+    margin-right: 8px;
+}
+
+.block_mycourselist .home-course {
+	border-top: 1px solid #e6e6e6;
+	padding:10px 0;
+	position: relative;
+	min-height: 60px;
+}
+
+.block_mycourselist  .home-course.last {
+	border-bottom: none;
+}
+
+.block_mycourselist  .home-course .post-img {
+	float:left;
+	width:95px;
+	text-align: center;
+	margin-right: 5px;
+}
+
+.block_mycourselist  .home-course .post-img img {
+	position:relative;
+	top:3px;
+	left:0px;
+}
+
+.block_mycourselist  .home-course .desc {
+	padding-left: 100px;
+	padding-right: 95px;
+}
+
+.block_mycourselist  .home-course .desc p {
+	font-size: 12px;
+	margin-bottom:0;
+}
+
+.block_mycourselist  .home-course .desc .post-title {
+	font-size: 18px;
+	font-weight: bold;
+	color : #CCCCCC;
+}
+
+.block_mycourselist  .home-course .desc .categorie {
+	font-size: 12px;
+	font-weight: bold;
+	color:#5d96c9;
+}
+
+.block_mycourselist  .hide-details {
+	padding:8px;
+	background:url([[pix:t/expanded]]) no-repeat;
+	background-position: left center;
+}
+
+.block_mycourselist .show-details {
+	padding:8px;
+	background:url([[pix:t/collapsed]]) no-repeat;
+	background-position: left center;
+}
+
+.block_mycourselist.se-former  .hide-details {
+	background:url([[pix:t/switch_minus]]) no-repeat  no-repeat left center;
+	float: right;
+	padding: 16px 8px;
+	height: 8px;
+}
+
+.block_mycourselist.se-former .show-details {
+	background:url([[pix:t/switch_plus]]) no-repeat left center;
+	float: right;
+	padding: 16px 8px;
+	height: 8px;
+}
+
+.block_mycourselist h3 {
+	display: inline-block !important;
+	margin-right: 5px;
+}
+
+.block_mycourselist.se-former h3 {
+	margin-top: 0;
+}
+
+.block_mycourselist .tags {
+	position: absolute;
+	top: 9px;
+	right: 0;
+}
+
+.block_mycourselist .formateur,
+.block_mycourselist .participant,
+.block_mycourselist .concepteur
+{
+	display: inline-block;
+	margin-bottom: 10px;
+	padding: 0px 5px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 9px;
+	border-radius: 3px;
+}
+
+.block_mycourselist .tags .fa-user{
+	margin-right: 5px;
+}
+
+.block_mycourselist .formateur {
+	background-color: #e96b77;
+}
+.block_mycourselist .participant {
+	background-color: #9958be;
+}
+.block_mycourselist .concepteur {
+	background-color: #44b99e;
+}
+
+.block_mycourselist .home-course .fav,
+.pagelayout-mydashboard .block_mycourselist .home-course .fav,
+.block_mycourselist .home-course .unfav{
+	display: none;
+	margin-left: 15px;
+	color: #0095db;
+}
+
+.block_mycourselist .home-course .fav,
+.pagelayout-mydashboard .block_mycourselist .home-course:hover .fav,
+.block_mycourselist .home-course:hover .unfav{
+	display: inline;
+}
+
+
+
+.block_mycourselist .mycourseoffer .button
+{
+	margin-top: 10px;
+}
+
+.block_mycourselist .mycourseoffer .offerblock
+{
+	border-bottom:1px solid #E6E6E6;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.block_mycourselist .mycourseoffer .offertable
+{
+	width:100%;
+}
+
+.block_mycourselist .mycourseoffer .collectionlogo
+{
+	width:60px;
+	vertical-align: top;
+}
+
+.block_mycourselist .mycourseoffer .collectionlogo img
+{
+	height: 48px;
+	width: 48px;
+}
+
+.block_mycourselist .mycourseoffer .courseformation
+{
+	margin-bottom: 10px;
+	padding-bottom:10px;
+	vertical-align: top;
+}
+
+.block_mycourselist .mycourseoffer .courseformationdesc
+{
+    width: 250px;
+    vertical-align: top;
+}
+
+.block_mycourselist .mycourseoffer .courseformation.last
+{
+	border:none;
+}
+
+.block_mycourselist .mycourseoffer .courseformation .collection
+{
+	color: #4A86C6;
+}
+
+.block_mycourselist .mycourseoffer .courseformation .fullname
+{
+	color: #000000;
+	font-size:14pt;
+	line-height: 17pt;
+	margin-bottom: 0px;
+}
+
+.block_mycourselist .mycourseoffer .courseformation .fullname a
+{
+	color: #000000;
+}
+
+.block_mycourselist .mycourseoffer .courseformation .fullname a:hover
+{
+	color: #555555;
+}
+
+.block_mycourselist .mycourseoffer .courseformation .subscription
+{
+	margin-bottom:0px;
+	color: #7B7B7B;
+}
+
+.block_mycourselist .mycourseoffer .courseformation .subscription .maxparticipant
+{
+	color: #7B7B7B;
+}
+
+.block_mycourselist .mycourseoffer .courseformationdesc .durationlocal
+{
+	margin-bottom:0px;
+	color: #7B7B7B;
+}
+
+.block_mycourselist .mycourseoffer .courseformationdesc .durationremote
+{
+	margin-bottom:0px;
+	color: #7B7B7B;
+}
+
+.block_mycourselist .mycourseoffer .courseformationdesc .provider
+{
+	background-color: #daecfa;
+	padding: 0px 6px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.block_mycourselist .mycourseoffer .courseformationdesc .provider img {
+    padding-bottom: 3px;
+    margin-right: 8px;
+}
+
+.block_mycourselist .mycourseoffer .courseformationdesc .locked
+{
+	color: #7B7B7B;
+	margin-top:5px;
+	margin-bottom:0px;
+}

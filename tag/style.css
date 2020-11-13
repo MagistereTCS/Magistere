@@ -1,0 +1,46 @@
+#page-content #region-main {
+    background-color: white;
+}
+
+.tag_interest {
+    padding-left: 10px;
+}
+
+.tag_interest h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tag_interest section {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.tag_title_collapse {
+    display: flex;
+}
+
+.arrow {
+    float: right;
+}
+
+.box .generalbox .tagarea .tagarea h3 {
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+.controls.controls-bottom {
+    clear: both;
+}
+
+.activity-encart.topics {
+    background-color: #fafafa;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px;
+}
+
+#participantmap {
+    z-index: 0;
+}

@@ -1,0 +1,22 @@
+/* parcours section */
+.block_course_management .header .title h2{
+    background-color: #95a5a6 !important;
+    color: #fff !important;
+}
+
+.block_course_management .header .title h2:before {
+    content: "\f07b" !important;
+    color: #fff;
+}
+
+/* parcours flexpage */
+.format-flexpage #region-main .block_course_management .header .title h2{
+    background: none !important;
+    color: #3d3d3d !important;
+}
+
+.format-flexpage .block_course_management .header .title h2:before {
+    content: " " !important;
+    width: 0;
+    margin: 0;
+}

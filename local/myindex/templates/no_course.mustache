@@ -1,0 +1,14 @@
+<div class="row-fluid view-group no-course">
+    <div class="content-no-course">
+        {{# search }}<p class="first">{{# str }} no_course_result, local_myindex {{/ str }} <span class="search">{{search}}</span></p>
+        <p>{{# str }} extend_research_to_offers, local_myindex {{/ str }}</p>{{/ search }}
+        {{# no-course }}<p class="first">{{# str }} no_course, local_myindex {{/ str }}</p>
+            <p>{{# str }} extend_to_offers, local_myindex {{/ str }}</p>{{/ no-course }}
+        <form action="{{course_offers_url}}" method="post">
+            <input type="hidden" value="{{search}}" name="search_name">
+            <input type="hidden" value="formation" name="v">
+            {{# search }}<input type="submit" value="{{# str }} search_to_offers, local_myindex {{/ str }}">{{/ search }}
+            {{# no-course }}<input type="submit" value="{{# str }} go_to_offers, local_myindex {{/ str }}">{{/ no-course }}
+        </form>
+    </div>
+</div>

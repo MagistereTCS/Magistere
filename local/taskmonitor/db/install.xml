@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/taskmonitor/db" VERSION="20180926" COMMENT="XMLDB file for Moodle local/taskmonitor"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="local_taskmonitor" COMMENT="local_taskmonitor table">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="true" NEXT="type"/>
+                <FIELD NAME="type" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" COMMENT="type" PREVIOUS="id" NEXT="classname"/>
+                <FIELD NAME="classname" SEQUENCE="false" TYPE="char" LENGTH="255" NOTNULL="false" PREVIOUS="type" NEXT="lastexec"/>
+                <FIELD NAME="name" SEQUENCE="false" TYPE="char" LENGTH="255" NOTNULL="false" PREVIOUS="type" NEXT="lastexec"/>
+                <FIELD NAME="priority" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="false" PREVIOUS="type" NEXT="lastexec"/>
+                <FIELD NAME="server" SEQUENCE="false" TYPE="char" LENGTH="100" NOTNULL="false" PREVIOUS="type" NEXT="lastexec"/>
+                <FIELD NAME="lastruntime" SEQUENCE="false" TYPE="int" LENGTH="10" NOTNULL="false" PREVIOUS="classname" NEXT="timecreated"/>
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="lastexec"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="uni_idx" TYPE="unique" FIELDS="classname"/>
+            </KEYS>
+        </TABLE>
+        <TABLE NAME="local_taskmonitor_event" COMMENT="local_taskmonitor_event table">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="true" NEXT="classname"/>
+                <FIELD NAME="classname" SEQUENCE="false" TYPE="char" LENGTH="255" NOTNULL="false" PREVIOUS="id" NEXT="starttime"/>
+                <FIELD NAME="starttime" SEQUENCE="false" TYPE="int" LENGTH="10" NOTNULL="false" PREVIOUS="classname" NEXT="runtime"/>
+                <FIELD NAME="runtime" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="starttime" NEXT="query"/>
+                <FIELD NAME="query" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="runtime" NEXT="failed"/>
+                <FIELD NAME="failed" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="query"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="uni_idx" TYPE="unique" FIELDS="classname,starttime"/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

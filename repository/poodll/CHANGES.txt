@@ -1,0 +1,16 @@
+Change List
+=========
+Version 2016112701
+fixed broken pdl links
+fixed broken whiteboard and video recorder
+
+Version 2016081401
+Added support for auto iframe resizing
+
+Version 2015121102
+Fixed a big that caused PoodLL repo to fail, and
+set whiteboard to drawingboard.js
+
+Version 2015121101
+Support for refactored PoodLL filter and support for Moodle 3.0
+

@@ -1,0 +1,35 @@
+/* parcours section */
+.block_glossary_random .header .title h2{
+    background-color: #1abc9c !important;
+    text-align: left !important;
+    color: #fff !important;
+}
+
+.block_glossary_random .header .title h2:before{
+    background: url([[pix:theme|blocks/glossaire]]) no-repeat left;
+    content: " " !important;
+    color: #fff;
+    padding: 0 !important;
+    height: 1.3em !important;
+    margin-left: -0.05em !important;
+    margin-right: 0.35em !important;
+}
+
+/* parcours flexpage */
+.format-flexpage #region-main .block_glossary_random .header .title h2{
+    background: none !important;
+    color: #3d3d3d !important;
+}
+
+.format-flexpage .block_glossary_random .header .title h2:before {
+    content: " " !important;
+    width: 0;
+}
+
+.format-flexpage #block-region-side-post .block_glossary_random .header .title h2, .format-flexpage #block-region-side-pre .block_glossary_random .header .title h2{
+    color: #fff;
+    padding: 36px 0 0 0;
+    text-align: center !important;
+    font-weight: bold;
+    background: none !important;
+}

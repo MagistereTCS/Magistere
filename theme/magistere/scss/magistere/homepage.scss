@@ -1,0 +1,409 @@
+@media (min-width: 1024px) {
+  #magistere_accueil_main_page .connection .link-info {
+    display: none;
+    height: 0;
+  }
+
+  #magistere_accueil_main_page .connection .collapse {
+    height: auto;
+    overflow: visible;
+  }
+}
+
+@media (max-width: 1024px) {
+  #page-site-noconnected #page {
+    width: auto !important;
+  }
+
+  #magistere_accueil_main_page {
+    width: auto !important;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape){
+  #magistere_accueil_main_page .connection .link-info {
+    display: block;
+    height: auto;
+  }
+
+  #magistere_accueil_main_page .connection .collapse {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .fill_main_aca.ui-dialog.popup_frontal{
+    padding: 0 !important;
+    margin-top: 0 !important;
+    width: 98% !important;
+    height: auto !important;
+    left: 0 !important;
+  }
+
+  .fill_main_aca .ui-dialog-titlebar span{
+    font-size: 12px !important;
+  }
+
+  #fill_main_aca #plateforme_aca,
+  #fill_main_aca #platforme_instit{
+    display: none !important;
+    height: 0 !important;
+  }
+
+  #fill_main_aca form .grey_background{
+    background-color: #ffffff !important;
+  }
+
+  #fill_main_aca form .grey_background .fitem.fitem_fselect,
+  #fill_main_aca form .grey_background .fitem.fitem_fsubmit{
+    padding-left: 0 !important;
+    width: 100% !important;
+    float: none !important;
+  }
+
+  #fill_main_aca form select#id_main_academy{
+    width: 100% !important;
+  }
+
+  #fill_main_aca form .grey_background .fitem.fitem_fsubmit input[type=submit]{
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  #page-site-noconnected #page {
+    width: auto !important;
+  }
+
+  #magistere_accueil_main_page {
+    width: auto !important;
+  }
+
+  #magistere_accueil_main_page .connection .block {
+    width: auto !important;
+    margin-left: 0 !important;
+    float: none !important;
+  }
+
+  #magistere_accueil_main_page .connection img {
+    width: 15% !important;
+    display: inline-block !important;
+    vertical-align: top;
+    padding-left: 20px;
+  }
+
+  #magistere_accueil_main_page .connection .block h2 {
+    width: 75% !important;
+    display: inline-block !important;
+    padding: 40px 20px 0 20px !important;
+    text-align: left !important;
+  }
+
+  #magistere_accueil_main_page .info {
+    height: auto !important;
+  }
+
+  #magistere_accueil_main_page .info .title {
+    margin: 0 !important;
+  }
+
+  #magistere_accueil_main_page .info .block {
+    width: auto !important;
+    float: none !important;
+    display: block !important;
+  }
+
+  #magistere_accueil_main_page .connection .other-connections {
+    padding: 10px !important;
+  }
+
+  #magistere_accueil_main_page .connection .help_connection,
+  #magistere_accueil_main_page .connection .other_connection {
+    float:none !important;
+    padding-bottom: 10px !important;
+  }
+
+  #magistere_accueil_main_page .connection .link-info {
+    display: block;
+    height: auto;
+  }
+
+  #magistere_accueil_main_page .connection .collapse {
+    height: 0;
+    overflow: hidden;
+  }
+
+  .fill_main_aca.ui-dialog.popup_frontal{
+    padding: 0 !important;
+    margin-top: 0 !important;
+    width: 98% !important;
+    height: auto !important;
+    left: 0 !important;
+  }
+
+  .fill_main_aca .ui-dialog-titlebar span{
+    font-size: 12px !important;
+  }
+
+  #fill_main_aca #plateforme_aca,
+  #fill_main_aca #platforme_instit{
+    display: none !important;
+    height: 0 !important;
+  }
+
+  #fill_main_aca form .grey_background{
+    background-color: #ffffff !important;
+  }
+
+  #fill_main_aca form .grey_background .fitem.fitem_fselect,
+  #fill_main_aca form .grey_background .fitem.fitem_fsubmit{
+    padding-left: 0 !important;
+    width: 100% !important;
+    float: none !important;
+  }
+
+  #fill_main_aca form select#id_main_academy{
+    width: 100% !important;
+  }
+
+  #fill_main_aca form .grey_background .fitem.fitem_fsubmit input[type=submit]{
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape){
+  #magistere_accueil_main_page .connection .block h2 {
+    width: 73% !important;
+  }
+}
+
+@media only screen and (max-width: 425px){
+  #magistere_accueil_main_page .title{
+    font-size: 19px !important;
+    margin-top: 10px !important;
+  }
+
+  #magistere_accueil_main_page .subtitle{
+    font-size: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #magistere_accueil_main_page .connection .block h2 {
+    width: 69% !important;
+    padding: 10px 20px 0 20px !important;
+  }
+}
+
+@media only screen and (max-width: 375px){
+  #magistere_accueil_main_page .connection .block h2 {
+    width: 67% !important;
+    padding: 10px 20px 0 20px !important;
+  }
+
+  #magistere_accueil_main_page .connection .block .btn {
+    padding: 8px 30px !important;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  #magistere_accueil_main_page .connection .block h2 {
+    width: 65% !important;
+    padding: 0 20px !important;
+  }
+}
+
+#page-site-noconnected .container{
+  width: unset;
+}
+
+
+/* Connexion */
+#magistere_accueil_main_page {
+  font-family: 'Open Sans', sans-serif !important;
+  width: 75%;
+  margin: auto;
+}
+
+#magistere_accueil_main_page .title {
+  text-align:center;
+  font-size: 24px;
+  line-height: 17px;
+  font-weight: bold;
+  color: #666666;
+  margin-top: 50px;
+}
+
+#magistere_accueil_main_page .connection .subtitle {
+  text-align:center;
+  color: #666666;
+  font-size: 15px;
+  line-height: 17px;
+  margin-bottom: 40px;
+}
+
+#magistere_accueil_main_page .connection .block {
+  width:48%;
+  margin-bottom: 10px;
+  border-radius: 0px;
+  background-color: #ffffff;
+}
+
+#magistere_accueil_main_page .connection .block h2 {
+  padding: 15px 40px 0px 40px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+#magistere_accueil_main_page .connection .block span {
+  font-size: 13px;
+}
+
+#magistere_accueil_main_page .connection .block .btn {
+  padding: 10px 40px;
+  width: 80px;
+  margin: 10px auto;
+  border-radius: 0.5em;
+  display: block;
+}
+
+#magistere_accueil_main_page .connection .block .btn:hover {
+  cursor: pointer;
+}
+
+#magistere_accueil_main_page .connection .block .btn span {
+  font-size: 16px;
+  color:#fff;
+}
+
+#magistere_accueil_main_page .connection img {
+  margin:auto;
+  padding-top:20px;
+  display: block;
+}
+
+#magistere_accueil_main_page .connection .bg {
+  padding: 20px 40px;
+  display: block;
+}
+
+#magistere_accueil_main_page .connection .link-info {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#magistere_accueil_main_page .connection .other-connections {
+  clear: both;
+}
+
+#magistere_accueil_main_page .connection .help_connection {
+  float: left;
+}
+
+#magistere_accueil_main_page .connection .other_connection {
+  float:right;
+}
+
+#magistere_accueil_main_page .connection .help_connection a,
+#magistere_accueil_main_page .connection .other_connection a {
+  color: #017ece;
+}
+
+#magistere_accueil_main_page .connection .ens_sco {
+  float: left;
+}
+
+#magistere_accueil_main_page .connection .ens_sco .btn {
+  background-color:#4898df;
+}
+
+#magistere_accueil_main_page .connection .ens_sco .bg {
+  background-color:#d8e9f9;
+}
+
+#magistere_accueil_main_page .connection .ens_sco span {
+  color:#4287c0;
+}
+
+#magistere_accueil_main_page .connection .ens_sco span a {
+  color:#4198df;
+  font-weight:bold;
+}
+
+#magistere_accueil_main_page .connection .ens_sco .underline {
+  text-decoration: none;
+}
+
+#magistere_accueil_main_page .connection .ens_sco .link_connexion,
+#magistere_accueil_main_page .connection .ens_sup .link_connexion {
+  height:20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#magistere_accueil_main_page .connection .ens_sco .link-info {
+  color: #0095db;
+}
+
+#magistere_accueil_main_page .connection .ens_sup {
+  float: right;
+}
+
+#magistere_accueil_main_page .connection .ens_sup .btn {
+  background-color:#9959ba;
+}
+
+#magistere_accueil_main_page .connection .ens_sup .bg {
+  background-color:#eadef2;
+}
+
+#magistere_accueil_main_page .connection .ens_sup span {
+  color:#824b9f;
+}
+
+#magistere_accueil_main_page .connection .ens_sup .link-info {
+  color:#824b9f;
+}
+
+/* Info */
+#magistere_accueil_main_page .info {
+  clear:both;
+}
+
+#magistere_accueil_main_page .info .title {
+  border-top: 3px solid #dbe2e4;
+  padding: 60px 0 45px 0;
+}
+
+#magistere_accueil_main_page .info .block {
+  width:33%;
+  display: inline-block;
+  vertical-align: top;
+  text-align:center;
+  background-color:transparent;
+  box-shadow: none;
+}
+
+#magistere_accueil_main_page .info .block h2 {
+  padding:0 40px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#magistere_accueil_main_page .info {
+  margin:20px auto;
+}
+
+#page-site-noconnected .ui-widget input,
+#page-site-noconnected .ui-widget select,
+#page-site-noconnected .ui-widget textarea,
+#page-site-noconnected .ui-widget button{
+  font-family: open sans,sans-serif !important;
+}
+
+#magistere_accueil_main_page .save_pref_login p {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}

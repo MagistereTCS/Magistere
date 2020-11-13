@@ -1,0 +1,15 @@
+/* parcours section */
+.block_completionstatus .header .title h2{
+    background-color: #95a5a6 !important;
+    color: #fff;
+}
+
+.block_completionstatus .header .title h2:before{
+    background: url([[pix:theme|blocks/achevement-cours]]) no-repeat left;
+    content: " " !important;
+    color: #fff;
+    padding: 0 !important;
+    height: 1.3em !important;
+    margin-left: -0.05em !important;
+    margin-right: 0.35em !important;
+}

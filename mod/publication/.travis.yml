@@ -1,0 +1,124 @@
+# This is the language of our project.
+language: php
+
+# This tells Travis CI to use its new architecture.  Everything is better!
+sudo: true
+
+addons:
+  firefox: "47.0.1"
+  postgresql: "9.3"
+  apt:
+    packages:
+#      - oracle-java8-installer
+#      - oracle-java8-set-default
+
+# This tells Travis CI to cache Composer's cache.  Speeds up build times.
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - $HOME/.npm
+
+# Determines which versions of PHP to test our project against.  Each version listed
+# here will create a separate build and run the tests against that version of PHP.
+# WARNING, PHP7 only works in Moodle 3.0.1 or later!
+php:
+ - 7.0
+ - 7.1
+ - 7.2
+
+# This section sets up the environment variables for the build.
+env:
+ global:
+# This line determines which version of Moodle to test against.
+  - MOODLE_BRANCH=MOODLE_35_STABLE
+# This matrix is used for testing against multiple databases.  So for each version of
+# PHP being tested, one build will be created for each database listed here.  EG: for
+# PHP 5.4, one build will be created using PHP 5.4 and pgsql.  In addition, another
+# build will be created using PHP 5.4 and mysqli.
+ matrix:
+  - DB=pgsql
+  - DB=mysqli
+  - DB=mariadb
+
+# This section defines who's going to receive the notifications!
+notifications:
+  email:
+    recipients:
+        # I'm going to receive all reports, no matter what status they have or had (my encrypted e-mail-adress)!
+      - secure: "B8FGtN36zVH0W63dW4Cjdu7RF3MFDkst7ouIWncQlekifMHDysxfutjHV/Ej4e7lstBhoVffiAuVLyyTXtP05+nqIGjRu6fiP9jgryUdF5/crT+U2UtSxBNC5lMBhAk8dq6SsDJGr9q+WTMKm9kp6XeMXRd0kXGqAwPtGJIS2RgiyS4MC/VK3RtxIXTHxKUNFeDYA7Ay0c1BUvxBXMLmzd5J8DgixLQRoMEpgBYhCqvyA0k2rh9pjC++smSYNscK256H6Edrt3R3XxPaddoXOps+Ps9O4yu1oWdth4eG0Ihg6/WX1s6F5yXiZ8iID19ehhF8SiEQZHEMhKjNGfHPT412DJhV9UnSpjHyN/y+Qc0qymN6YXltIze9ROReLTfXLImTsZK0gW0J5/PL7167AHUaIjhdLMQGX96/Qr7UAWyTfivu1CBThtiEh82sdq8sQBHPRK8BNnFYY9R7gbvhNNwm6eTLdTrlVvqPVEySl3dlDGKlv2eEGCX6sVP9/P38iFKz+rB+KjUhDwwY4GzJ9hpIR8gb57ddErbH/LjMnZiq3MuKx4msvv8Uke+8UekC2f2/xpzr6Puwx7nPPTJzqFYCPykWZFMhLk5yP0TxYs2Omx5TCbtgBEfaKYR8qWDpFia6A+x6RNTfq8v+45FdlIHME2FgS9PTMrnUpmKAOVA="
+    on_success: always # default: change
+    on_failure: always # default: always
+  slack:
+    # This is the value "[Slack-Organisation]:[API-Key]#[channel]" just encrypted!
+    rooms:
+        #travisci channel
+      - secure: "coDXwX1Gf9VTFJyjlCDFm1F0KfSRkz2DbJizD237Fla6B7ssYD/5uYKDBPHMHxHIBZ7oVGzOzuzNZdN18B/8B+6pAQeaJiVhnZGDIQh9QWAfS/6GMwhRF6wSHkXbLt8E7+pdJe0uXRatVFz3VCAwL2zghkmoTDROAMVio9RlwVf/rvAP6W0hhYIOeFU3q0IQeGIShvYYcrXl1SzeXT2zoG/GI/bRW7ZJ7AWNcfL6oN44IdszSSA3T453uBv1w4lwxGI+JLeNbr09YYfJ9QaPZpAHv7qc9rXMR2BicNwlMd/Ll8OwulnxYabqJizoINPVba6OkAxWh95AcenYSWGNR2c5vxCOC0agU7TF50w4P3UVZr3HaygQg4ECIr7q+2pdvDEx7iYEE0VLUKj+H+1ofH8qVa6q+Xo318xxcO530fTjq7vFKdpI+ZBXg/a/jNIzKRmlIanNf5yYlWYcfEQ9CEQQJENSe6LX+2unAzie2Dh7/24s+IdZDNbxQiqtz2NJurtAml2uptmgNbOMXsTusDArC2Qk2b+aVTvsK9zkhDzpGqunJi5VG3jaBjjILKmZvBgHx4yhX1kCCKfArpB4wXvcaXuxu+pfQLNrwk1Y53n2hoOpW4umnUOyIJUPZfHcKvigvEcoIr+m2i2NPTvF38ctJ2KD/bagRtoBV0pc+90="
+        #mod_publication channel
+      - secure: "J3CsGwgfUqu8UOrQj4Iz9Qm27U0GjgQX2zh31qIdrE8EKeBkOWJ492SJUZ+Huhkh965yM/NU2BKDHqDraIpyZX2syTUu8fj1WGQFUH9Wqhp6N6d9kgwAtSXgRF16RR2LEiKmeBfm0rvRHjICG3MIST0/pgVoAWL7mKYpvQeBx+O3n97Ixkl0e+YkBKmhYAPdsyXU2NLWhz8fMR/MXOqVLybmWYNbjlANK4MqSwRPOIrehYkbYoNj326iSsMLff6csa9OlhZqaZcADsFOLnkDgz299Zzmzvw/MvRwE3boRy73lbDt89ifZcFSMvhjkeAPA5zQm+hufVVheOAoQ5jMOEUq06hdXfI43PsUsiZ/7f0wM4cb6ew/x4T0ROcSlfX3qKbXcuy8PpO7u8zDmI5WDkssJCylwgPASk1/AIXGmEEUXK1SNbQQzz0QNZ2B+5CGTScTE4kElyjY9YYDB9aDVYJVV5bcLfVhfsdOk+ODHOTCiD+rk9PCP1QB6Cs6odbunzFAp/bzo8x03qu7WjNZvwvLC5Z8nHPZjDnDrn+iII2f8IotPa3zglacgzm9Rn0JKhD5LyVoB+i9lBuX/rUxDEbIJIfo9v3lBLobtB0XnTBXNXSN3129HwZ9/96+5J7r/WPd9UunCAlpfsQkNRD5Lk/GjrjXxqJMUbwaWMX9Iwk="
+    on_success: always # default: change
+    on_failure: always # default: always
+
+# This lists steps that are run before the installation step.
+before_install:
+# This disables XDebug which should speed up the build.  One reason to remove this
+# line is if you are trying to generate code coverage with PHPUnit.
+  - phpenv config-rm xdebug.ini
+  - nvm install 8.9
+  - nvm use 8.9
+# Currently we are inside of the clone of your repository.  We move up two
+# directories to build the project.
+  - cd ../..
+# Update Composer.
+  - composer selfupdate
+# Install this project into a directory called "ci".
+  - composer create-project -n --no-dev --prefer-dist moodlerooms/moodle-plugin-ci ci ^2
+# Update the $PATH so scripts from this project can be called easily.
+  - export PATH="$(cd ci/bin; pwd):$(cd ci/vendor/bin; pwd):$PATH"
+
+# This lists steps that are run for installation and setup.
+install:
+# Run the default install.  The overview of what this does:
+#    - Clone the Moodle project into a directory called moodle.
+#    - Create Moodle config.php, database, data directories, etc.
+#    - Copy your plugin into Moodle.
+#    - If your plugin has Behat features, then Behat will be setup.
+#    - If your plugin has unit tests, then PHPUnit will be setup.
+  - moodle-plugin-ci install
+
+# This lists steps that are run for the purposes of testing.  Any of
+# these steps can be re-ordered or removed to your liking.  And of
+# course, you can add any of your own custom steps.
+script:
+# This step lints your PHP files to check for syntax errors.
+  - moodle-plugin-ci phplint
+# This step runs the PHP Copy/Paste Detector on your plugin. This helps to find
+# code duplication.
+  - moodle-plugin-ci phpcpd
+# This step runs the PHP Mess Detector on your plugin. This helps to find potential
+# problems with your code which can result in refactoring opportunities.
+  - moodle-plugin-ci phpmd
+# This step runs the Moodle Code Checker to make sure that your plugin conforms to the
+# Moodle coding standards.  It is highly recommended that you keep this step.
+  - moodle-plugin-ci codechecker
+# This step runs some light validation on the plugin file structure and code.  Validation can be plugin specific.
+  - moodle-plugin-ci validate
+
+  - moodle-plugin-ci savepoints
+  - moodle-plugin-ci mustache
+  - moodle-plugin-ci grunt
+
+# This step runs the PHPUnit tests of your plugin.  If your plugin has PHPUnit tests,
+# then it is highly recommended that you keep this step.
+  - moodle-plugin-ci phpunit
+# This step runs the Behat tests of your plugin.  If your plugin has Behat tests, then
+# it is highly recommended that you keep this step.
+  - moodle-plugin-ci behat --profile default
+  - moodle-plugin-ci behat --profile chrome
+
+after_script:
+# See: https://github.com/moodlerooms/moodle-plugin-ci/issues/32
+  # - ps aux
+  - killall -9 php
+  - killall -9 java
+  - killall -9 Xvfb
+  # - ps aux

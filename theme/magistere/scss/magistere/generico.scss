@@ -1,0 +1,155 @@
+/* Custom css for generico tab */
+.activity .ui-tabs-nav{
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #fcfdfd;
+  border: none;
+}
+
+.activity .ui-tabs {
+  margin: 0;
+  padding: 0;
+}
+
+.activity .ui-tabs .ui-tabs-nav{
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.activity .ui-tabs .ui-tabs-nav li {
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none;
+  border-right: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa !important;
+  background: none;
+}
+
+.activity .ui-tabs .ui-tabs-nav li a {
+  color: #000;
+}
+
+.activity .ui-tabs .ui-tabs-nav .ui-state-default.ui-tabs-active {
+  background: #fcfdfd;
+  border-bottom: 1px solid #fcfdfd !important;
+}
+
+.activity .ui-tabs .ui-tabs-nav .ui-state-default.ui-tabs-active:after {
+  content : "";
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  height  : 1px;
+  width   : 1px;  /* or 100px */
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.activity .ui-tabs .ui-tabs-nav .ui-state-default {
+  background-color: #e8e8e8;
+  margin-bottom: -1px !important;
+}
+
+/*
+ * Generico - Accordian
+ */
+
+.ui-accordion .ui-accordion-header.ui-state-default{
+  background-color : #ececec !important;
+  background-image: none;
+  color: #515151;
+  padding: 0 7px 0 7px;
+  line-height: 37px;
+  border : 0px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  font-weight:bold;
+  text-transform: unset;
+}
+
+.ui-accordion .ui-widget-content{
+  background : unset;
+}
+
+.ui-accordion.ui-widget .ui-accordion-content{
+  border : unset;
+  padding: 5px 0 5px 0;
+  margin-top: unset;
+  font-family: 'Open Sans',sans-serif;;
+  color: #333333;
+}
+
+.ui-accordion .ui-state-default .ui-icon.ui-icon-triangle-1-s{
+  background: url('[[pix:theme|general/hide-icon]]') no-repeat center;
+  position: unset;
+  float: right;
+  margin-top: 0px;
+  height: 37px;
+  width: 20px;
+}
+
+.ui-accordion .ui-state-default .ui-icon.ui-icon-triangle-1-e{
+  background: url('[[pix:theme|general/view-icon]]') no-repeat center;
+  position: unset;
+  float: right;
+  margin-top: 0px;
+  height: 37px;
+  width: 20px;
+}
+
+.details_activity_objective, .details_block_objective{
+  height:32px;
+}
+
+.details_activity_date, .details_block_date{
+  height:32px;
+  width:70px;
+}
+
+.details_activity_chrono, .details_block_chrono{
+  height:32px;
+  width:45px;
+}
+
+.details_activity_objective, .details_block_objective,
+.details_activity_date, .details_block_date,
+.details_activity_chrono, .details_block_chrono{
+  padding-left: 40px !important;
+}
+
+.details_activity_objective{
+  background:url('[[pix:theme|general/details_activity_cible_pt_violet]]') 0 top no-repeat;
+}
+
+.details_activity_date{
+  background:url('[[pix:theme|general/details_activity_date_pt_violet]]') 0 top no-repeat;
+}
+
+.details_activity_chrono{
+  background:url('[[pix:theme|general/details_activity_chrono_pt_violet]]') 0 top no-repeat;
+}
+
+.details_block_objective{
+  background:url('[[pix:theme|general/details_activity_cible_pt_noir]]') 0 top no-repeat;
+  min-height: 30px;
+}
+
+.details_block_date{
+  background:url('[[pix:theme|general/details_activity_date_pt_noir]]') 0 top no-repeat;
+}
+
+.details_block_chrono{
+  background:url('[[pix:theme|general/details_activity_chrono_pt_noir]]') 0 top no-repeat;
+}
+
+.details_block_objective ul.objective_list{
+  margin-left: 6px;
+}
+
+.details_block_objective ul.objective_list li {
+  padding-left: 6px;
+  text-indent: 0;
+}
+
+.block-region .details_block_objective{
+  width: 65%;
+}

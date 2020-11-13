@@ -1,0 +1,19 @@
+.block_course_list .footer {margin-top: 5px;}
+.block_course_list .content li { margin: .3em 0;  padding-left: 10px;}
+
+/* parcours section */
+.block_course_list .header .title h2{
+    background-color: #95a5a6 !important;
+    color: #fff;
+}
+
+.block_course_list .header .title h2:before {
+    content: "\f0c5" !important;
+    color: #fff;
+}
+
+/* parcours flexpage */
+.format-flexpage .block_course_list .header .title h2:before{
+    content: " "!important;
+    width: 0;
+}

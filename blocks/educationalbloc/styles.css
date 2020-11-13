@@ -1,0 +1,126 @@
+.display_none_educationalbloc{
+	display:block;
+}
+
+
+/* TYPE 1 */
+.block_educationalbloc_type1 .header .title h2 {
+	color:#0a466d !important;
+}
+
+.block_educationalbloc_type1,
+.block_educationalbloc_type1 .content,
+.block_educationalbloc_type1 .header {
+	background-color: #dae9f0 !important;
+}
+
+/* TYPE 2 */
+.block_educationalbloc_type2 .header .title h2 {
+	color:#7d2900 !important;
+}
+
+.block_educationalbloc_type2,
+.block_educationalbloc_type2 .content,
+.block_educationalbloc_type2 .header {
+	background-color: #f7e9e3 !important;
+}
+
+/* TYPE 3 */
+.block_educationalbloc_type3 .header .title h2 {
+	color:#984A80 !important;
+}
+
+.block_educationalbloc_type3,
+.block_educationalbloc_type3 .content,
+.block_educationalbloc_type3 .header {
+	background-color: #EEE2EC !important;
+}
+
+/*.block_educationalbloc_type3 .header .commands {*/
+	/*background-color: transparent !important;*/
+/*}*/
+
+/* TYPE 4 */
+.block_educationalbloc_type4 .header .title h2 {
+	color:#4b651d !important;
+}
+
+.block_educationalbloc_type4,
+.block_educationalbloc_type4 .content,
+.block_educationalbloc_type4 .header {
+	background-color: #ebefde !important;
+}
+
+/* TYPE 5 */
+.block_educationalbloc_type5 .header .title h2 {
+	color:#850e10 !important;
+}
+
+.block_educationalbloc_type5,
+.block_educationalbloc_type5 .content,
+.block_educationalbloc_type5 .header {
+	background-color: #eaacad !important;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+/* REGLE GENERAL DES BLOCS PEDAGOGIQUE */
+.block_educationalbloc .header .title .block_action {
+	display:none;
+}
+
+.block_educationalbloc .header .title .commands {
+	border:none;
+	/*background: none !important;*/
+}
+
+/*.block_educationalbloc .content p {
+	margin: 0;
+}*/
+
+.block_educationalbloc .header .title h2 {
+	font-weight: bold !important;
+	margin:0 !important;
+	width:auto !important;
+	background: none !important;
+	/*padding: 10px 0 0 0 !important;*/
+	/*text-align: left !important;*/
+}
+
+/*.block_educationalbloc.block_with_controls .header .title h2{*/
+	/*padding: 35px 0 3px !important;*/
+	/*text-align: left !important;*/
+/*}*/
+
+/*.block_educationalbloc .header .title{*/
+	/*padding-left: 10px;*/
+	/*padding-right: 10px;*/
+/*}*/
+
+.block_educationalbloc.block .header {
+	background-image: none !important;
+}
+
+#region-post .block_educationalbloc .actionmenu{
+	background-image: url([[pix:t/edit_menu]]);
+}
+
+#region-post .block_educationalbloc.block .content,
+.block_educationalbloc.block .content {
+	padding:0 10px !important;
+	border:none !important;
+}
+
+
+/* parcours flexpage */
+.format-flexpage #block-region-side-post .block_educationalbloc .header .title h2, .format-flexpage #block-region-side-pre .block_educationalbloc .header .title h2 {
+	padding: 16px 15px;
+}
+
+/*.format-flexpage #block-region-side-post .block_educationalbloc .header .title .moodle-actionmenu,*/
+/*.format-flexpage #block-region-side-pre .block_educationalbloc .header .title .moodle-actionmenu{*/
+	/*background: none !important;*/
+/*}*/

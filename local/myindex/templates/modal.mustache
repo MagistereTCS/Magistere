@@ -1,0 +1,154 @@
+
+<div class="modal fade" id="modalCourse_{{course_academy}}_{{course_id}}" tabindex="-1" role="dialog" aria-labelledby="ModalCourse" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalCourseTitle">{{ course_fullname }}</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <div class="actions">
+                    {{#user_is_participant}}
+                        {{^is_coming}} <a class="btn" href="{{ course_url }}">{{# str }} course_access, local_myindex {{/ str }}</a> {{/is_coming}}
+                    {{/user_is_participant}}
+                    {{^user_is_participant}}
+                        <a class="btn" href="{{ course_url }}">{{# str }} course_access, local_myindex {{/ str }}</a>
+                    {{/user_is_participant}}
+                </div>
+            </div>
+            <div class="modal-body">
+                <ul class="coursedetail">
+                    {{#index_video}}
+                        {{#course_description}}
+                            <div class="video-js-responsive-container vjs-hd">
+                                {{{index_video}}}
+                            </div>
+                        {{/course_description}}
+                        {{^course_description}}
+                            <li>
+                                <div class="video-js-responsive-container vjs-hd no-description">
+                                    {{{index_video}}}
+                                </div>
+                            </li>
+                            <div style="clear: both;padding-top: 5px;"></div>
+                        {{/course_description}}
+                    {{/index_video}}
+                    {{#course_description}}
+                        <li class="description {{#index_video}}with-video{{/index_video}}">
+                            <div class="itemtitle">{{# str }} modal_description, local_myindex {{/ str }}</div>
+                            <div class="itemelement">{{{ course_description }}}</div>
+                        </li>
+                    {{/course_description}}
+                    {{#index_objectifs}}
+                        <li class="objective">
+                            <div class="itemtitle">{{# str }} modal_objective, local_myindex {{/ str }}</div>
+                            <div class="itemelement">{{{ index_objectifs }}}</div>
+                        </li>
+                    {{/index_objectifs}}
+                    {{#index_has_rythme_or_date}}
+                        <li>
+                            {{#index_has_rythme}}
+                                <div class="indexrythme {{#index_has_date}}half-content{{/index_has_date}}">
+                                    {{#index_timepresence}}
+                                        <div class="clear">
+                                            <div class="itemtitle">{{# str }} modal_time_presence, local_myindex {{/ str }}</div>
+                                            <div class="itemelement"><p>{{ index_timepresence }}</p></div>
+                                        </div>
+
+                                    {{/index_timepresence}}
+                                    {{#index_timedistance}}
+                                        <div class="clear">
+                                            <div class="itemtitle">{{# str }} modal_time_distance, local_myindex {{/ str }}</div>
+                                            <div class="itemelement"><p>{{ index_timedistance }}</p></div>
+                                        </div>
+                                    {{/index_timedistance}}
+                                    {{#index_rythme}}
+                                        <div class="clear">
+                                            <div class="itemtitle">{{# str }} modal_rythme, local_myindex {{/ str }}</div>
+                                            <div class="itemelement"><p>{{ index_rythme }}</p></div>
+                                        </div>
+                                    {{/index_rythme}}
+                                </div>
+                            {{/index_has_rythme}}
+                            {{#index_has_date}}
+                                <div class="indexdate {{#index_has_rythme}}half-content{{/index_has_rythme}}">
+                                    {{#index_startdate}}
+                                        <div class="clear">
+                                            <div class="itemtitle">{{# str }} modal_startdate, local_myindex {{/ str }}</div>
+                                            <div class="itemelement"><p>{{ index_startdate }}</p></div>
+                                        </div>
+                                    {{/index_startdate}}
+                                    {{#index_enddate}}
+                                        <div class="clear">
+                                            <div class="itemtitle">{{# str }} modal_enddate, local_myindex {{/ str }}</div>
+                                            <div class="itemelement"><p>{{ index_enddate }}</p></div>
+                                        </div>
+                                    {{/index_enddate}}
+                                </div>
+                            {{/index_has_date}}
+                        </li>
+                    {{/index_has_rythme_or_date}}
+                    <li {{^course_formateurs}} style="display: none;" {{/course_formateurs}}>
+                        <div class="formers">
+                            <div class="itemtitle">{{# str }} modal_formers, local_myindex {{/ str }}</div>
+                            <div class="itemelement">
+                                <ul>
+                                    {{#course_formateurs}}
+                                        <li>{{lastname}} {{firstname}}</li>
+                                    {{/course_formateurs}}
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li {{^course_gaia}} style="display: none;" {{/course_gaia}} >
+                        <div class="coursegaia">
+                            <div class="itemtitle">{{# str }} modal_gaia, local_myindex {{/ str }}</div>
+                            <div class="itemelement">
+                                <ul>
+                                    {{#course_gaia}}
+                                        <li><p>{{# str }} modal_gaia_dispositive, local_myindex {{/ str }} : {{ dispositif_id }} {{ dispositif_name }}</p>
+                                        <p>{{# str }} modal_gaia_module, local_myindex {{/ str }} : {{ module_id }} {{ module_name }}</p></li>
+                                    {{/course_gaia}}
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    {{#forums_notifications}}
+                        <li class="notifications-forum">
+                            <div class="itemtitle">{{# str }} modal_notifications_forum, local_myindex {{/ str }}</div>
+                            <div class="itemelement">
+                                <div class="count-notifications">
+                                    {{#count}}
+                                    <span class="fa fa-stack fa-1x notification-badge">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <span class="fa fa-stack-1x number">{{count}}</span>
+                                    </span>
+                                    {{/count}}
+                                </div>
+                                <a href="{{url}}">{{# str }} modal_notifications_forum_link, local_myindex {{/ str }}</a>
+                            </div>
+                        </li>
+                    {{/forums_notifications}}
+                    <li {{^badges}} style="display: none;" {{/badges}}>
+                        <div class="badges">
+                            <div class="itemtitle">{{# str }} modal_badges, local_myindex {{/ str }}</div>
+                            <div class="itemelement">
+                                {{#badges}}
+                                    <img src="{{ url }}">
+                                {{/badges}}
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="formationframework">
+                            <div class="itemtitle">{{# str }} modal_formation_framework, local_myindex {{/ str }}</div>
+                            <div class="itemelement">{{# str }} modal_formation_framework_content, local_myindex {{/ str }}</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

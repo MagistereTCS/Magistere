@@ -1,0 +1,75 @@
+#id_filtercfg #fgroup_id_filtercfg_column1,
+#id_filtercfg #fgroup_id_filtercfg_column2,
+#id_filtercfg #fgroup_id_filtercfg_column3,
+#id_filtercfg #fgroup_id_filtercfg_column4{
+    float: left;
+}
+
+#id_filtercfg #fgroup_id_filtercfg_column1 .fitemtitle,
+#id_filtercfg #fgroup_id_filtercfg_column2 .fitemtitle,
+#id_filtercfg #fgroup_id_filtercfg_column3 .fitemtitle,
+#id_filtercfg #fgroup_id_filtercfg_column4 .fitemtitle{
+    width: 0;
+}
+
+#id_filtercfg #fgroup_id_filtercfg_column2 .felement,
+#id_filtercfg #fgroup_id_filtercfg_column3 .felement,
+#id_filtercfg #fgroup_id_filtercfg_column4 .felement{
+    margin-left: 0;
+}
+
+#fgroup_id_action_group {
+    margin-top: 25px;
+}
+
+.local_supervision_tool .header .title h2 {
+    background-color: #e86e79 !important;
+    color: white !important;
+}
+
+.local_supervision_tool .header .title h2::before {
+    content: "\f06e" !important;
+    color: #fff !important;
+}
+
+#fitem_id_filtersave {
+    clear: both;
+}
+
+#fitem_id_filtersave .felement.fsubmit {
+    margin-top: 15px;
+}
+
+#mform1 .jtable-data-row {
+    border-bottom: 1px solid #ececec;
+}
+
+#mform1 .jtable-data-row td {
+    padding: 5px;
+}
+
+#mform1 .jtable thead th {
+    padding: 5px;
+}
+
+#mform1 .jtable td a {
+    color: #0070a8;
+}
+
+div.jtable-main-container table.jtable thead th.jtable-column-header div.jtable-column-header-container {
+    height: unset !important;
+}
+
+#mform1 .jtable td .formateurs {
+	background: none!important;
+  	border: none;
+  	padding: 0!important;
+  	color: #0070a8;
+  	cursor: pointer;
+}
+
+#mform1 .jtable td .formateurs:hover {
+	color: #0070a8;
+}
+
+

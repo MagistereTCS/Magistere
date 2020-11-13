@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/progress/db" VERSION="20150211" COMMENT="blocks/progress"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="progress_activities" COMMENT="progress_activities" NEXT="progress_instance_activity">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="9" NOTNULL="true" SEQUENCE="true" NEXT="course_id"/>
+        <FIELD NAME="course_id" TYPE="int" LENGTH="9" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="course_module_id"/>
+        <FIELD NAME="course_module_id" TYPE="int" LENGTH="9" NOTNULL="true" SEQUENCE="false" PREVIOUS="course_id" NEXT="user_id"/>
+        <FIELD NAME="user_id" TYPE="int" LENGTH="9" NOTNULL="true" SEQUENCE="false" PREVIOUS="course_module_id" NEXT="add_date"/>
+        <FIELD NAME="add_date" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="user_id" NEXT="module_name"/>
+        <FIELD NAME="module_name" TYPE="char" LENGTH="30" NOTNULL="true" SEQUENCE="false" PREVIOUS="add_date" NEXT="status"/>
+        <FIELD NAME="status" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="module_name"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="unique_ccu"/>
+        <KEY NAME="unique_ccu" TYPE="unique" FIELDS="course_id, course_module_id, user_id, status" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="progress_instance_activity" COMMENT="progress_instance_activity " PREVIOUS="progress_activities">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="instanceid"/>
+        <FIELD NAME="instanceid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="instanceid" NEXT="num"/>
+        <FIELD NAME="num" TYPE="int" LENGTH="5" NOTNULL="true" SEQUENCE="false" PREVIOUS="userid" NEXT="name"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="30" NOTNULL="true" SEQUENCE="false" PREVIOUS="num" NEXT="monitor"/>
+        <FIELD NAME="monitor" TYPE="int" LENGTH="3" NOTNULL="true" SEQUENCE="false" PREVIOUS="name" NEXT="date_time"/>
+        <FIELD NAME="date_time" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="monitor" NEXT="action"/>
+        <FIELD NAME="action" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" PREVIOUS="date_time" NEXT="position"/>
+        <FIELD NAME="position" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="action" NEXT="completed"/>
+        <FIELD NAME="completed" TYPE="int" LENGTH="1" NOTNULL="true" SEQUENCE="false" PREVIOUS="position"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" NEXT="unique_ii"/>
+        <KEY NAME="unique_ii" TYPE="unique" FIELDS="instanceid, userid, num, name" PREVIOUS="primary"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

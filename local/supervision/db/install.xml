@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/supervision/db" VERSION="20130625" COMMENT="XMLDB file for Moodle local/supervision"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+	<TABLE NAME="t_type_uai" COMMENT="t_type_uai table" PREVIOUS="t_uai" NEXT="t_academie">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="true" NEXT="code_nature"/>
+        <FIELD NAME="code_nature" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="code nature" PREVIOUS="id" NEXT="libelle_court"/>
+        <FIELD NAME="libelle_court" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="libelle court" PREVIOUS="code_nature" NEXT="libelle_long"/>
+        <FIELD NAME="libelle_long" TYPE="text" NOTNULL="true" SEQUENCE="false" COMMENT="libelle long" PREVIOUS="libelle_court" NEXT="niveau"/>
+        <FIELD NAME="niveau" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="niveau" PREVIOUS="libelle_long"/>
+	  </FIELDS>
+      <KEYS>
+        <KEY NAME="primary_t_type_uai" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+	<TABLE NAME="t_niveau" COMMENT="t_niveau table" PREVIOUS="t_departement" NEXT="t_role_liaison">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="true" NEXT="code_nat_min"/>
+        <FIELD NAME="code_nat_min" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="code nat min" PREVIOUS="id" NEXT="code_nat_max"/>
+        <FIELD NAME="code_nat_max" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="code nat max" PREVIOUS="code_nat_min" NEXT="libelle"/>
+		<FIELD NAME="libelle" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="libelle" PREVIOUS="code_nat_max" NEXT="code_niveau"/>
+		<FIELD NAME="code_niveau" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="code niveau" PREVIOUS="libelle"/>
+	  </FIELDS>
+      <KEYS>
+        <KEY NAME="primary_t_niveau" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+	<TABLE NAME="t_role_liaison" COMMENT="role_liaison" PREVIOUS="t_niveau" NEXT="progress_complete">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="true" NEXT="roleid"/>
+        <FIELD NAME="roleid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="roleid" PREVIOUS="id" NEXT="code_role"/>
+        <FIELD NAME="code_role" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" COMMENT="code nat max" PREVIOUS="roleid" />
+	  </FIELDS>
+      <KEYS>
+        <KEY NAME="primary_t_role_liaison" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="progress_complete" COMMENT="defini une activité comme complete" PREVIOUS="t_role_liaison">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="true" NEXT="courseid"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="cours" PREVIOUS="id" NEXT="userid"/>
+        <FIELD NAME="userid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="user" PREVIOUS="courseid" NEXT="is_complete"/>
+        <FIELD NAME="is_complete" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false" COMMENT="cours" PREVIOUS="userid"/>
+	  </FIELDS>
+      <KEYS>
+        <KEY NAME="primary_progress_complete" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

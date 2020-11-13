@@ -1,0 +1,400 @@
+div.gradingnavigation div {
+    float: left;
+    margin-left: 2em;
+}
+
+div.submissionstatustable,
+div.submissionfull,
+div.submissionlinks,
+div.usersummary,
+div.feedback,
+div.gradingsummary {
+    margin-bottom: 1em;
+}
+
+.path-mod-viaassign .generaltable,
+#viaparticipants .generaltable,
+div.submissionstatus .generaltable,
+div.submissionlinks .generaltable,
+div.feedback .generaltable,
+div.submissionsummarytable .generaltable,
+div.viaassignhistory table,
+div.gradingsummary .generaltable {
+    width: 100%;
+}
+
+#page-mod-viaassign-view table.generaltable table td { border: 0px none; }
+/*#page-mod-viaassign-view table.generaltable td.cell.c5 {white-space: nowrap; }*/
+#page-mod-viaassign-view table.generaltable td.cell.c5 {width: 20% }
+.box.publicplaybacks {
+    margin-top:10px;
+}
+.gradingsummarytable,
+.feedbacktable,
+.lockedsubmission,
+.submissionsummarytable {
+    margin-top: 1em;
+}
+
+div.submissionsummarytable table tbody tr td.c0 {
+    width: 30%;
+}
+
+.submittedlate {
+    color: red;
+    font-weight: 900;
+}
+
+.jsenabled .gradingoptionsform .fsubmit {display: none;}
+.jsenabled .gradingtable .c1 select {display: none;}
+.quickgradingform .mform fieldset { margin: 0px; padding: 0px; }
+.gradingbatchoperationsform .mform fieldset { margin: 0px; padding: 0px; }
+
+td.submissionstatus,
+div.submissionstatus,
+a:link.submissionstatus {
+    color: black;
+    background-color: #efefef;
+}
+
+td.submissionstatusdraft,
+div.submissionstatusdraft,
+a:link.submissionstatusdraft {
+    color: black;
+    background-color: #efefcf;
+}
+
+td.submissionstatussubmitted,
+div.submissionstatussubmitted,
+a:link.submissionstatussubmitted {
+    color: black;
+    background-color: #cfefcf;
+}
+
+
+td.submissionlocked,
+div.submissionlocked {
+    color: black;
+    background-color: #efefcf;
+}
+
+td.submissionreopened,
+div.submissionreopened {
+    color: black;
+    background-color: #efefef;
+}
+
+td.submissiongraded,
+div.submissiongraded {
+    color: black;
+    background-color: #cfefcf;
+}
+
+td.submissionnotgraded,
+div.submissionnotgraded {
+    color: black;
+    background-color: #efefef;
+}
+
+td.latesubmission,
+a:link.latesubmission,
+div.latesubmission {
+    color: black;
+    background-color: #efcfcf;
+}
+
+td.earlysubmission,
+div.earlysubmission {
+    color: black;
+    background-color: #cfefcf;
+}
+
+.gradingtable .c0 { display: none; }
+.jsenabled .gradingtable .c0 { display: table-cell; }
+.gradingbatchoperationsform { display: none; }
+.jsenabled .gradingbatchoperationsform { display: block; }
+
+.gradingtable tr.selectedrow td { background-color: #ffeecc; }
+.gradingtable tr.unselectedrow td { background-color: white; }
+
+.gradingtable .c0 div.selectall {margin-left: 7px;}
+
+.gradingtable .yui3-menu ul {
+    margin: 0px;
+}
+
+.gradingtable .yui3-menu-label {
+    padding-left: 0px;
+    line-height: 12px;
+}
+.gradingtable .yui3-menu-label img { padding: 0 3px; }
+.gradingtable .yui3-menu li {
+    list-style-type: none;
+}
+
+.jsenabled .gradingtable .yui3-loading {
+    display: none;
+}
+
+.gradingtable .yui3-menu .yui3-menu-content {
+    border: 0px;
+    padding-top: 0;
+}
+
+#page-mod-viaassign-view div.gradingtable tr .quickgrademodified {
+    background-color: #FFCC99;
+}
+
+td.submissioneditable {
+    color: red;
+}
+
+.expandsummaryicon {
+    cursor: pointer;
+    display: none;
+}
+
+.jsenabled .expandsummaryicon {
+    display: inline;
+}
+
+.hidefull {
+    display: none;
+}
+
+.quickgradingform form .commentscontainer input,
+.quickgradingform form .commentscontainer textarea {
+    display: none;
+}
+
+.jsenabled .quickgradingform form .commentscontainer input,
+.jsenabled .quickgradingform form .commentscontainer textarea {
+    display: inline;
+}
+
+#page-mod-viaassign-view .previousfeedbackwarning {
+    font-size: 140%;
+    font-weight: bold;
+    text-align: center;
+    color: #500;
+}
+
+#page-mod-viaassign-view .submissionhistory {
+    background-color: #b0b0b0;
+}
+
+#page-mod-viaassign-view .submissionhistory .cell.historytitle {
+    background-color: #808080;
+}
+
+#page-mod-viaassign-view .submissionhistory .cell {
+    background-color: #d0d0d0;
+}
+
+#page-mod-viaassign-view .submissionhistory .singlebutton.via {
+    display: inline-block;
+    float: right;
+}
+
+#page-mod-viaassign-view.dir-rtl .submissionhistory .singlebutton.via {
+    float: left;
+}
+
+#page-mod-viaassign-view .submissionsummarytable .singlebutton.via {
+    display: inline-block;
+}
+
+.jsenabled .mod-viaassign-history-link {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+
+.jsenabled .mod-viaassign-history-link h4 {
+    display: inline;
+}
+
+#page-mod-viaassign-view.jsenabled .viaassignhistory h4 {
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+#page-mod-viaassign-view.jsenabled.dir_rtl .viaassignhistory h4 {
+    text-align: right;
+}
+
+.dir-rtl.jsenabled .mod-viaassign-history-link h4 {
+    text-align: right;
+}
+
+.jsenabled .mod-viaassign-history-link-open {
+    padding: 0 5px 0 20px; background: url([[pix:t/expanded]]) 2px center no-repeat;
+}
+
+.jsenabled .mod-viaassign-history-link-closed {
+    padding: 0 5px 0 20px; background: url([[pix:t/collapsed]]) 2px center no-repeat;
+}
+
+.dir-rtl.jsenabled .mod-viaassign-history-link-closed {
+    padding: 0 20px 0 5px; background: url([[pix:t/collapsed_rtl]]) 2px center no-repeat;
+}
+
+#page-mod-viaassign-view .submithelp {
+    padding: 1em;
+}
+
+#page-mod-viaassign-view .feedbacktitle {
+    font-weight: bold;
+}
+
+#page-mod-viaassign-view .submitconfirm,
+#page-mod-viaassign-view .submissionlinks,
+#page-mod-viaassign-view .submissionaction {
+    text-align: center;
+}
+
+
+#page-mod-viaassign-view .submissionsummarytable .c0,
+#page-mod-viaassign-view .mod-viaassign-history-panel .c0 {
+    width: 150px;
+}
+
+
+#page-mod-viaassign-view .gradingtable .moodle-actionmenu {
+    white-space: nowrap;
+}
+#page-mod-viaassign-view .gradingtable .moodle-actionmenu[data-enhanced].show .menu a {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+#page-mod-viaassign-view .gradingtable .menu-action img {
+    display: none;
+}
+.viaassignhistory A,
+.viaassignparticipation A {
+    text-decoration:underline !important;
+}
+
+.viaassignhistory .modifyvia,
+.viaassignhistory .deletevia,
+.viaassignhistory .singlebutton.via,
+.viaassignhistory .singlebutton.via  FORM,
+.viaassignhistory .via_button {
+    display:inline;
+}
+.viaassignhistory .modifyvia div input[type="submit"],
+.viaassignhistory .deletevia div input[type="submit"] {
+    margin:0 2px 2px 0;
+}
+.viaassignhistory .modifyvia,
+.viaassignhistory .singlebutton.via {
+    float:left;
+}
+
+.accessvia .singlebutton input[type="submit"][disabled],
+.path-mod-viaassign .singlebutton input[type="submit"][disabled],
+.viaassignparticipation input[type="submit"][disabled],
+.viaassignparticipation input[type="button"][disabled]
+.viaassignhistory input[type="submit"][disabled],
+.viaassignhistory input[type="button"][disabled]{
+    cursor: default !important;
+    background-image: none;
+    opacity: .65;
+}
+
+.viaassignhistory .c2 {
+    width:185px;
+}
+.feedback TD.nobackground {
+    background-color: #fff;
+}
+.feedback TD.title {
+   font-weight:bold;
+}
+.deletesubmission FORM {
+    margin-right:10px;
+    float: left;
+}
+.cancelsubmission FORM {
+    float: left;
+}
+.extension {
+    color:red;
+}
+.subheader {
+    font-weight:bold;
+    display:inline;
+    padding-right:20px;
+}
+#usererror.error.hide {
+    display:none;
+}
+#fitem_id_datebegin {
+    margin-top:10px
+}
+.path-mod-viaassign .box.gradingtable {
+    margin-top:10px;
+}
+.path-mod-viaassign .gradingtable .c0 div.selectall {
+    margin-left:0px;
+}
+.path-mod-viaassign .gradingtable .header.c0 {
+    width:30px;
+}
+.path-mod-viaassign .gradingtable .c0 {
+    padding-left:8px;
+}
+.path-mod-viaassign .gradingtable .no-overflow {
+    overflow: visible;
+}
+.path-mod-viaassign .gradingtable .header.c1,
+.path-mod-viaassign .gradingtable .cell.c1 {
+    width:35px;
+}
+.path-mod-viaassign .gradingtable .header.c1,
+.path-mod-viaassign .gradingtable .cell.c1  {
+    width:35px;
+}
+#fitem_id_groupid {
+    margin-top:10px;
+}
+.fdate_time_selector A{ display: none !important;}
+
+/* Tooltip text */
+.viatooltip1 .viatooltiptext1,
+.viatooltip2 .viatooltiptext2,
+.viatooltip3 .viatooltiptext3,
+.viatooltip4 .viatooltiptext4 {
+    visibility: hidden;
+    width: 280px;
+    background-color: #fff;
+    color: #555;
+    text-align: left;
+    padding: 5px;
+    border-radius: 6px;
+    font-weight:normal;
+    border: 1px solid;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1000;
+
+}
+.viatooltip2 .viatooltiptext2,
+.viatooltip4 .viatooltiptext4 {
+    margin-left: -355px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.viatooltip1:hover .viatooltiptext1,
+.viatooltip2:hover .viatooltiptext2,
+.viatooltip3:hover .viatooltiptext3,
+.viatooltip4:hover .viatooltiptext4 {
+    visibility: visible;
+}
+.viatooltip1:hover,
+.viatooltip2:hover,
+.viatooltip3:hover,
+.viatooltip4:hover {
+    cursor:pointer;
+}

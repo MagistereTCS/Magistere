@@ -1,0 +1,327 @@
+/* Form Course */
+
+.dispositif_result,
+.module_result,
+.session_result {
+    height: 150px;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.hided {
+    display: none;
+}
+
+
+/* Course Linking Form */
+
+#session_data .felement{
+    margin-top : 20px;
+}
+
+#session_data #id_cancelgeneral{
+    margin-left: 0px;
+}
+
+.left_side {
+    float: left;
+    width: 10%;
+}
+
+.right_side {
+    float: right;
+    width: 90%;
+}
+
+.startdate{
+    float: left;
+    width: 255px;
+    height: 52px;
+}
+
+.enddate{
+    float: right;
+    width: 255px;
+    height: 52px;
+}
+
+label#from_label,
+label#dispositif_label,
+label#module_label,
+label#session_label{
+    float: left;
+    width: 220px;
+    text-align: right;
+    padding-right: 30px;
+    color : #6F706F;
+    padding-top: 10px;
+     font-size: 1.3em;
+     cursor :  default;
+}
+
+#datefilter,
+#dispositif,
+#module,
+#session,
+#session_data{
+   margin-left: 250px;
+   width: calc(100% - 250px);
+   
+}
+
+.enddate div{
+    font-size: 1.3em;
+    color : #6F706F;
+    height: 42px;
+    padding-top:10px ;
+    position: absolute;
+}
+.enddate input{
+    width: calc( 50% - 30px);
+    margin-left: 30px;
+
+}
+
+.custom_input{
+    height : 50px;
+}
+.custom_input .wrapper{
+    position: relative;
+    height : 100%;
+}
+
+#dispositif_search_btn,
+#module_search_btn,
+#session_search_btn{
+    border-radius: 0;
+    margin-left: 0px;
+}
+
+#dispositif_reset_btn,
+#module_reset_btn,
+#session_reset_btn{
+    color : rgb(0, 149, 219);
+    background-color: #ecf0f1;
+    font-size: 1em;
+    position : absolute;
+    left : calc(100% - 30px - 65px);
+     height : 35px;
+     padding : 0px;
+     width: 35px;
+     margin: 5px;
+     border-radius: 22.5px;
+}
+
+#dispositif_search_btn,
+#module_search_btn,
+#session_search_btn{
+    width: 45px;
+    height : 45px;
+}
+
+#dispositif_input,
+#module_input,
+#session_input{
+    border : none;
+    width: calc(100% - 63px - 50px);
+    height : 37px;
+    padding-right : 58px;
+}
+
+#dispositif_res,
+#module_res,
+#session_res {
+    max-height: 210px;
+    overflow: auto;
+    width: 100%;
+    background-color: #FFF;
+    margin-bottom: 15px;
+}
+
+#dispositif_res ul,
+#module_res ul,
+#session_res ul {
+   list-style-type: none;
+   display: contents; 
+}
+
+#dispositif_res ul li,
+#module_res ul li,
+#session_res ul li{
+    color : rgb(0, 149, 219);
+    padding: 10px;
+    margin: 0; 
+    width: calc(100% - 20px);
+    min-height: 30px;
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+}
+
+#dispositif_res ul li:hover,
+#module_res ul li:hover,
+#session_res ul li:hover{
+    background-color:#cceaff;
+}
+
+#dispositif_res ul li:nth-of-type(even),
+#module_res ul li:nth-of-type(even),
+#session_res ul li:nth-of-type(even){
+    background-color: #F8FBFD;
+}
+
+#dispositif_res ul li:nth-of-type(even):hover,
+#module_res ul li:nth-of-type(even):hover,
+#session_res ul li:nth-of-type(even):hover{
+    background-color: #cceaff;
+}
+
+#dispositif_res .title,
+#module_res .title,
+#session_res .title {
+    width: calc(100% - 90px );
+    float:left; 
+    height : 100%;
+}
+
+#dispositif_res .module {
+margin-left: calc(100% - 90px );
+    width : 90px;
+    text-align: right;
+    color: red;
+    font-weight: bold;
+    height : 100%;
+}
+
+.session_date{
+    width: calc(100% - 170px);
+    float:left; 
+}
+
+.session_attendance{
+    width : 170px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-left: calc(100% - 170px);
+}
+
+.session_logo{
+    width: 60px;
+    position : absolute;
+    left : 0;
+    text-align: center;
+}
+
+.session_logo i {
+    padding-left: 10px;
+}
+
+.session_infos{
+    height: 100%;
+    width : calc(100% - 60px );
+    margin-left: 60px;
+
+}
+
+#session_data #groupings {
+	margin-left: 50%;
+}
+
+#session_data #groups select,
+#session_data #groupings select {
+	min-width: 80%;
+}
+
+#session_data #groupings label span{
+	font-weight:normal;
+	font-size:small;
+}
+
+#session_data #participants,
+#session_data .fleft {
+    float : left;
+    width: calc(50% - 10px);
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+#session_data #participants .list{
+    display: block;
+    border : 2px solid #0095db;
+    padding : 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    min-height: 120px;
+}
+
+#session_data #participants .list span{
+    font-weight: bold;
+}
+
+#session_data #groups label{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#session_data #groupings label{
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#session_data #participants .list ul{
+    margin-top : 10px;
+}
+
+#session_data #formateurs{
+    margin-left: 50%;
+    padding : 0 0 0 10px;
+}
+
+#session_data #formateurs select{
+  display: block;
+  height : 164px;
+  width: 100%;
+      border : 2px solid #0095db;
+      border-radius: 5px;
+}
+
+#session_data #formateurs select optgroup{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#session_data #formateurs select option:first-of-type{
+  margin-top: 10px;
+}
+
+#session_data #override_subscriptions ~ label span{
+    font-style: italic;
+}
+
+#session_data #show_participants {
+    cursor: pointer;
+    color : #0095db;
+}
+
+#session_data input[type=checkbox]{
+    height : 20px;
+    width : 20px;    
+}
+
+@media screen and (max-width: 650px) {
+    .session_date{
+        width: 100%;
+        float:none; 
+    }
+  .session_attendance {
+    margin-left: 0;
+  }
+}
+
+#subbuttons {
+	text-align: center;
+}

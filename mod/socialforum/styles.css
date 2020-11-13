@@ -1,0 +1,344 @@
+/* Block Socialforum */
+.block_flexpagemod_socialforum .subjects{
+    background-color: #EEE2EC;
+}
+
+.block_flexpagemod_socialforum .subjects .subject{
+    clear: both;
+    padding: 10px 5px 20px 5px;
+    border-top: 1px dotted #ccc;
+}
+
+.block_flexpagemod_socialforum .subjects .subject:hover{
+    background-color: #DDC4D6;
+}
+
+.block_flexpagemod_socialforum .subjects .subject .subject-title{
+    display: inline-block;
+    position: relative;
+    top: 9px;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+.block_flexpagemod_socialforum .subjects .subject .subject-contributions{
+    float: right;
+    position: relative;
+    top: 9px;
+    padding: 0 20px 0 5px;
+}
+
+.block_flexpagemod_socialforum .subjects .subject .subject-likes{
+    float: right;
+}
+
+/* Subject list */
+#page-mod-socialforum-view #page-content .activity-encart h3{
+    color: grey;
+    font-size: 20px;
+}
+
+#page-mod-socialforum-view #region-main .forumpost .header{
+    width: 48px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+#page-mod-socialforum-view #region-main .forumheader{
+    background-color: #FAFAFA;
+    position: relative;
+    top: -22px;
+    left: -10px;
+    margin-right: -20px;
+    padding: 0 10px 10px 10px;
+    border-bottom: #E6E6E6 1px solid;
+}
+
+#page-mod-socialforum-view #region-main .forumheader h3{
+    padding: 15px 0 10px 0;
+}
+
+#page-mod-socialforum-view #region-main .forumheader .mlinks .mlink_backtocourse{
+    float: left;
+}
+
+#page-mod-socialforum-view #region-main .forumheader .mlinks .mlink_seeother{
+    float: right;
+}
+
+#page-mod-socialforum-view #region-main .forumheader .mlinks .mlink_backtocourse span,
+#page-mod-socialforum-view #region-main .forumheader .mlinks .mlink_seeother span{
+    padding-left: 5px;
+    color: #0095db;
+}
+
+/* Subject & Contribution detail */
+#page-mod-socialforum-view #region-main table{
+    width:100%;
+    position: relative;
+}
+
+#page-mod-socialforum-view #page-content i.fa{
+    cursor: pointer;
+}
+
+#page-mod-socialforum-view #region-main .actions{
+    padding-top: 10px;
+}
+
+#page-mod-socialforum-view #region-main .actions .filter{
+    float: right;
+}
+
+#page-mod-socialforum-view #region-main .post{
+    padding: 10px 0 0 0;
+    margin: 1px 0 0 0;
+    background-color: #FFFFFF;
+    border: none;
+    box-shadow: none;
+    border-bottom: #E6E6E6 1px solid;
+}
+
+#page-mod-socialforum-view #region-main .post.subject{
+    background-color: #E6F5FC;
+    border-top: #E6E6E6 1px solid;
+    border-bottom: #E6E6E6 1px solid;
+}
+
+#page-mod-socialforum-view #region-main .post.deferred{
+    background-color: #FAFAFA;
+}
+
+#page-mod-socialforum-view #region-main .post .header{
+    padding: 15px 0 0 0;
+    margin: 1px 0 0 0;
+}
+
+#page-mod-socialforum-view #region-main .post .header .picture{
+    width: 48px;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+#page-mod-socialforum-view #region-main .post .header .picture img{
+    margin-left: 3px;
+    margin-right: 10px;
+}
+
+#page-mod-socialforum-view #region-main .post .header .subject{
+    font-weight: bold;
+}
+
+#page-mod-socialforum-view #region-main .post .subject-user{
+    display: inline-block;
+}
+
+#page-mod-socialforum-view #region-main .post .author{
+    color: #333;
+}
+
+#page-mod-socialforum-view #region-main .post .author a{
+    color: #0095db;
+    font-weight: normal;
+}
+
+#page-mod-socialforum-view #region-main .post .links{
+    float: right;
+    color: #0095db;
+    padding-right: 10px;
+}
+
+#page-mod-socialforum-view #region-main .post .links a.quote{
+    color: #0095db;
+    display: inline-block;
+}
+
+#page-mod-socialforum-view #region-main .post .links a.quote:before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f10d';
+    padding-right: 5px;
+}
+
+#page-mod-socialforum-view #region-main .post .popularity{
+    display: inline-block;
+}
+
+#page-mod-socialforum-view #region-main .post .popularity i{
+    padding-right: 5px;
+}
+
+#page-mod-socialforum-view #region-main .post .popularity .count{
+    display: inline-block;
+}
+
+#page-mod-socialforum-view #region-main .post .favorite{
+    display: inline-block;
+    padding-left: 5px;
+}
+
+#page-mod-socialforum-view #region-main .post .message{
+    padding: 10px 0 0 78px;
+}
+
+#page-mod-socialforum-view #region-main .post.best-popularity{
+    border: #0095db 2px solid;
+}
+
+#page-mod-socialforum-view #region-main .post.best-popularity .best-like{
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+#page-mod-socialforum-view #region-main .post.best-popularity i.fa-check{
+    color: #0095db;
+}
+
+#page-mod-socialforum-view #region-main  blockquote,
+blockquote{
+    background-color: #E6F5FC !important;
+    border: none !important;
+    padding: 10px 0 10px 10px !important;
+}
+
+#page-mod-socialforum-view #region-main  blockquote span.author,
+#page-mod-socialforum-view #region-main  blockquote span{
+    font-weight: bold !important;
+    font-size: 0.8em !important;
+}
+
+#page-mod-socialforum-view #region-main  blockquote span.author:before,
+#page-mod-socialforum-view #region-main  blockquote span:before{
+    font-family: 'Font Awesome 5 Free';
+    content: '\f10d' !important;
+    padding-right: 5px !important;
+}
+
+#page-mod-socialforum-view #region-main  blockquote p{
+    font-size: 14px !important;
+    padding-left: 15px;
+}
+
+#page-mod-socialforum-view #region-main  blockquote .header{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#page-mod-socialforum-view #region-main .attachedimages img{
+    max-width: 400px;
+}
+
+#page-mod-socialforum-view #region-main .attachments,
+#page-mod-socialforum-view #region-main .attachedimages{
+    padding: 5px 0;
+}
+
+
+#page-mod-socialforum-view #region-main .post .footer{
+    padding: 0 10px 20px 10px;
+    text-align: right;
+}
+
+#page-mod-socialforum-view #region-main .post .footer a.delete,
+#page-mod-socialforum-view #region-main .post .footer a.edit{
+    border-radius: 4px;
+    background-color: #0095db;
+    color: #FFF;
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+
+/* Subjects list */
+#page-mod-socialforum-view #region-main  table.social-forum-subjects th.sortable{
+    font-weight: bold;
+    cursor:pointer;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#page-mod-socialforum-view #region-main  table.social-forum-subjects th.headerSortUp {
+    background-image: url([[pix:mod_socialforum|asc]]);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+#page-mod-socialforum-view #region-main  table.social-forum-subjects th.headerSortDown {
+    background-image: url([[pix:mod_socialforum|desc]]);
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+#page-mod-socialforum-view .aard_section_forumheaderlist tbody tr:nth-child(odd){
+    background-color: #fafafa;
+}
+
+#page-mod-socialforum-view .aard_section_forumheaderlist tbody tr{
+    border-top: 1px solid #ececec;
+}
+
+#page-mod-socialforum-view .aard_section_forumheaderlist tbody tr:hover{
+    background-color: #E6F5FC;
+}
+
+#page-mod-socialforum-view #page-content .social-forum-subjects th.lastcol i.fa-thumbs-o-up{
+    color: white;
+}
+
+#page-mod-socialforum-view #page-content .aard_section_forumheaderlist th.c1,
+#page-mod-socialforum-view #page-content .aard_section_forumheaderlist th.c4{
+    text-align: center !important;
+}
+
+#page-mod-socialforum-view #page-content .aard_section_forumheaderlist th.c3{
+    text-align: left !important;
+}
+
+#page-mod-socialforum-view #page-content  .contributions-list .picture,
+#page-mod-socialforum-view #page-content  .deferred-contributions-list .picture{
+    display: inline-block;
+    vertical-align: top;
+}
+
+#page-mod-socialforum-view #page-content  .contributions-list span.user,
+#page-mod-socialforum-view #page-content  .deferred-contributions-list span.user{
+    padding: 0 10px;
+}
+
+#page-mod-socialforum-view #page-content  .deferred-contributions-list .date{
+    padding: 5px;
+    background-color: white;
+    border: 1px grey solid
+}
+
+#page-mod-socialforum-view #page-content  .deferred-contributions-list .contribution-header{
+    padding-top: 5px;
+}
+
+#page-mod-socialforum-view #page-content  .deferred-contributions-list .collapsible-contributions{
+    display: inline-block;
+    float: right;
+    padding: 0 0 0 10px;
+}
+
+#page-mod-socialforum-view #page-content  .deferred-contributions-list tbody{
+    display: none;
+}
+
+/* Form Socialforum */
+#mform-socialforum #fgroup_id_radioar fieldset span{
+    display: table;
+}
+
+#mform-socialforum fieldset .fdate_selector span ,
+#mform-socialforum fieldset .fdate_selector #id_timepublished_enabled{
+    display: none;
+}

@@ -1,0 +1,1474 @@
+[01-Jun-2016 14:09:19 America/New_York] PHP Notice:  Undefined property: stdClass::$dirrroot in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 3516
+[01-Jun-2016 14:09:19 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:09:19 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:09:19 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:09:19 America/New_York] PHP   3. viaassign->process_save_grade($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:399
+[01-Jun-2016 14:09:19 America/New_York] PHP   4. viaassign->save_grade($userid = *uninitialized*, $data = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:5010
+[01-Jun-2016 14:09:19 America/New_York] PHP   5. viaassign->apply_grade_to_user($formdata = *uninitialized*, $userid = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4952
+[01-Jun-2016 14:09:19 America/New_York] PHP   6. viaassign->update_grade($grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4884
+[01-Jun-2016 14:09:19 America/New_York] PHP   7. viaassign->gradebook_item_update($submission = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:1614
+[01-Jun-2016 14:09:19 America/New_York] PHP Warning:  require_once(/mod/viaassign/lib.php): failed to open stream: No such file or directory in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 3516
+[01-Jun-2016 14:09:19 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:09:19 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:09:19 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:09:19 America/New_York] PHP   3. viaassign->process_save_grade($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:399
+[01-Jun-2016 14:09:19 America/New_York] PHP   4. viaassign->save_grade($userid = *uninitialized*, $data = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:5010
+[01-Jun-2016 14:09:19 America/New_York] PHP   5. viaassign->apply_grade_to_user($formdata = *uninitialized*, $userid = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4952
+[01-Jun-2016 14:09:19 America/New_York] PHP   6. viaassign->update_grade($grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4884
+[01-Jun-2016 14:09:19 America/New_York] PHP   7. viaassign->gradebook_item_update($submission = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:1614
+[01-Jun-2016 14:09:19 America/New_York] PHP Fatal error:  require_once(): Failed opening required '/mod/viaassign/lib.php' (include_path='D:\ClientProjects\Moodle2_7-Via20160101/lib/zend;D:\ClientProjects\Moodle2_7-Via20160101/lib/pear;.;C:\Program Files (x86)\Jcx.Software\VS.Php\2012\Php 5.6') in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 3516
+[01-Jun-2016 14:09:19 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:09:19 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:09:19 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:09:19 America/New_York] PHP   3. viaassign->process_save_grade($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:399
+[01-Jun-2016 14:09:19 America/New_York] PHP   4. viaassign->save_grade($userid = *uninitialized*, $data = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:5010
+[01-Jun-2016 14:09:19 America/New_York] PHP   5. viaassign->apply_grade_to_user($formdata = *uninitialized*, $userid = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4952
+[01-Jun-2016 14:09:19 America/New_York] PHP   6. viaassign->update_grade($grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4884
+[01-Jun-2016 14:09:19 America/New_York] PHP   7. viaassign->gradebook_item_update($submission = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:1614
+[01-Jun-2016 14:10:48 America/New_York] PHP Warning:  require_once(): http:// wrapper is disabled in the server configuration by allow_url_include=0 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 3516
+[01-Jun-2016 14:10:48 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:10:48 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:10:48 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:10:48 America/New_York] PHP   3. viaassign->process_save_grade($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:399
+[01-Jun-2016 14:10:48 America/New_York] PHP   4. viaassign->save_grade($userid = *uninitialized*, $data = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:5010
+[01-Jun-2016 14:10:48 America/New_York] PHP   5. viaassign->apply_grade_to_user($formdata = *uninitialized*, $userid = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4952
+[01-Jun-2016 14:10:48 America/New_York] PHP   6. viaassign->update_grade($grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4884
+[01-Jun-2016 14:10:48 America/New_York] PHP   7. viaassign->gradebook_item_update($submission = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:1614
+[01-Jun-2016 14:10:48 America/New_York] PHP Warning:  require_once(http://127.0.0.1:8000/mod/viaassign/lib.php): failed to open stream: no suitable wrapper could be found in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 3516
+[01-Jun-2016 14:10:48 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:10:48 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:10:48 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:10:48 America/New_York] PHP   3. viaassign->process_save_grade($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:399
+[01-Jun-2016 14:10:48 America/New_York] PHP   4. viaassign->save_grade($userid = *uninitialized*, $data = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:5010
+[01-Jun-2016 14:10:48 America/New_York] PHP   5. viaassign->apply_grade_to_user($formdata = *uninitialized*, $userid = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4952
+[01-Jun-2016 14:10:48 America/New_York] PHP   6. viaassign->update_grade($grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4884
+[01-Jun-2016 14:10:48 America/New_York] PHP   7. viaassign->gradebook_item_update($submission = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:1614
+[01-Jun-2016 14:10:48 America/New_York] PHP Fatal error:  require_once(): Failed opening required 'http://127.0.0.1:8000/mod/viaassign/lib.php' (include_path='D:\ClientProjects\Moodle2_7-Via20160101/lib/zend;D:\ClientProjects\Moodle2_7-Via20160101/lib/pear;.;C:\Program Files (x86)\Jcx.Software\VS.Php\2012\Php 5.6') in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 3516
+[01-Jun-2016 14:10:48 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:10:48 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:10:48 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:10:48 America/New_York] PHP   3. viaassign->process_save_grade($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:399
+[01-Jun-2016 14:10:48 America/New_York] PHP   4. viaassign->save_grade($userid = *uninitialized*, $data = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:5010
+[01-Jun-2016 14:10:48 America/New_York] PHP   5. viaassign->apply_grade_to_user($formdata = *uninitialized*, $userid = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4952
+[01-Jun-2016 14:10:48 America/New_York] PHP   6. viaassign->update_grade($grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4884
+[01-Jun-2016 14:10:48 America/New_York] PHP   7. viaassign->gradebook_item_update($submission = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:1614
+[01-Jun-2016 14:12:11 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 1184
+[01-Jun-2016 14:12:11 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:12:11 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:12:11 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:12:11 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:12:11 America/New_York] PHP   4. viaassign->list_participants($currentgroup = *uninitialized*, $idsonly = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4060
+[01-Jun-2016 14:12:11 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 1193
+[01-Jun-2016 14:12:11 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:12:11 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:12:11 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:12:11 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:12:11 America/New_York] PHP   4. viaassign->list_participants($currentgroup = *uninitialized*, $idsonly = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4060
+[01-Jun-2016 14:12:11 America/New_York] Default exception handler: Can not find data record in database table course. Debug: SELECT id,category FROM {course} WHERE id IS NULL
+[array (
+)]
+Error code: invalidrecord
+* line 1451 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1427 of \lib\dml\moodle_database.php: call to moodle_database->get_record_select()
+* line 6830 of \lib\accesslib.php: call to moodle_database->get_record()
+* line 1193 of \mod\viaassign\locallib.php: call to context_course::instance()
+* line 4060 of \mod\viaassign\locallib.php: call to viaassign->list_participants()
+* line 409 of \mod\viaassign\locallib.php: call to viaassign->process_save_quick_grades()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[01-Jun-2016 14:15:39 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 1184
+[01-Jun-2016 14:15:39 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:15:39 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:15:39 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:15:39 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:15:39 America/New_York] PHP   4. viaassign->list_participants($currentgroup = *uninitialized*, $idsonly = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4060
+[01-Jun-2016 14:26:50 America/New_York] PHP Warning:  explode() expects parameter 2 to be string, array given in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 1186
+[01-Jun-2016 14:26:50 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:26:50 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:26:50 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:26:50 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:26:50 America/New_York] PHP   4. viaassign->list_participants($currentgroup = *uninitialized*, $idsonly = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4062
+[01-Jun-2016 14:26:50 America/New_York] PHP   5. explode(*uninitialized*, *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:1186
+[01-Jun-2016 14:26:50 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 1195
+[01-Jun-2016 14:26:50 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:26:50 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:26:50 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:26:50 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:26:50 America/New_York] PHP   4. viaassign->list_participants($currentgroup = *uninitialized*, $idsonly = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4062
+[01-Jun-2016 14:26:50 America/New_York] Default exception handler: Can not find data record in database table course. Debug: SELECT id,category FROM {course} WHERE id IS NULL
+[array (
+)]
+Error code: invalidrecord
+* line 1451 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1427 of \lib\dml\moodle_database.php: call to moodle_database->get_record_select()
+* line 6830 of \lib\accesslib.php: call to moodle_database->get_record()
+* line 1195 of \mod\viaassign\locallib.php: call to context_course::instance()
+* line 4062 of \mod\viaassign\locallib.php: call to viaassign->list_participants()
+* line 409 of \mod\viaassign\locallib.php: call to viaassign->process_save_quick_grades()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[01-Jun-2016 14:33:24 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 1195
+[01-Jun-2016 14:33:24 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:33:24 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:33:24 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:33:24 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:33:24 America/New_York] PHP   4. viaassign->list_participants($currentgroup = *uninitialized*, $idsonly = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4062
+[01-Jun-2016 14:34:05 America/New_York] Default exception handler: Can not find data record in database table course. Debug: SELECT id,category FROM {course} WHERE id IS NULL
+[array (
+)]
+Error code: invalidrecord
+* line 1451 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1427 of \lib\dml\moodle_database.php: call to moodle_database->get_record_select()
+* line 6830 of \lib\accesslib.php: call to moodle_database->get_record()
+* line 1195 of \mod\viaassign\locallib.php: call to context_course::instance()
+* line 4062 of \mod\viaassign\locallib.php: call to viaassign->list_participants()
+* line 409 of \mod\viaassign\locallib.php: call to viaassign->process_save_quick_grades()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[01-Jun-2016 14:34:56 America/New_York] PHP Warning:  Creating default object from empty value in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4099
+[01-Jun-2016 14:34:56 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:34:56 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:34:56 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:34:56 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:34:56 America/New_York] PHP Notice:  Undefined property: stdClass::$id in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\feedback\comments\locallib.php on line 176
+[01-Jun-2016 14:34:56 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:34:56 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:34:56 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:34:56 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:34:56 America/New_York] PHP   4. viaassign_feedback_comments->save_quickgrading_changes($userid = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4106
+[01-Jun-2016 14:34:56 America/New_York] PHP Notice:  Undefined property: stdClass::$id in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\feedback\comments\locallib.php on line 189
+[01-Jun-2016 14:34:56 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:34:56 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:34:56 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:34:56 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:34:56 America/New_York] PHP   4. viaassign_feedback_comments->save_quickgrading_changes($userid = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4106
+[01-Jun-2016 14:34:56 America/New_York] Default exception handler: Error writing to database Debug: Column 'grade' cannot be null
+INSERT INTO mdl_viaassignfeedback_comments (commenttext,commentformat,grade,viaassign) VALUES(?,?,?,?)
+[array (
+  0 => '',
+  1 => '1',
+  2 => NULL,
+  3 => '1',
+)]
+Error code: dmlwriteexception
+* line 446 of \lib\dml\moodle_database.php: dml_write_exception thrown
+* line 1098 of \lib\dml\mysqli_native_moodle_database.php: call to moodle_database->query_end()
+* line 1144 of \lib\dml\mysqli_native_moodle_database.php: call to mysqli_native_moodle_database->insert_record_raw()
+* line 191 of \mod\viaassign\feedback\comments\locallib.php: call to mysqli_native_moodle_database->insert_record()
+* line 4106 of \mod\viaassign\locallib.php: call to viaassign_feedback_comments->save_quickgrading_changes()
+* line 409 of \mod\viaassign\locallib.php: call to viaassign->process_save_quick_grades()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[01-Jun-2016 14:54:23 America/New_York] PHP Warning:  Creating default object from empty value in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4097
+[01-Jun-2016 14:54:23 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:54:23 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:54:23 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:54:23 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:54:23 America/New_York] PHP Notice:  Undefined property: stdClass::$id in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\feedback\comments\locallib.php on line 176
+[01-Jun-2016 14:54:23 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:54:23 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:54:23 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:54:23 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:54:23 America/New_York] PHP   4. viaassign_feedback_comments->save_quickgrading_changes($userid = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4104
+[01-Jun-2016 14:54:23 America/New_York] PHP Notice:  Undefined property: stdClass::$id in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\feedback\comments\locallib.php on line 189
+[01-Jun-2016 14:54:23 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:54:23 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:54:23 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:54:23 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:54:23 America/New_York] PHP   4. viaassign_feedback_comments->save_quickgrading_changes($userid = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4104
+[01-Jun-2016 14:54:23 America/New_York] Default exception handler: Error writing to database Debug: Column 'grade' cannot be null
+INSERT INTO mdl_viaassignfeedback_comments (commenttext,commentformat,grade,viaassign) VALUES(?,?,?,?)
+[array (
+  0 => 'jkljkl',
+  1 => '1',
+  2 => NULL,
+  3 => '1',
+)]
+Error code: dmlwriteexception
+* line 446 of \lib\dml\moodle_database.php: dml_write_exception thrown
+* line 1098 of \lib\dml\mysqli_native_moodle_database.php: call to moodle_database->query_end()
+* line 1144 of \lib\dml\mysqli_native_moodle_database.php: call to mysqli_native_moodle_database->insert_record_raw()
+* line 191 of \mod\viaassign\feedback\comments\locallib.php: call to mysqli_native_moodle_database->insert_record()
+* line 4104 of \mod\viaassign\locallib.php: call to viaassign_feedback_comments->save_quickgrading_changes()
+* line 409 of \mod\viaassign\locallib.php: call to viaassign->process_save_quick_grades()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[01-Jun-2016 14:57:27 America/New_York] PHP Warning:  Creating default object from empty value in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4097
+[01-Jun-2016 14:57:27 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:57:27 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:57:27 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:57:27 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:57:38 America/New_York] PHP Notice:  Undefined property: stdClass::$id in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\feedback\comments\locallib.php on line 176
+[01-Jun-2016 14:57:38 America/New_York] PHP Stack trace:
+[01-Jun-2016 14:57:38 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 14:57:38 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 14:57:38 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 14:57:38 America/New_York] PHP   4. viaassign_feedback_comments->save_quickgrading_changes($userid = *uninitialized*, $grade = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4104
+[01-Jun-2016 15:01:31 America/New_York] PHP Warning:  Creating default object from empty value in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4097
+[01-Jun-2016 15:01:31 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:01:31 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:01:31 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:01:31 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:32:03 America/New_York] PHP Warning:  Creating default object from empty value in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4079
+[01-Jun-2016 15:32:03 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:32:03 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:32:03 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:32:03 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:32:05 America/New_York] PHP Notice:  Undefined property: stdClass::$idate in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4083
+[01-Jun-2016 15:32:05 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:32:05 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:32:05 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:32:05 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:32:06 America/New_York] PHP Notice:  Undefined variable: garde in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4085
+[01-Jun-2016 15:32:06 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:32:06 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:32:06 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:32:06 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:32:47 America/New_York] PHP Warning:  Creating default object from empty value in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4079
+[01-Jun-2016 15:32:47 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:32:47 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:32:47 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:32:47 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:32:49 America/New_York] PHP Notice:  Undefined property: stdClass::$idate in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4083
+[01-Jun-2016 15:32:49 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:32:49 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:32:49 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:32:49 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:32:49 America/New_York] PHP Notice:  Undefined variable: garde in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4085
+[01-Jun-2016 15:32:49 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:32:49 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:32:49 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:32:49 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:34:22 America/New_York] PHP Notice:  Undefined property: stdClass::$idate in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4085
+[01-Jun-2016 15:34:22 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:34:22 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:34:22 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:34:22 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 15:39:17 America/New_York] Default exception handler: Error writing to database Debug: Column 'viaid' cannot be null
+INSERT INTO mdl_viaassign_grades (viaassign,userid,timecreated,timemodified,grade,grader,viaid) VALUES(?,?,?,?,?,?,?)
+[array (
+  0 => '1',
+  1 => 12,
+  2 => 1464809957,
+  3 => 1464809957,
+  4 => -1,
+  5 => '2',
+  6 => NULL,
+)]
+Error code: dmlwriteexception
+* line 446 of \lib\dml\moodle_database.php: dml_write_exception thrown
+* line 1098 of \lib\dml\mysqli_native_moodle_database.php: call to moodle_database->query_end()
+* line 1144 of \lib\dml\mysqli_native_moodle_database.php: call to mysqli_native_moodle_database->insert_record_raw()
+* line 2211 of \mod\viaassign\locallib.php: call to mysqli_native_moodle_database->insert_record()
+* line 4106 of \mod\viaassign\locallib.php: call to viaassign->get_user_grade()
+* line 409 of \mod\viaassign\locallib.php: call to viaassign->process_save_quick_grades()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[01-Jun-2016 15:54:59 America/New_York] PHP Notice:  Undefined variable: modifiedusers in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4103
+[01-Jun-2016 15:54:59 America/New_York] PHP Stack trace:
+[01-Jun-2016 15:54:59 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 15:54:59 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 15:54:59 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[01-Jun-2016 16:08:01 America/New_York] PHP Notice:  Undefined property: stdClass::$comment in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 420
+[01-Jun-2016 16:08:01 America/New_York] PHP Stack trace:
+[01-Jun-2016 16:08:01 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[01-Jun-2016 16:08:01 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[01-Jun-2016 16:08:01 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[01-Jun-2016 16:08:01 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[01-Jun-2016 16:08:01 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2613
+[01-Jun-2016 16:08:01 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[01-Jun-2016 16:08:01 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[01-Jun-2016 16:08:01 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[01-Jun-2016 16:08:01 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[01-Jun-2016 16:08:01 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[01-Jun-2016 16:08:01 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[01-Jun-2016 16:08:01 America/New_York] PHP  12. viaassign_grading_table->col_select($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:760
+[02-Jun-2016 07:59:52 America/New_York] PHP Notice:  Undefined property: stdClass::$viaid in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4109
+[02-Jun-2016 07:59:52 America/New_York] PHP Stack trace:
+[02-Jun-2016 07:59:52 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 07:59:52 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 07:59:52 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 08:07:44 America/New_York] PHP Notice:  Undefined property: stdClass::$viaid in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4109
+[02-Jun-2016 08:07:44 America/New_York] PHP Stack trace:
+[02-Jun-2016 08:07:44 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 08:07:44 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 08:07:44 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 08:32:29 America/New_York] PHP Notice:  Undefined property: stdClass::$grade in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4137
+[02-Jun-2016 08:32:29 America/New_York] PHP Stack trace:
+[02-Jun-2016 08:32:29 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 08:32:29 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 08:32:29 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 08:51:38 America/New_York] PHP Notice:  Undefined property: stdClass::$viaid in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4116
+[02-Jun-2016 08:51:38 America/New_York] PHP Stack trace:
+[02-Jun-2016 08:51:38 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 08:51:38 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 08:51:38 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 08:51:40 America/New_York] PHP Notice:  Undefined property: stdClass::$viaid in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4118
+[02-Jun-2016 08:51:40 America/New_York] PHP Stack trace:
+[02-Jun-2016 08:51:40 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 08:51:40 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 08:51:40 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 08:54:35 America/New_York] PHP Notice:  Undefined property: stdClass::$grade in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4123
+[02-Jun-2016 08:54:35 America/New_York] PHP Stack trace:
+[02-Jun-2016 08:54:35 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 08:54:35 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 08:54:35 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:09:02 America/New_York] PHP Notice:  Undefined property: stdClass::$grade in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4123
+[02-Jun-2016 09:09:02 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:09:02 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:09:02 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:09:02 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:09:11 America/New_York] PHP Notice:  Undefined property: stdClass::$grade in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4123
+[02-Jun-2016 09:09:11 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:09:11 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:09:11 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:09:11 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:15:21 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4108
+[02-Jun-2016 09:15:21 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:15:21 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:15:21 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:15:21 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:15:23 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4108
+[02-Jun-2016 09:15:23 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:15:23 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:15:23 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:15:23 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:15:25 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4108
+[02-Jun-2016 09:15:25 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:15:25 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:15:25 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:15:25 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:15:31 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4108
+[02-Jun-2016 09:15:31 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:15:31 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:15:31 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:15:31 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:15:33 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4108
+[02-Jun-2016 09:15:33 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:15:33 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:15:33 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:15:33 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:21:20 America/New_York] PHP Notice:  Undefined property: stdClass::$grade in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4132
+[02-Jun-2016 09:21:20 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:21:20 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:21:20 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:21:20 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:23:20 America/New_York] PHP Notice:  Undefined property: stdClass::$grade in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4132
+[02-Jun-2016 09:23:20 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:23:20 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:23:20 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:23:20 America/New_York] PHP   3. viaassign->process_save_quick_grades() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:409
+[02-Jun-2016 09:56:28 America/New_York] PHP Notice:  Undefined variable: DB in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 754
+[02-Jun-2016 09:56:28 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:56:28 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:56:28 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:56:28 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[02-Jun-2016 09:56:28 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[02-Jun-2016 09:56:28 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2622
+[02-Jun-2016 09:56:28 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[02-Jun-2016 09:56:28 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[02-Jun-2016 09:56:28 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[02-Jun-2016 09:56:28 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[02-Jun-2016 09:56:28 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[02-Jun-2016 09:56:28 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[02-Jun-2016 09:56:28 America/New_York] PHP  12. viaassign_grading_table->other_cols($colname = *uninitialized*, $row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:762
+[02-Jun-2016 09:56:28 America/New_York] PHP Fatal error:  Call to a member function get_records() on null in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php on line 754
+[02-Jun-2016 09:56:28 America/New_York] PHP Stack trace:
+[02-Jun-2016 09:56:28 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 09:56:28 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 09:56:28 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:459
+[02-Jun-2016 09:56:28 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[02-Jun-2016 09:56:28 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2622
+[02-Jun-2016 09:56:28 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_grading_table($table = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[02-Jun-2016 09:56:28 America/New_York] PHP   7. mod_viaassign_renderer->flexible_table($table = *uninitialized*, $rowsperpage = *uninitialized*, $displaylinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:842
+[02-Jun-2016 09:56:28 America/New_York] PHP   8. table_sql->out($pagesize = *uninitialized*, $useinitialsbar = *uninitialized*, $downloadhelpbutton = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php:1043
+[02-Jun-2016 09:56:28 America/New_York] PHP   9. table_sql->build_table() D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1496
+[02-Jun-2016 09:56:28 America/New_York] PHP  10. viaassign_grading_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:1384
+[02-Jun-2016 09:56:28 America/New_York] PHP  11. flexible_table->format_row($row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradingtable.php:291
+[02-Jun-2016 09:56:28 America/New_York] PHP  12. viaassign_grading_table->other_cols($colname = *uninitialized*, $row = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\tablelib.php:762
+[02-Jun-2016 11:48:25 America/New_York] PHP Notice:  Undefined offset: 4 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4591
+[02-Jun-2016 11:48:25 America/New_York] PHP Stack trace:
+[02-Jun-2016 11:48:25 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 11:48:25 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 11:48:25 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 11:48:25 America/New_York] PHP   4. moodleform->moodleform($action = *uninitialized*, $customdata = *uninitialized*, $method = *uninitialized*, $target = *uninitialized*, $attributes = *uninitialized*, $editable = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2490
+[02-Jun-2016 11:48:25 America/New_York] PHP   5. mod_viaassign_grade_form->definition() D:\ClientProjects\Moodle2_7-Via20160101\lib\formslib.php:191
+[02-Jun-2016 11:48:25 America/New_York] PHP   6. viaassign->add_grade_form_elements($mform = *uninitialized*, $data = *uninitialized*, $params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradeform.php:52
+[02-Jun-2016 11:51:12 America/New_York] PHP Notice:  Undefined offset: 4 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4591
+[02-Jun-2016 11:51:12 America/New_York] PHP Stack trace:
+[02-Jun-2016 11:51:12 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 11:51:12 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 11:51:12 America/New_York] PHP   3. viaassign->process_save_grade($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:399
+[02-Jun-2016 11:51:12 America/New_York] PHP   4. moodleform->moodleform($action = *uninitialized*, $customdata = *uninitialized*, $method = *uninitialized*, $target = *uninitialized*, $attributes = *uninitialized*, $editable = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:5056
+[02-Jun-2016 11:51:12 America/New_York] PHP   5. mod_viaassign_grade_form->definition() D:\ClientProjects\Moodle2_7-Via20160101\lib\formslib.php:191
+[02-Jun-2016 11:51:12 America/New_York] PHP   6. viaassign->add_grade_form_elements($mform = *uninitialized*, $data = *uninitialized*, $params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradeform.php:52
+[02-Jun-2016 14:01:00 America/New_York] Default exception handler: Coding error detected, it must be fixed by a programmer: Row is out of bounds for the current grading table: 4 Debug: 
+Error code: codingerror
+* line 2430 of \mod\viaassign\locallib.php: coding_exception thrown
+* line 442 of \mod\viaassign\locallib.php: call to viaassign->view_single_feedback_page()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[02-Jun-2016 14:01:27 America/New_York] PHP Notice:  Undefined offset: 4 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2434
+[02-Jun-2016 14:01:27 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:01:27 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:01:27 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:01:27 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:02:13 America/New_York] PHP Notice:  Undefined variable: last in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2482
+[02-Jun-2016 14:02:13 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:02:13 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:02:13 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:02:13 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:02:25 America/New_York] PHP Notice:  Undefined offset: 4 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4591
+[02-Jun-2016 14:02:25 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:02:25 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:02:25 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:02:25 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:02:25 America/New_York] PHP   4. moodleform->moodleform($action = *uninitialized*, $customdata = *uninitialized*, $method = *uninitialized*, $target = *uninitialized*, $attributes = *uninitialized*, $editable = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2490
+[02-Jun-2016 14:02:25 America/New_York] PHP   5. mod_viaassign_grade_form->definition() D:\ClientProjects\Moodle2_7-Via20160101\lib\formslib.php:191
+[02-Jun-2016 14:02:25 America/New_York] PHP   6. viaassign->add_grade_form_elements($mform = *uninitialized*, $data = *uninitialized*, $params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradeform.php:52
+[02-Jun-2016 14:03:02 America/New_York] PHP Notice:  Undefined variable: last in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2482
+[02-Jun-2016 14:03:02 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:03:02 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:03:02 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:03:02 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:03:05 America/New_York] PHP Notice:  Undefined variable: useridlist in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4706
+[02-Jun-2016 14:03:05 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:03:05 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:03:05 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:03:05 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:03:05 America/New_York] PHP   4. moodleform->moodleform($action = *uninitialized*, $customdata = *uninitialized*, $method = *uninitialized*, $target = *uninitialized*, $attributes = *uninitialized*, $editable = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2490
+[02-Jun-2016 14:03:05 America/New_York] PHP   5. mod_viaassign_grade_form->definition() D:\ClientProjects\Moodle2_7-Via20160101\lib\formslib.php:191
+[02-Jun-2016 14:03:05 America/New_York] PHP   6. viaassign->add_grade_form_elements($mform = *uninitialized*, $data = *uninitialized*, $params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradeform.php:52
+[02-Jun-2016 14:05:11 America/New_York] PHP Notice:  Undefined variable: last in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2485
+[02-Jun-2016 14:05:11 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:05:11 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:05:11 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:05:11 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:06:59 America/New_York] PHP Notice:  Undefined variable: useridlist in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4711
+[02-Jun-2016 14:06:59 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:06:59 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:06:59 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:06:59 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:06:59 America/New_York] PHP   4. moodleform->moodleform($action = *uninitialized*, $customdata = *uninitialized*, $method = *uninitialized*, $target = *uninitialized*, $attributes = *uninitialized*, $editable = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2495
+[02-Jun-2016 14:06:59 America/New_York] PHP   5. mod_viaassign_grade_form->definition() D:\ClientProjects\Moodle2_7-Via20160101\lib\formslib.php:191
+[02-Jun-2016 14:06:59 America/New_York] PHP   6. viaassign->add_grade_form_elements($mform = *uninitialized*, $data = *uninitialized*, $params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradeform.php:52
+[02-Jun-2016 14:07:45 America/New_York] PHP Notice:  Undefined variable: cache in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4584
+[02-Jun-2016 14:07:45 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:07:45 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:07:45 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:07:45 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:07:45 America/New_York] PHP   4. moodleform->moodleform($action = *uninitialized*, $customdata = *uninitialized*, $method = *uninitialized*, $target = *uninitialized*, $attributes = *uninitialized*, $editable = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2495
+[02-Jun-2016 14:07:45 America/New_York] PHP   5. mod_viaassign_grade_form->definition() D:\ClientProjects\Moodle2_7-Via20160101\lib\formslib.php:191
+[02-Jun-2016 14:07:45 America/New_York] PHP   6. viaassign->add_grade_form_elements($mform = *uninitialized*, $data = *uninitialized*, $params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradeform.php:52
+[02-Jun-2016 14:07:45 America/New_York] PHP Fatal error:  Call to a member function get() on null in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 4584
+[02-Jun-2016 14:07:45 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:07:45 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:07:45 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[02-Jun-2016 14:07:45 America/New_York] PHP   3. viaassign->view_single_feedback_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:442
+[02-Jun-2016 14:07:45 America/New_York] PHP   4. moodleform->moodleform($action = *uninitialized*, $customdata = *uninitialized*, $method = *uninitialized*, $target = *uninitialized*, $attributes = *uninitialized*, $editable = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2495
+[02-Jun-2016 14:07:45 America/New_York] PHP   5. mod_viaassign_grade_form->definition() D:\ClientProjects\Moodle2_7-Via20160101\lib\formslib.php:191
+[02-Jun-2016 14:07:45 America/New_York] PHP   6. viaassign->add_grade_form_elements($mform = *uninitialized*, $data = *uninitialized*, $params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\gradeform.php:52
+[02-Jun-2016 14:16:28 America/New_York] PHP Fatal error:  Call to undefined function riquired_param() in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 401
+[02-Jun-2016 14:16:28 America/New_York] PHP Stack trace:
+[02-Jun-2016 14:16:28 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[02-Jun-2016 14:16:28 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 09:19:49 America/New_York] PHP Parse error:  syntax error, unexpected ')' in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 615
+[06-Jun-2016 09:19:49 America/New_York] PHP Stack trace:
+[06-Jun-2016 09:19:49 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 09:19:49 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 09:19:49 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:457
+[06-Jun-2016 09:19:49 America/New_York] PHP   4. viaassign->get_renderer() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3331
+[06-Jun-2016 09:19:49 America/New_York] PHP   5. moodle_page->get_renderer($component = *uninitialized*, $subtype = *uninitialized*, $target = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2075
+[06-Jun-2016 09:19:49 America/New_York] PHP   6. theme_config->get_renderer($page = *uninitialized*, $component = *uninitialized*, $subtype = *uninitialized*, $target = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\pagelib.php:812
+[06-Jun-2016 09:19:49 America/New_York] PHP   7. theme_overridden_renderer_factory->get_renderer($page = *uninitialized*, $component = *uninitialized*, $subtype = *uninitialized*, $target = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputlib.php:1787
+[06-Jun-2016 09:19:49 America/New_York] PHP   8. renderer_factory_base->standard_renderer_classname($component = *uninitialized*, $subtype = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputfactories.php:296
+[06-Jun-2016 10:02:18 America/New_York] Default exception handler: Coding error detected, it must be fixed by a programmer: moodle_database::update_record_raw() id field must be specified. Debug: 
+Error code: codingerror
+* line 1302 of \lib\dml\mysqli_native_moodle_database.php: coding_exception thrown
+* line 1358 of \lib\dml\mysqli_native_moodle_database.php: call to mysqli_native_moodle_database->update_record_raw()
+* line 475 of \mod\viaassign\gradingtable.php: call to mysqli_native_moodle_database->update_record()
+* line 760 of \lib\tablelib.php: call to viaassign_grading_table->col_grade()
+* line 291 of \mod\viaassign\gradingtable.php: call to flexible_table->format_row()
+* line 1384 of \lib\tablelib.php: call to viaassign_grading_table->format_row()
+* line 1496 of \lib\tablelib.php: call to table_sql->build_table()
+* line 1043 of \mod\viaassign\renderer.php: call to table_sql->out()
+* line 842 of \mod\viaassign\renderer.php: call to mod_viaassign_renderer->flexible_table()
+* line 221 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_grading_table()
+* line 2616 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2661 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 459 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[06-Jun-2016 14:25:54 America/New_York] Default exception handler: Coding error detected, it must be fixed by a programmer: PHP catchable fatal error Debug: Argument 2 passed to mod_viaassign\event\grading_form_viewed::create_from_user() must be an instance of stdClass, boolean given, called in [dirroot]\mod\viaassign\locallib.php on line 2377 and defined
+Error code: codingerror
+* line 393 of \lib\setuplib.php: coding_exception thrown
+* line 57 of \mod\viaassign\classes\event\grading_form_viewed.php: call to default_error_handler()
+* line 2377 of \mod\viaassign\locallib.php: call to mod_viaassign\event\grading_form_viewed::create_from_user()
+* line 439 of \mod\viaassign\locallib.php: call to viaassign->view_single_grade_page()
+* line 53 of \mod\viaassign\view.php: call to viaassign->view()
+
+[06-Jun-2016 16:08:15 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2770
+[06-Jun-2016 16:08:15 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:08:15 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:08:15 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:08:15 America/New_York] PHP   3. viaassign->view_delete_via_page($params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:448
+[06-Jun-2016 16:12:28 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2770
+[06-Jun-2016 16:12:28 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:12:28 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:12:28 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:12:28 America/New_York] PHP   3. viaassign->view_delete_via_page($params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:448
+[06-Jun-2016 16:13:05 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2770
+[06-Jun-2016 16:13:05 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:13:05 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:13:05 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:13:05 America/New_York] PHP   3. viaassign->view_delete_via_page($params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:448
+[06-Jun-2016 16:23:12 America/New_York] PHP Notice:  Undefined offset: 6 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2309
+[06-Jun-2016 16:23:12 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:23:12 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:23:12 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:23:12 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:23:12 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2309
+[06-Jun-2016 16:23:12 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:23:12 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:23:12 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:23:12 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:24:04 America/New_York] PHP Notice:  Undefined offset: 6 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2309
+[06-Jun-2016 16:24:04 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:24:04 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:24:04 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:24:04 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:24:04 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2309
+[06-Jun-2016 16:24:04 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:24:04 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:24:04 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:24:04 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:27:02 America/New_York] PHP Notice:  Undefined offset: 6 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2309
+[06-Jun-2016 16:27:02 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:27:02 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:27:02 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:27:02 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:27:43 America/New_York] PHP Notice:  Undefined offset: 6 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2309
+[06-Jun-2016 16:27:43 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:27:43 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:27:43 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:27:43 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:28:21 America/New_York] PHP Notice:  Undefined offset: 6 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2310
+[06-Jun-2016 16:28:21 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:28:21 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:28:21 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:28:21 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:28:21 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2310
+[06-Jun-2016 16:28:21 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:28:21 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:28:21 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:28:21 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[06-Jun-2016 16:29:11 America/New_York] PHP Notice:  Undefined offset: 6 in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2309
+[06-Jun-2016 16:29:11 America/New_York] PHP Stack trace:
+[06-Jun-2016 16:29:11 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[06-Jun-2016 16:29:11 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:53
+[06-Jun-2016 16:29:11 America/New_York] PHP   3. viaassign->view_single_grade_page($mform = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:440
+[08-Jun-2016 08:48:54 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 08:53:16 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 09:25:47 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 11:11:27 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 11:11:49 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 11:14:13 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 11:14:50 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 11:18:33 America/New_York] Default exception handler: A required parameter (id) was missing Debug: 
+Error code: missingparam
+* line 463 of \lib\setuplib.php: moodle_exception thrown
+* line 545 of \lib\moodlelib.php: call to print_error()
+* line 28 of \mod\viaassign\view.php: call to required_param()
+
+[08-Jun-2016 11:23:15 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 0,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 37 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[08-Jun-2016 11:53:42 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 17,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 37 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[08-Jun-2016 11:55:46 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 17,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 37 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[08-Jun-2016 11:59:17 America/New_York] PHP Warning:  Missing argument 3 for optional_param(), called in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php on line 28 and defined in D:\ClientProjects\Moodle2_7-Via20160101\lib\moodlelib.php on line 619
+[08-Jun-2016 11:59:17 America/New_York] PHP Stack trace:
+[08-Jun-2016 11:59:17 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[08-Jun-2016 11:59:17 America/New_York] PHP   2. optional_param($parname = *uninitialized*, $default = *uninitialized*, $type = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:28
+[08-Jun-2016 12:53:53 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 0,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 42 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[08-Jun-2016 12:54:23 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 0,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 41 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[08-Jun-2016 12:54:51 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 0,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 41 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[08-Jun-2016 13:26:17 America/New_York] PHP Notice:  Undefined property: mod_viaassign_renderer::$context in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 800
+[08-Jun-2016 13:26:17 America/New_York] PHP Stack trace:
+[08-Jun-2016 13:26:17 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[08-Jun-2016 13:26:17 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:57
+[08-Jun-2016 13:26:17 America/New_York] PHP   3. viaassign->view_grading_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:460
+[08-Jun-2016 13:26:17 America/New_York] PHP   4. viaassign->view_grading_table() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2667
+[08-Jun-2016 13:26:17 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2647
+[08-Jun-2016 13:26:17 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_playbacks($playbacks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[08-Jun-2016 13:26:17 America/New_York] Default exception handler: Coding error detected, it must be fixed by a programmer: PHP catchable fatal error Debug: Argument 2 passed to has_capability() must be an instance of context, null given, called in [dirroot]\mod\viaassign\renderer.php on line 800 and defined
+Error code: codingerror
+* line 393 of \lib\setuplib.php: coding_exception thrown
+* line 367 of \lib\accesslib.php: call to default_error_handler()
+* line 800 of \mod\viaassign\renderer.php: call to has_capability()
+* line 221 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_playbacks()
+* line 2647 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2667 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 460 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 57 of \mod\viaassign\view.php: call to viaassign->view()
+
+[10-Jun-2016 13:12:45 America/New_York] PHP Fatal error:  Class viaassign_portfolio_caller contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (portfolio_caller_base::get_sha1) in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 5372
+[10-Jun-2016 13:12:45 America/New_York] PHP Stack trace:
+[10-Jun-2016 13:12:45 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[10-Jun-2016 13:12:45 America/New_York] PHP   2. require_once() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:26
+[10-Jun-2016 13:20:07 America/New_York] Default exception handler: Coding error detected, it must be fixed by a programmer: Attempt to require a JavaScript file that does not exist. Debug: /mod/via/javascript/via_form.js
+Error code: codingerror
+* line 658 of \lib\outputrequirementslib.php: coding_exception thrown
+* line 383 of \lib\outputrequirementslib.php: call to page_requirements_manager->js_fix_url()
+* line 47 of \mod\viaassign\via_form.php: call to page_requirements_manager->js()
+* line 191 of \lib\formslib.php: call to via_form->definition()
+* line 2828 of \mod\viaassign\locallib.php: call to moodleform->moodleform()
+* line 446 of \mod\viaassign\locallib.php: call to viaassign->view_submit_via_page()
+* line 57 of \mod\viaassign\view.php: call to viaassign->view()
+
+[10-Jun-2016 13:21:20 America/New_York] Default exception handler: Coding error detected, it must be fixed by a programmer: Attempt to require a JavaScript file that does not exist. Debug: /mod/via/javascript/via_form.js
+Error code: codingerror
+* line 658 of \lib\outputrequirementslib.php: coding_exception thrown
+* line 383 of \lib\outputrequirementslib.php: call to page_requirements_manager->js_fix_url()
+* line 49 of \mod\viaassign\view.php: call to page_requirements_manager->js()
+
+[20-Jun-2016 08:34:51 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 2782
+[20-Jun-2016 08:34:51 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:34:51 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:34:51 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:34:51 America/New_York] PHP   3. viaassign->view_delete_via_page($params = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:449
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Undefined variable: user in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 603
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 603
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Undefined variable: user in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 609
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 609
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Undefined variable: user in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 603
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 603
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Undefined variable: user in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 609
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 08:37:14 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 609
+[20-Jun-2016 08:37:14 America/New_York] PHP Stack trace:
+[20-Jun-2016 08:37:14 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[20-Jun-2016 08:37:14 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[20-Jun-2016 08:37:14 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[20-Jun-2016 08:37:14 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3390
+[20-Jun-2016 08:37:14 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3123
+[20-Jun-2016 08:37:14 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[20-Jun-2016 13:31:01 America/New_York] Default exception handler: Impossible de trouver l'enregistrement de données dans la base de données. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 0,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 41 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[14-Jul-2016 14:10:42 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 23,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 41 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[14-Jul-2016 14:10:54 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 23,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1479 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1348 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 41 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[15-Jul-2016 09:24:37 America/New_York] PHP Fatal error:  Call to undefined method viaassign::heading() in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php on line 3147
+[15-Jul-2016 09:24:37 America/New_York] PHP Stack trace:
+[15-Jul-2016 09:24:37 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[15-Jul-2016 09:24:37 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[15-Jul-2016 09:24:37 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[15-Jul-2016 09:24:37 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3405
+[21-Jul-2016 14:16:51 America/New_York] PHP Notice:  Undefined property: stdClass::$idate in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 650
+[21-Jul-2016 14:16:51 America/New_York] PHP Stack trace:
+[21-Jul-2016 14:16:51 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 14:16:51 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 14:16:51 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 14:16:51 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 14:16:51 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3132
+[21-Jul-2016 14:16:51 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[21-Jul-2016 14:17:17 America/New_York] PHP Notice:  Undefined property: stdClass::$idate in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 650
+[21-Jul-2016 14:17:17 America/New_York] PHP Stack trace:
+[21-Jul-2016 14:17:17 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 14:17:17 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 14:17:17 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 14:17:17 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 14:17:17 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3132
+[21-Jul-2016 14:17:17 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_history($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[21-Jul-2016 14:49:58 America/New_York] PHP Parse error:  syntax error, unexpected ',', expecting ')' in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 704
+[21-Jul-2016 14:49:58 America/New_York] PHP Stack trace:
+[21-Jul-2016 14:49:58 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 14:49:58 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 14:49:58 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 14:49:58 America/New_York] PHP   4. viaassign->get_renderer() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3377
+[21-Jul-2016 14:49:58 America/New_York] PHP   5. moodle_page->get_renderer($component = *uninitialized*, $subtype = *uninitialized*, $target = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:2084
+[21-Jul-2016 14:49:58 America/New_York] PHP   6. theme_config->get_renderer($page = *uninitialized*, $component = *uninitialized*, $subtype = *uninitialized*, $target = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\pagelib.php:812
+[21-Jul-2016 14:49:58 America/New_York] PHP   7. theme_overridden_renderer_factory->get_renderer($page = *uninitialized*, $component = *uninitialized*, $subtype = *uninitialized*, $target = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputlib.php:1787
+[21-Jul-2016 14:49:58 America/New_York] PHP   8. renderer_factory_base->standard_renderer_classname($component = *uninitialized*, $subtype = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputfactories.php:296
+[21-Jul-2016 14:50:44 America/New_York] PHP Notice:  Undefined variable: via in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 733
+[21-Jul-2016 14:50:44 America/New_York] PHP Stack trace:
+[21-Jul-2016 14:50:44 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 14:50:44 America/New_York] PHP   2. viaassign->view() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 14:50:44 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 14:50:44 America/New_York] PHP   4. viaassign->view_student_summary() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 14:50:44 America/New_York] PHP   5. plugin_renderer_base->render() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[21-Jul-2016 14:50:44 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations() D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[21-Jul-2016 14:50:44 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 733
+[21-Jul-2016 14:50:44 America/New_York] PHP Stack trace:
+[21-Jul-2016 14:50:44 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 14:50:44 America/New_York] PHP   2. viaassign->view() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 14:50:44 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 14:50:44 America/New_York] PHP   4. viaassign->view_student_summary() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 14:50:44 America/New_York] PHP   5. plugin_renderer_base->render() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[21-Jul-2016 14:50:44 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations() D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[21-Jul-2016 14:50:44 America/New_York] PHP Notice:  Undefined variable: via in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 733
+[21-Jul-2016 14:50:44 America/New_York] PHP Stack trace:
+[21-Jul-2016 14:50:44 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 14:50:44 America/New_York] PHP   2. viaassign->view() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 14:50:44 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 14:50:44 America/New_York] PHP   4. viaassign->view_student_summary() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 14:50:44 America/New_York] PHP   5. plugin_renderer_base->render() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[21-Jul-2016 14:50:44 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations() D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[21-Jul-2016 14:50:44 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 733
+[21-Jul-2016 14:50:44 America/New_York] PHP Stack trace:
+[21-Jul-2016 14:50:44 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 14:50:44 America/New_York] PHP   2. viaassign->view() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 14:50:44 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 14:50:44 America/New_York] PHP   4. viaassign->view_student_summary() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 14:50:44 America/New_York] PHP   5. plugin_renderer_base->render() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[21-Jul-2016 14:50:44 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations() D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[21-Jul-2016 15:50:00 America/New_York] PHP Notice:  Undefined variable: via in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 738
+[21-Jul-2016 15:50:00 America/New_York] PHP Stack trace:
+[21-Jul-2016 15:50:00 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 15:50:00 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 15:50:00 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 15:50:00 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 15:50:00 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[21-Jul-2016 15:50:00 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[21-Jul-2016 15:50:00 America/New_York] PHP Notice:  Trying to get property of non-object in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 738
+[21-Jul-2016 15:50:00 America/New_York] PHP Stack trace:
+[21-Jul-2016 15:50:00 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[21-Jul-2016 15:50:00 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[21-Jul-2016 15:50:00 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[21-Jul-2016 15:50:00 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3406
+[21-Jul-2016 15:50:00 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[21-Jul-2016 15:50:00 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[25-Jul-2016 09:32:17 America/New_York] PHP Notice:  Undefined property: stdClass::$assess_type in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 735
+[25-Jul-2016 09:32:17 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:32:17 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:32:17 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:32:17 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[25-Jul-2016 09:32:17 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3409
+[25-Jul-2016 09:32:17 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[25-Jul-2016 09:32:17 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[25-Jul-2016 09:32:17 America/New_York] PHP Notice:  Undefined property: stdClass::$assess_type in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 735
+[25-Jul-2016 09:32:17 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:32:17 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:32:17 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:32:17 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[25-Jul-2016 09:32:17 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3409
+[25-Jul-2016 09:32:17 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[25-Jul-2016 09:32:17 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[25-Jul-2016 09:32:52 America/New_York] PHP Notice:  Undefined property: stdClass::$assess_type in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 735
+[25-Jul-2016 09:32:52 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:32:52 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:32:52 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:32:52 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[25-Jul-2016 09:32:52 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3409
+[25-Jul-2016 09:32:52 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[25-Jul-2016 09:32:52 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[25-Jul-2016 09:32:52 America/New_York] PHP Notice:  Undefined property: stdClass::$assess_type in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 735
+[25-Jul-2016 09:32:52 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:32:52 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:32:52 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:32:52 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[25-Jul-2016 09:32:52 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3409
+[25-Jul-2016 09:32:52 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[25-Jul-2016 09:32:52 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[25-Jul-2016 09:32:52 America/New_York] PHP Notice:  Undefined property: stdClass::$assess_type in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 735
+[25-Jul-2016 09:32:52 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:32:52 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:32:52 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:32:52 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[25-Jul-2016 09:32:52 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3409
+[25-Jul-2016 09:32:52 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[25-Jul-2016 09:32:52 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[25-Jul-2016 09:32:52 America/New_York] PHP Notice:  Undefined property: stdClass::$assess_type in D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\renderer.php on line 735
+[25-Jul-2016 09:32:52 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:32:52 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:32:52 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:32:52 America/New_York] PHP   3. viaassign->view_submission_page() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:458
+[25-Jul-2016 09:32:52 America/New_York] PHP   4. viaassign->view_student_summary($user = *uninitialized*, $showlinks = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3409
+[25-Jul-2016 09:32:52 America/New_York] PHP   5. plugin_renderer_base->render($widget = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:3145
+[25-Jul-2016 09:32:52 America/New_York] PHP   6. mod_viaassign_renderer->render_viaassign_participations($history = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\lib\outputrenderers.php:221
+[25-Jul-2016 09:36:34 America/New_York] PHP Notice:  Undefined variable: exists in D:\ClientProjects\Moodle2_7-Via20160101\mod\via\lib.php on line 110
+[25-Jul-2016 09:36:34 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:36:34 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:36:34 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:36:34 America/New_York] PHP   3. viaassign->process_save_via($mform = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:359
+[25-Jul-2016 09:36:34 America/New_York] PHP   4. viaassign->save_via($formdata = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4418
+[25-Jul-2016 09:36:34 America/New_York] PHP   5. via_add_instance($via = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4458
+[25-Jul-2016 09:48:57 America/New_York] PHP Notice:  Undefined variable: exists in D:\ClientProjects\Moodle2_7-Via20160101\mod\via\lib.php on line 110
+[25-Jul-2016 09:48:57 America/New_York] PHP Stack trace:
+[25-Jul-2016 09:48:57 America/New_York] PHP   1. {main}() D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:0
+[25-Jul-2016 09:48:57 America/New_York] PHP   2. viaassign->view($action = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\view.php:61
+[25-Jul-2016 09:48:57 America/New_York] PHP   3. viaassign->process_save_via($mform = *uninitialized*, $viaid = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:359
+[25-Jul-2016 09:48:57 America/New_York] PHP   4. viaassign->save_via($formdata = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4418
+[25-Jul-2016 09:48:57 America/New_York] PHP   5. via_add_instance($via = *uninitialized*) D:\ClientProjects\Moodle2_7-Via20160101\mod\viaassign\locallib.php:4458
+[27-Feb-2017 14:36:28 America/New_York] Default exception handler: Error reading from database Debug: SQLState: 42000<br>
+Error Code: 102<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Incorrect syntax near 'OFFSET'.<br>
+SQLState: 42000<br>
+Error Code: 153<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Invalid usage of the option NEXT in the FETCH statement.<br>
+
+SELECT
+                id = ROW_NUMBER() OVER (ORDER BY u.id), u.id as userid, s.status as status, s.id as submissionid, s.timecreated as firstsubmission, s.timemodified as timesubmitted, s.viaid as viaidsumbitted, v.id as viaid, v.course as viacourse, v.name as vianame, v.datebegin as viadate, v.duration as viaduration, g.id as gradeid, g.grade as grade, g.timemodified as timemarked, g.timecreated as firstmarked, uf.mailed as mailed, uf.locked as locked, uf.extensionduedate as extensionduedate 
+                FROM mdl_user u
+                         LEFT JOIN mdl_viaassign_submission s ON
+                            u.id = s.userid AND
+                            s.viaassignid = '1'
+                         LEFT JOIN mdl_via v ON
+                            v.id = s.viaid
+                         LEFT JOIN mdl_viaassign_grades g ON
+                            u.id = g.userid AND
+                            g.viaassign = '1' AND
+                            s.viaid = g.viaid
+                         LEFT JOIN mdl_viaassign_user_flags uf ON
+                            u.id = uf.userid AND uf.viaassign = '1'
+                WHERE u.id IN ('3','12','13','14','15')
+                 OFFSET 0 ROWS  FETCH NEXT 20 ROWS ONLY
+[array (
+  0 => 1,
+  1 => 1,
+  2 => 1,
+  3 => 3,
+  4 => 12,
+  5 => 13,
+  6 => 14,
+  7 => 15,
+)]
+Error code: dmlreadexception
+* line 474 of \lib\dml\moodle_database.php: dml_read_exception thrown
+* line 291 of \lib\dml\sqlsrv_native_moodle_database.php: call to moodle_database->query_end()
+* line 398 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->query_end()
+* line 859 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->do_query()
+* line 907 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->get_recordset_sql()
+* line 1588 of \lib\tablelib.php: call to sqlsrv_native_moodle_database->get_records_sql()
+* line 1608 of \lib\tablelib.php: call to table_sql->query_db()
+* line 1083 of \mod\viaassign\renderer.php: call to table_sql->out()
+* line 882 of \mod\viaassign\renderer.php: call to mod_viaassign_renderer->flexible_table()
+* line 319 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_grading_table()
+* line 2630 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2663 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 460 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 61 of \mod\viaassign\view.php: call to viaassign->view()
+
+[27-Feb-2017 15:01:18 America/New_York] Default exception handler: Can not find data record in database. Debug: SELECT cm.*, m.name, md.name AS modname 
+              FROM {course_modules} cm
+                   JOIN {modules} md ON md.id = cm.module
+                   JOIN {viaassign} m ON m.id = cm.instance
+                   
+             WHERE cm.id = :cmid AND md.name = :modulename
+                   
+[array (
+  'cmid' => 85,
+  'modulename' => 'viaassign',
+)]
+Error code: invalidrecordunknown
+* line 1530 of \lib\dml\moodle_database.php: dml_missing_record_exception thrown
+* line 1297 of \lib\datalib.php: call to moodle_database->get_record_sql()
+* line 41 of \mod\viaassign\view.php: call to get_coursemodule_from_id()
+
+[27-Feb-2017 15:03:26 America/New_York] Default exception handler: Error reading from database Debug: SQLState: 42000<br>
+Error Code: 102<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Incorrect syntax near 'OFFSET'.<br>
+SQLState: 42000<br>
+Error Code: 153<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Invalid usage of the option NEXT in the FETCH statement.<br>
+
+SELECT
+                id = ROW_NUMBER() OVER (ORDER BY u.id), u.id as userid, s.status as status, s.id as submissionid, s.timecreated as firstsubmission, s.timemodified as timesubmitted, s.viaid as viaidsumbitted, v.id as viaid, v.course as viacourse, v.name as vianame, v.datebegin as viadate, v.duration as viaduration, g.id as gradeid, g.grade as grade, g.timemodified as timemarked, g.timecreated as firstmarked, uf.mailed as mailed, uf.locked as locked, uf.extensionduedate as extensionduedate 
+                FROM mdl_user u
+                         LEFT JOIN mdl_viaassign_submission s ON
+                            u.id = s.userid AND
+                            s.viaassignid = '1'
+                         LEFT JOIN mdl_via v ON
+                            v.id = s.viaid
+                         LEFT JOIN mdl_viaassign_grades g ON
+                            u.id = g.userid AND
+                            g.viaassign = '1' AND
+                            s.viaid = g.viaid
+                         LEFT JOIN mdl_viaassign_user_flags uf ON
+                            u.id = uf.userid AND uf.viaassign = '1'
+                WHERE u.id IN ('3','12','13','14','15')
+                 OFFSET 0 ROWS  FETCH NEXT 20 ROWS ONLY
+[array (
+  0 => 1,
+  1 => 1,
+  2 => 1,
+  3 => 3,
+  4 => 12,
+  5 => 13,
+  6 => 14,
+  7 => 15,
+)]
+Error code: dmlreadexception
+* line 474 of \lib\dml\moodle_database.php: dml_read_exception thrown
+* line 291 of \lib\dml\sqlsrv_native_moodle_database.php: call to moodle_database->query_end()
+* line 398 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->query_end()
+* line 859 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->do_query()
+* line 907 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->get_recordset_sql()
+* line 1588 of \lib\tablelib.php: call to sqlsrv_native_moodle_database->get_records_sql()
+* line 1608 of \lib\tablelib.php: call to table_sql->query_db()
+* line 1083 of \mod\viaassign\renderer.php: call to table_sql->out()
+* line 882 of \mod\viaassign\renderer.php: call to mod_viaassign_renderer->flexible_table()
+* line 319 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_grading_table()
+* line 2630 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2663 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 460 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 61 of \mod\viaassign\view.php: call to viaassign->view()
+
+[27-Feb-2017 15:25:50 America/New_York] Default exception handler: Error reading from database Debug: SQLState: 42000<br>
+Error Code: 102<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Incorrect syntax near 'OFFSET'.<br>
+SQLState: 42000<br>
+Error Code: 153<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Invalid usage of the option NEXT in the FETCH statement.<br>
+
+SELECT
+                id = ROW_NUMBER() OVER (ORDER BY u.id), u.id as userid, s.status as status, s.id as submissionid, s.timecreated as firstsubmission, s.timemodified as timesubmitted, s.viaid as viaidsumbitted, v.id as viaid, v.course as viacourse, v.name as vianame, v.datebegin as viadate, v.duration as viaduration, g.id as gradeid, g.grade as grade, g.timemodified as timemarked, g.timecreated as firstmarked, uf.mailed as mailed, uf.locked as locked, uf.extensionduedate as extensionduedate 
+                FROM mdl_user u
+                         LEFT JOIN mdl_viaassign_submission s ON
+                            u.id = s.userid AND
+                            s.viaassignid = '1'
+                         LEFT JOIN mdl_via v ON
+                            v.id = s.viaid
+                         LEFT JOIN mdl_viaassign_grades g ON
+                            u.id = g.userid AND
+                            g.viaassign = '1' AND
+                            s.viaid = g.viaid
+                         LEFT JOIN mdl_viaassign_user_flags uf ON
+                            u.id = uf.userid AND uf.viaassign = '1'
+                WHERE u.id IN ('3','12','13','14','15')
+                 OFFSET 0 ROWS  FETCH NEXT 20 ROWS ONLY
+[array (
+  0 => 1,
+  1 => 1,
+  2 => 1,
+  3 => 3,
+  4 => 12,
+  5 => 13,
+  6 => 14,
+  7 => 15,
+)]
+Error code: dmlreadexception
+* line 474 of \lib\dml\moodle_database.php: dml_read_exception thrown
+* line 291 of \lib\dml\sqlsrv_native_moodle_database.php: call to moodle_database->query_end()
+* line 398 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->query_end()
+* line 859 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->do_query()
+* line 907 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->get_recordset_sql()
+* line 1588 of \lib\tablelib.php: call to sqlsrv_native_moodle_database->get_records_sql()
+* line 1608 of \lib\tablelib.php: call to table_sql->query_db()
+* line 1083 of \mod\viaassign\renderer.php: call to table_sql->out()
+* line 882 of \mod\viaassign\renderer.php: call to mod_viaassign_renderer->flexible_table()
+* line 319 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_grading_table()
+* line 2630 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2663 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 460 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 61 of \mod\viaassign\view.php: call to viaassign->view()
+
+[27-Feb-2017 15:30:27 America/New_York] Default exception handler: Error reading from database Debug: SQLState: 42000<br>
+Error Code: 102<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Incorrect syntax near 'OFFSET'.<br>
+SQLState: 42000<br>
+Error Code: 153<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Invalid usage of the option NEXT in the FETCH statement.<br>
+
+SELECT
+                id = ROW_NUMBER() OVER (ORDER BY u.id), u.id as userid, s.status as status, s.id as submissionid, s.timecreated as firstsubmission, s.timemodified as timesubmitted, s.viaid as viaidsumbitted, v.id as viaid, v.course as viacourse, v.name as vianame, v.datebegin as viadate, v.duration as viaduration, g.id as gradeid, g.grade as grade, g.timemodified as timemarked, g.timecreated as firstmarked, uf.mailed as mailed, uf.locked as locked, uf.extensionduedate as extensionduedate 
+                FROM mdl_user u
+                         LEFT JOIN mdl_viaassign_submission s ON
+                            u.id = s.userid AND
+                            s.viaassignid = '1'
+                         LEFT JOIN mdl_via v ON
+                            v.id = s.viaid
+                         LEFT JOIN mdl_viaassign_grades g ON
+                            u.id = g.userid AND
+                            g.viaassign = '1' AND
+                            s.viaid = g.viaid
+                         LEFT JOIN mdl_viaassign_user_flags uf ON
+                            u.id = uf.userid AND uf.viaassign = '1'
+                WHERE u.id IN ('3','12','13','14','15')
+                 OFFSET 0 ROWS  FETCH NEXT 20 ROWS ONLY
+[array (
+  0 => 1,
+  1 => 1,
+  2 => 1,
+  3 => 3,
+  4 => 12,
+  5 => 13,
+  6 => 14,
+  7 => 15,
+)]
+Error code: dmlreadexception
+* line 474 of \lib\dml\moodle_database.php: dml_read_exception thrown
+* line 291 of \lib\dml\sqlsrv_native_moodle_database.php: call to moodle_database->query_end()
+* line 398 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->query_end()
+* line 859 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->do_query()
+* line 907 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->get_recordset_sql()
+* line 1588 of \lib\tablelib.php: call to sqlsrv_native_moodle_database->get_records_sql()
+* line 1608 of \lib\tablelib.php: call to table_sql->query_db()
+* line 1083 of \mod\viaassign\renderer.php: call to table_sql->out()
+* line 882 of \mod\viaassign\renderer.php: call to mod_viaassign_renderer->flexible_table()
+* line 319 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_grading_table()
+* line 2630 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2663 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 460 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 61 of \mod\viaassign\view.php: call to viaassign->view()
+
+[27-Feb-2017 15:35:27 America/New_York] Default exception handler: Error reading from database Debug: SQLState: 42000<br>
+Error Code: 102<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Incorrect syntax near 'u'.<br>
+SQLState: 42000<br>
+Error Code: 153<br>
+Message: [Microsoft][ODBC Driver 11 for SQL Server][SQL Server]Invalid usage of the option NEXT in the FETCH statement.<br>
+
+SELECT
+                id = ROW_NUMBER() OVER (u.id), u.id as userid, s.status as status, s.id as submissionid, s.timecreated as firstsubmission, s.timemodified as timesubmitted, s.viaid as viaidsumbitted, v.id as viaid, v.course as viacourse, v.name as vianame, v.datebegin as viadate, v.duration as viaduration, g.id as gradeid, g.grade as grade, g.timemodified as timemarked, g.timecreated as firstmarked, uf.mailed as mailed, uf.locked as locked, uf.extensionduedate as extensionduedate 
+                FROM mdl_user u
+                         LEFT JOIN mdl_viaassign_submission s ON
+                            u.id = s.userid AND
+                            s.viaassignid = '1'
+                         LEFT JOIN mdl_via v ON
+                            v.id = s.viaid
+                         LEFT JOIN mdl_viaassign_grades g ON
+                            u.id = g.userid AND
+                            g.viaassign = '1' AND
+                            s.viaid = g.viaid
+                         LEFT JOIN mdl_viaassign_user_flags uf ON
+                            u.id = uf.userid AND uf.viaassign = '1'
+                WHERE u.id IN ('3','12','13','14','15')
+                 ORDER BY 1 OFFSET 0 ROWS  FETCH NEXT 20 ROWS ONLY
+[array (
+  0 => 1,
+  1 => 1,
+  2 => 1,
+  3 => 3,
+  4 => 12,
+  5 => 13,
+  6 => 14,
+  7 => 15,
+)]
+Error code: dmlreadexception
+* line 474 of \lib\dml\moodle_database.php: dml_read_exception thrown
+* line 291 of \lib\dml\sqlsrv_native_moodle_database.php: call to moodle_database->query_end()
+* line 398 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->query_end()
+* line 859 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->do_query()
+* line 907 of \lib\dml\sqlsrv_native_moodle_database.php: call to sqlsrv_native_moodle_database->get_recordset_sql()
+* line 1588 of \lib\tablelib.php: call to sqlsrv_native_moodle_database->get_records_sql()
+* line 1608 of \lib\tablelib.php: call to table_sql->query_db()
+* line 1083 of \mod\viaassign\renderer.php: call to table_sql->out()
+* line 882 of \mod\viaassign\renderer.php: call to mod_viaassign_renderer->flexible_table()
+* line 319 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_grading_table()
+* line 2630 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2663 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 460 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 61 of \mod\viaassign\view.php: call to viaassign->view()
+
+[28-Feb-2017 08:45:24 America/New_York] Default exception handler: Coding error detected, it must be fixed by a programmer: PHP catchable fatal error Debug: Object of class stdClass could not be converted to string
+Error code: codingerror
+* line 425 of \lib\setuplib.php: coding_exception thrown
+* line 357 of \mod\viaassign\gradingtable.php: call to default_error_handler()
+* line 810 of \lib\tablelib.php: call to viaassign_grading_table->col_picture()
+* line 293 of \mod\viaassign\gradingtable.php: call to flexible_table->format_row()
+* line 1493 of \lib\tablelib.php: call to viaassign_grading_table->format_row()
+* line 1609 of \lib\tablelib.php: call to table_sql->build_table()
+* line 1083 of \mod\viaassign\renderer.php: call to table_sql->out()
+* line 882 of \mod\viaassign\renderer.php: call to mod_viaassign_renderer->flexible_table()
+* line 319 of \lib\outputrenderers.php: call to mod_viaassign_renderer->render_viaassign_grading_table()
+* line 2630 of \mod\viaassign\locallib.php: call to plugin_renderer_base->render()
+* line 2663 of \mod\viaassign\locallib.php: call to viaassign->view_grading_table()
+* line 460 of \mod\viaassign\locallib.php: call to viaassign->view_grading_page()
+* line 61 of \mod\viaassign\view.php: call to viaassign->view()
+

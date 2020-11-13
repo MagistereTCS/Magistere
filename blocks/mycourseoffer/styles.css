@@ -1,0 +1,125 @@
+
+.block_mycourseoffer .header
+{
+	background-color: #9c59bd;
+}
+.block_mycourseoffer .header h2
+{
+	background-color: #9c59bd !important;
+	color: #ffffff !important;
+}
+
+.block_mycourseoffer ul.mycourseoffer {
+	margin: 0;
+}
+
+.block_mycourseoffer ul.mycourseoffer li {
+	border-bottom:1px solid #E6E6E6;
+	margin-bottom: 10px;
+	padding-bottom:10px;
+}
+
+.block_mycourseoffer ul.mycourseoffer li:last-child {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+.block_mycourseoffer ul.mycourseoffer .collectionlogo {
+	float: left;
+}
+
+.block_mycourseoffer ul.mycourseoffer .collectionlogo img {
+	height: 24px;
+	width: 24px;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation{
+	padding-left: 30px;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .collection {
+	font-size:13px;
+	color: #0095db;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .fullname {
+	color: #333333;
+	font-size:16px;
+	line-height: 17pt;
+	margin-bottom: 0px;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .fullname a {
+	color: #000000;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .fullname a:hover {
+	color: #555555;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .subscription {
+	margin-bottom:0px;
+	font-size:13px;
+	color: #999999;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .subscription .maxparticipant {
+	color: #7B7B7B;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .duration {
+	margin-bottom:0px;
+	color: #7B7B7B;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .provider {
+	margin-bottom: 3px;
+	color: #333333;
+	font-size:14px;
+}
+
+.block_mycourseoffer ul.mycourseoffer .courseformation .locked {
+	color: #7B7B7B;
+}
+
+.block_mycourseoffer  .search-course{
+	margin-bottom: 15px;
+
+}
+
+.block_mycourseoffer  .search-course input[name="search_name"] {
+	display: inline-block;
+	width: calc(100% - 40px);
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	border-radius: 4px;
+	-webkit-font-smoothing: subpixel-antialiased;
+	height: 30px;
+	margin-bottom: 0;
+	padding-right: 35px;
+}
+
+.block_mycourseoffer .search-course .search_submit {
+	float: right;
+	margin-right: 40px;
+	margin-top: -40px;
+	position: relative;
+	z-index: 2;
+	font-size: 22px;
+	border-radius: 0 4px 4px 0;
+	background-color: transparent;
+	color: grey;
+	padding: 9px 5px 9px 5px;
+	cursor: pointer;
+}
+.block_mycourseoffer #edit{
+	width: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 30px;
+	padding: 5px;
+}
+.block_mycourseoffer .search-course  form{
+	display: inline;
+}

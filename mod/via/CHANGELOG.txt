@@ -1,0 +1,277 @@
+This file defines the changes made to Via - Virtual classroom
+last update 07/07/2020 2020011403
+-New option to disable unplanned activities
+
+last update 05/06/2020 2020011402
+-Fix restore course whith deleted activity
+-Fix remove participants from invalid activity
+
+last update 04/02/2020 2020011401
+-Fix authentification from Via app
+-Integration of Moodle 3.8
+
+last update 19/02/2019 (2018042005)
+-The courseID is no more stored during backup /restore
+-Bug fixes for compatibiliy with viaassign
+
+last update 09/10/2018 (2018042004)
+-Bug fix
+
+last update 07/09/2018 (2018042003)
+- Prevent Moodle to overwrite UserData in Via
+- Add option to synchronise immediately playback records with Via
+
+last update 19/07/2018 (2018042002)
+- Bug fixes
+
+last update 20/04/2018 (2018042001)
+- Integration of Moodle 3.4
+- Improvement for Grouping and Group with Moodle 3.X
+- Improvements to delegate activities
+- Bug fixes for user synchronisation when the activity has been deleted from Via
+- Bug fixes for category use (when activated in parameters)
+- you can access to the activity after the end if there is still someone inside
+- Correction of Users SetupState synchronisation
+- Bug fixe for viaassign activity with multiple pages
+- Management of viaassign events: we can attach them to the class or to the activity depending on the parameters.
+- Integration of new release of Chrome ( micro and camera not available during configuration)
+- Activity Completion by grade has been desactivated
+
+last update 14/09/2017 (2017030108)
+- Bug fixes for Grouping and Group
+- Bug fix for activity completion on view
+- Some improvements on the display of Via parameters
+
+last update 10/07/2017 (2017030107)
+- Improvement on a new activityType: desactivated. Only availabale with manual operations: ask SVI for more informations
+
+
+last update 06/06/2017 (2017030106)
+- Improvements on user synchronization:
+- User's picture in png are now included
+- First and last names can now be not synchronized 
+
+last update 31/05/2017 (2017030105)
+- Modifications on activity duplication: the old host is now saved
+- Correction on delete issues
+- Bug fixes for downloading documents
+- We don't keep user in deleted activity to avoid restoration issues
+- New Option to choose enrol type in Via
+- Availability confirmation is now available for everyone except the host
+
+
+last update 05/04/2017 (2017030104)
+- Bug fixes for email reminder sended from viaassign
+- Bug fixes for export from Via
+- Bug fixes for the access to unified reccordings
+
+last update 27/03/2017 (2017030103)
+- Bug fixes for incompatibility with IE
+
+last update 17/03/2017 (2017030102)
+- Bug fixes for incompatibility with php7.1
+- Bug fixes for upgrade from version via 2016042016
+
+last update 01/03/2017 (2017030101)
+- new tables were created to render the recylcle bin functional
+- new settings were created to permit users to personnalise their mails and reminders
+- if the setting 'via_activitydeletion' is true we still pemit users to delete recordings but only in moodle,
+they continue to existe in Via.
+- a new status exists for duplicated or restored activities; these are now unplanned activities and do not yet existe in Via.
+- PHP 7 was installed and used to validate the code.
+- many bug fixes included.
+
+last update 01/01/2016 (2016042009)
+- bug fix in playbacksync when retrieving and saveing breakouts!
+
+last update 01/01/2016 (2016042008)
+- bug fix in content management for the URL types
+
+last update 01/01/2016 (20160420)
+- new user association
+- new document upload
+- new cron tasks
+- new visual, using font awsome
+
+last update 01/01/2016 (2016010101)
+- config link is not visible on computer (NOT on mobiles)
+
+last update 08/09/2015 (2015050106)
+- correction to the list of recordings; if isnewvia(Via 8) recordings can be viewed on mobiles.
+
+last update 28/08/2015 (2015050105)
+- A new button was added for M@gistère to synchronise large groupes before the start of an activity.
+- M@gistère we be the only ones with this version.
+
+last update 01/05/2015 (2015050103)
+- corrections were made to the activity duplication function which was not passing on the isnewvia value.
+
+last update 01/05/2015 (2015050102)
+- validations were added to replace commas and replace them with dots for the presence tables. 
+Commas were returned by french servers.
+
+last update 01/05/2015 (2015050100)
+- new tables were created for storing API information to call Via less often.
+- functions were added in the cron to call these new functions at varying intervals 
+and may be modified depending on the needs of the client.
+- a new option was added in the activity creation to chose the type of acivity that is to be created; 
+Via 6 or the most recent version of Via
+- a new option was added in the activity creation to chose whether or not to display the user list in a webinare.
+- an email will be sent automatically to the user who exported a recording once the export is ready to be downloaded.
+- certain moodle functions were taken out of the code in order to be called depending on the moodle version, 
+this will help have less plugin versions in the long term.
+
+last update 20/01/2015 (2015012004)
+- Indexes were corrected in the install page.
+- Resizeable was added to the view.via openpopup parameters.
+- Access to the activity for admins was modified.
+
+last update 20/01/2015 (2015012002)
+- Indexes were add to the via tables to increase efficiency.
+
+last update 20/01/2015 (2015012001)
+
+- New pagination on the via details page, only the first 50 users will be displayed.
+- Removed the setting in the plugins parameters to permit sending reminders from Via. They are always send through moodle.
+- We have modified how users are synchronized with Via to reduce the amount of calls made to via.
+-- Only the first 50 users will be synched.
+--- on creation on an activity or on modification.
+-- the 50 displayed in the details page will be synched
+-- the presence status will be calculated on the display of the presence report.
+-- cron - new enrollements will be added to the via_pariticipants table but not added to via
+-- cron - old enrollements will be removed from the via_participants table and from via, only if they had been synched.
+- a wysiwyg was added to the via invitation page for flexibility.
+- Avatars added in Moodle will be added to Via.
+- It is now possible to download Via recordings.
+- For activities that are not permanent a 'prensece status' will be calculated from the minutes 
+  entered in the activity parameters. A printable version of this status is available.
+- Both these options can be activated or not from the plugins' settings.
+- Cleaned up code following commentes made by Moodle.org
+ -- removed mdl_ prefixs that had been hardcoded at Moodle.org's request.
+ -- added via_ to add function that did not already have it.
+ -- removed all $_POST references
+ -- displaced many functions to locallib
+ -- replaced fopen by cURL for security reasons
+- the via interface opens as a new page without tools to use as much of the screen as possible.
+
+
+last update 01/11/2014 (2014110101)
+
+- New capability was created to view presence reports
+- New option was added during the creation of an activity to add the minimum time required for an activity to be considered present.
+- New table was created that calculated if the user was present or not depending on the value above.
+- A printable version of this table is created on the click of a button.
+
+Last update 01/08/2014 (2014080162)
+
+NEEDS VIA 6.2!
+
+-Recordings can be deleted individually
+-Activities can be duplicated, documents and associated users follow - with or without whiteboards and surveys.
+-Activities can be backupes and restored, documents follow and associated users if desired - 
+with or without whiteboards and surveys.
+-New settings were added to select if the whitebords and surveys will be added during the duplication or 
+backup & restore process. The parameter applies to all activities.
+-Duplicated activities will be created one month in the future to the present, leaving enough time to go 
+modify the actual date and time. Unless it is a permanent activity, in which case there is no start time or duration.
+-If a grouping is selected for an activity, only the users associated with the grouping will be synchronised. 
+If manual enrollemnt is chosen, other users may be added to the activity but will not be synchronised.
+-A new list of users was added to the details page for a quick over view. We also added their 'set up wizard' 
+state. And added the confirmation status to this table, we removed the confirmation table from underneath the participants table.
+-A new parmeter was added to the settings page, to limit deletion to moodle. If checked activities will 
+be deleted in Moodle but not in Via.
+-The log tables were droped!
+-The file UApi was renamed to uapi and moved inside mod/via to satisfy the moodle community.
+-More information will be synchronised with Via if the option is checked, example the phone number and the 
+moodle name will be added as the organisation name.
+-Users deleted in Moodle will be deleted in the via_users table and removed from the activities in 
+which they were meant to take part.
+-Possibility to add the description on the course page
+-Permissions (capabilities)
+-CSS
+-special access is granted to administrators and manangers not added to an activity.
+-A new option was added in the plugin's parameters to limit access to the via portal.
+-All the code was checked with the code checker to be permitted to be added to the moodle community.
+
+Last update 01/07/2014
+-Corrections we made for Moodle 2.7
+
+Last update 01/04/2014
+-Validations added in case a user is deleted or deactivated in Via after being associated in moodle
+-Validations added in order not to give more than one role to a user in one activity
+-Validations added in order to always have one host and only one host. 
+-If a host is replaced and the enrollment is set to automatic then we add the user in the standard role. 
+-A modification was made to the automatic enrolment method, animators remain modifiable.
+-If an animator is removed and the enrollment is set to automatic then we add the user as participant. 
+-A new feature was added in order to add all students as animators
+-Extra validations were added in case an activity is created with manual enrollment then changed to automatic, etc.
+-A bug was fixed when students with the animator role were set back to participant at access of an activite.
+-Modifications were made so that recordings are always visible for the users were editing rights, they can 
+then display or hide any recording R set them all to public.
+-Hides recordings on tablettes and mobiles, as they can not be opened.
+-Modifications were made to the way config information is stored, it is now in the 'config_plugin' table, 
+instead of in 'config'
+
+Last update 21/11/2013
+-Mofications made for Moodle 2.6
+-Added proxy information
+-Made corrections after errors were reported
+
+Last update 06/11/2013 Version 2013092001
+-Correction to the playback list - recordings
+
+Last update 20/09/2013 Version 20130920
+-In this version we have made modifications to the cron synchronisation of users for all types of enrollments!
+-We have also added validations at many levels to add users that were added in moodle but not in via.
+-We have added a log to keep track of these errors and later additions.
+-We have also given it a new more modern look!!!
+-For connexion on mobiles using moodle with a mobile theme we have made modifications to the connexion
+-As well as improvements following feedback from moodle.org : 
+ - GPL licence
+ - changing the page encode from Western European (Windows) to UTF-8 with signature
+
+last update 02/07/2013
+-In this version we have removed the added code to the moodle core. Users will be 
+synchronised with the help of the cron.
+-So changes to the courses' participants will not be instananious, rather it can 
+take up to 10 minutes before the changes are made to the via participants table.
+-For this to work a new column was added to the via participants table and new 
+functions were added to via_cron. 
+-The categories in Via are reproduced in moodle, the admin can choose which 
+categories will be available and can even add one as default. 
+-Then when an activity is created the teacher can chose from the available categories.
+-These are only helpful for invoicing; the category can only be seen when editing an activity.
+-The connection test was modified, we test the API connection, then we test the new moodle key, independently.
+
+last update 01/05/2013
+-Modification to UserGetSSOtoken to create link accessible from mobiles.
+-We validate the user and the plugin version, needs via 5.2 or above to work.
+-Validations were also added to the emails and reminders, reminders can now only be sent for 
+activities with a fixed time and date. 
+-The emails are different for the permanent activities.
+
+last update 06/02/2013
+Corrections were brought to the send invite function.
+
+last update 27/03/2013
+-Addition of a visible version to the settings page for quick reference.
+-Correction to sql search for user type, mssql vs. mysql. 
+
+last update 01/05/2013
+-In the settings page we added a via_adminID, this id will be used to create and modify activities. 
+-In the settings we also added a check box to chose if the users' via information should be synchronized with 
+the moodle's values.
+-If checked users' information will be updated when they connect to an activity, but the user name, 
+password and user type will not be affected.
+-When synchronizing the information we validate if the user's email exists as email or as login, if 
+it does we assume it is the same person. 
+
+updated 27/11/2012
+-Corrections were made to the reminder email.
+-Corrections were made in the automatic enrollment for the animators and hosts, these are now modifiable
+
+updated 19/09/2012
+-In this version the cron function : via_update_enrolment() was uncommented to synchronize users
+but instructions were provided to run in only once before commenting it out again
+also a last minute change was made in mod/via/lib.php in function via_update_participants_list
+as an error was occurring in manual inscription when users were removed.

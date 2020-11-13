@@ -1,0 +1,72 @@
+
+<li class="item {{#is_coming}}soon{{/is_coming}}{{#is_demo}}demo{{/is_demo}} course-tile" id="course_tile_{{course_academy}}_{{course_id}}">
+    <div class="thumbnail card">
+        <div class="img-event">
+            {{#has_picture}}
+                {{^is_admin}}
+                    {{# user_is_participant}}
+                        {{#is_coming}}<img class="group list-group-image img-fluid" src="{{ index_picture }}" alt="" />{{/is_coming}}
+                        {{^is_coming}} <a href="{{ course_url }}"><img class="group list-group-image img-fluid" src="{{ index_picture }}" alt="" /></a> {{/is_coming}}
+                    {{/user_is_participant}}
+                    {{^user_is_participant}} <a href="{{ course_url }}"><img class="group list-group-image img-fluid" src="{{ index_picture }}" alt="" /></a> {{/user_is_participant}}
+                {{/is_admin}}
+                {{#is_admin}}<a href="{{ course_url }}"><img class="group list-group-image img-fluid" src="{{ index_picture }}" alt="" /></a>{{/is_admin}}
+            {{/has_picture}}
+            {{^has_picture}}
+                <img class="group list-group-image img-fluid" src="{{ index_picture }}" alt="" />
+            {{/has_picture}}
+            {{#is_coming}}<div class="filigrane">Session à venir</div>{{/is_coming}}
+            {{#is_demo}}<div class="filigrane">Parcours en Démonstration</div>{{/is_demo}}
+            {{^has_picture}}{{^user_is_participant}}<div class="no-picture-title">Indexation incomplète</div>{{/user_is_participant}}{{/has_picture}}
+            {{^has_picture}}{{^user_is_participant}}<div class="indexation-link"><a href="{{ indexation_url }}"><i class="fas fa-pencil-alt" aria-hidden="true"></i></a></div>{{/user_is_participant}}{{/has_picture}}
+        </div>
+        <div class="caption card-body">
+            {{#user_role}}<div class="role-tag-list"><div class="role {{ user_role }}"><i class="fa fa-user" aria-hidden="true"></i> {{ user_role }}</div></div>{{/user_role}}
+            <div class="fav-button-list"><p class="fav" data-id=""><i class="fa fa-star fav-icon {{# favorite}}fav{{/favorite}}{{^ favorite}}unfav{{/favorite}}" aria-hidden="true" title = "{{# favorite}}Retirer de mes parcours favoris{{/favorite}}{{^ favorite}}Ajouter à mes parcours favoris{{/favorite}}"></i></p></div>
+            <h4 class="group card-title inner list-group-item-heading name-course">
+                {{^is_admin}}
+                    {{# user_is_participant}}
+                        {{#is_coming}}{{ course_fullname }}{{/is_coming}}
+                        {{^is_coming}} <a href="{{ course_url }}">{{ course_fullname }}</a> {{/is_coming}}
+                    {{/user_is_participant}}
+                    {{^user_is_participant}} <a href="{{ course_url }}">{{ course_fullname }}</a> {{/user_is_participant}}
+                {{/is_admin}}
+                {{#is_admin}}<a href="{{ course_url }}">{{ course_fullname }}</a>{{/is_admin}}
+
+            </h4>
+            <div class="course-content-card">
+                <div class="date-academy">
+                    {{#index_startdate}}<p class="date">Début : {{ index_startdate }}</p>{{/index_startdate}}
+                    {{#index_enddate}}<p class="feature"> - </p>{{/index_enddate}}
+                    {{#index_enddate}}<p class="date">Fin : {{ index_enddate }}</p>{{/index_enddate}}
+                </div>
+                {{# user_progression }}
+                <div class="progress-circle">
+                    <div id="cont" class="progress-user" data-pct="{{ user_progression }}">
+                        <svg id="svg" width="48" height="48" viewPort="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle r="20" cx="24" cy="24" fill="transparent" stroke-dasharray="125.664" stroke-dashoffset="0"></circle>
+                            <circle id="bar" r="20" cx="24" cy="24" fill="transparent" stroke-dasharray="125.664" stroke-dashoffset="0"></circle>
+                        </svg>
+                    </div>
+                </div>
+                {{/ user_progression }}
+            </div>
+            <div style="clear: both;"></div>
+            <div class="line-footer"></div>
+            <div class="footer-course">
+                <div class="footer-content">
+                    <div class="fav-button"><p class="fav" data-id=""><i class="fa fa-star fav-icon {{# favorite}}fav{{/favorite}}{{^ favorite}}unfav{{/favorite}}" aria-hidden="true" title = "{{# favorite}}Retirer de mes parcours favoris{{/favorite}}{{^ favorite}}Ajouter à mes parcours favoris{{/favorite}}"></i></p></div>
+                    <div class="role-tag">{{#user_role}}<div class="role {{ user_role }}"><i class="fa fa-user" aria-hidden="true"></i> {{ user_role }}</div>{{/user_role}}</div>
+                    <div class="show-detail">
+                        <a ref-modal="modalCourse_{{course_academy}}_{{course_id}}"
+                           ref-modal-id="{{course_id}}"
+                           ref-modal-source="{{course_academy}}"
+                           ref-bs-element="modal"
+                           href="javascript:void(0);" >Voir les détails</a>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

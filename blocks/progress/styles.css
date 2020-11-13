@@ -1,0 +1,387 @@
+.block_progress .content {
+    text-align: center;
+}
+
+.block_progress .progressBarDiv ul {
+	width: 100% !important;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.block_progress .progressBarDiv ul * {
+	box-sizing: border-box;
+}
+
+.block_progress .progressBarDiv .progressBarCell:FIRST-CHILD {
+	margin-left:0;
+}
+
+.block_progress .progressBarDiv ul li {
+	display: inline-block;
+}
+
+.block_progress .progressBarDiv .progressBarCell {
+	border:1px solid #9eaecf;
+	margin-left:-1px
+}
+
+
+.block_progress .block_progress .progressBarProgressTable {
+    width: 100%;
+    margin: 0 0 2px 0;
+	height: 17px;
+}
+
+.block_progress #ProgressBarOverviewTable .jt_lastlogin {
+	width: 22% !important;
+}
+
+.block_progress #ProgressBarOverviewTable .jt_suivi {
+	width: 25% !important;
+}
+
+.block_progress .progressBarCell {
+    
+    /*height: 20px;*/
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: none;
+    position: relative;
+    margin-top:2px;
+	margin-bottom:2px;
+}
+
+.block_progress .progressBarCell:hover {
+    margin-top:0px;
+	margin-bottom:0px;
+}
+
+.block_progress .progressBarCellContent {
+	height: 20px;
+}
+
+.block_progress .progressBarCellContent:hover {
+	margin-top:2px;
+	margin-bottom:2px;
+}
+
+.block_progress .progressBarCell .progressBarCellContent .smallicon {
+    width: 85%;
+    max-width: 10px;
+    height: auto;
+    max-height: 10px;
+    vertical-align: middle;
+}
+
+.block_progress .progressEventInfo {
+    font-size: x-small;
+    text-align: left;
+    overflow: hidden;
+}
+
+.block_progress .progressEventInfo img {
+    vertical-align: middle;
+}
+
+.block_progress .moduleIcon {
+    float: left;
+    margin-right: 5px;
+}
+
+.block_progress .progressBarHeader {
+    font-size: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.block_progress .progressConfigBox {
+    border:1px dashed #cccccc;
+    padding: 5px;
+    margin:5px 0 !important;
+}
+
+.block_progress .groupselector {
+    text-align: center;
+}
+
+.block_progress .progressoverviewmenus {
+    margin-bottom: 5px;
+}
+
+.block_progress .progressoverviewmenus select {
+    margin-left: 2px;
+}
+
+.block_progress .progress-cursor:BEFORE {
+    background: url([[pix:block_progress|now]]) left 4px no-repeat;
+    content: 'Maintenant';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left:-5px;
+    padding-left:15px;
+    text-align:left;
+    width:77px;
+}
+
+.block_progress .progress-cursor.right:BEFORE {
+	background-position: right 4px;
+    left:inherit;
+    right: -5px;
+    padding-right:15px;
+    text-align:right;
+}
+
+.block_progress .btn_action {
+	float: right;
+	margin-right:10px;
+}
+
+.block_progress .jtable-page-info {
+	margin-right: 10px;
+}
+
+.block_progress .progress_button_action input {
+	background-color: #0382d4;
+	font-size: 12px;
+	color:#FFF;
+	border:none;
+	line-height: 20px;
+	margin-top:10px;
+	margin-bottom:10px;
+    display:inline-block;
+    cursor:pointer;
+	margin-right: 10px;
+	padding:2px;
+}
+
+
+
+.block_progress .progressEventInfo_activity {
+	font-size: 8pt;
+	font-weight: normal;
+	/*color: #657ca8;*/
+	padding: 2px 0 0 23px;
+	margin-bottom:10px;
+	float:left;
+	width: 100%;
+}
+
+.block_progress .progressEventInfo_default {
+	font-size: 8pt;
+	font-weight: normal;
+	color: #657ca8;
+	text-align:center;
+}
+
+.block_progress .progressEventInfo_activity_title {
+	font-weight: bold;
+}
+
+.block_progress .progressEventInfo_activity .status {
+	color: #0095db;
+}
+
+#block-region-side-pre .block_progress .content .newlink,
+#block-region-side-post .block_progress .content .newlink {
+	border-top: 1px dotted #aea097;
+	padding-left: 23px;
+}
+
+#block-region-side-pre .block_progress .content .newlink a,
+#block-region-side-post .block_progress .content .newlink a {
+	background-image: url([[pix:block_progress|now]]);
+	background-repeat: no-repeat;
+	background-position: left 15px;
+	display: inline-block;
+	padding: 10px 0 10px 20px;
+	width:100%;
+	text-align:left;
+	font-size: 8pt;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+
+#block-region-side-pre .block_progress .content .newlink:hover,
+#block-region-side-post .block_progress .content .newlink:hover {
+	background-color: #c9d0df;
+}
+
+
+.generate_certificate.ui-dialog-titlebar {
+	background: #FFF;
+	color: #000;
+}
+.generate_certificate  .link_aca {
+	display: inline-block;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.generate_certificate  .link_aca:hover {
+	background: #ecf5fc;
+}
+
+.generate_certificate .title {
+	color: #047cd2;
+	font-size: 15px;
+}
+
+.ui-dialog.generate_certificate {
+       background-color: #FFF;
+       padding: 23px;
+}
+
+.ui-dialog.generate_certificate .ui-dialog-content {
+       overflow: hidden;
+}
+
+.ui-dialog.generate_certificate .ui-dialog-titlebar {
+       background-color: #FFF;
+       border: none;
+       border-bottom: solid 5px #ececec;
+       color: #202a30;
+       font-size: 17px;
+}
+
+.generate_certificate input[type=submit]:disabled, .generate_certificate input[type=submit]:disabled {
+       background: #d0d4d7;
+}
+
+.block_progress .ui-datepicker-trigger {
+	vertical-align: middle;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.block_progress .progressoverviewmenus span.helptooltip a img {
+	box-sizing: content-box;
+}
+
+/* parcours section */
+.block_progress .header .title h2 {
+	background-color: #9b58b7 !important;
+	color: #fff !important;
+}
+
+.block_progress .header .title h2:before {
+	background: url([[pix:theme|blocks/suivi]]) no-repeat left;
+	content: " ";
+	color: #fff;
+	padding: 0 !important;
+	height: 1.3em !important;
+	margin-left: -0.05em !important;
+	margin-right: 0.35em !important;
+}
+
+/* parcours flexpage */
+.format-flexpage #region-main .block_progress .header .title h2 {
+	background: none !important;
+	color: #3d3d3d !important;
+}
+
+.format-flexpage #block-region-side-post .block_progress .header .title h2, .format-flexpage #block-region-side-pre .block_progress .header .title h2 {
+	color: #fff !important;
+	text-align: center !important;
+}
+
+/* couleur des carrés de la progress bar */
+.format-flexpage .block_progress .attemptedcolour {
+	background-color: #73A839;
+}
+.format-flexpage .block_progress .notattemptedcolour {
+	background-color: #C71C22;
+}
+.format-flexpage .block_progress .futurenotattemptedcolour {
+	background-color: #025187;
+}
+.format-topics .block_progress .attemptedcolour .progressBarCellContent {
+	background-color: #4acc6a;
+}
+.format-topics .block_progress .attemptedcolour .progressBarCellContent:hover {
+	background-color: #3ea657;
+}
+.format-topics .block_progress .notattemptedcolour .progressBarCellContent {
+	background-color: #e6e6e6;
+}
+.format-topics .block_progress .notattemptedcolour .progressBarCellContent:hover {
+	background-color: #bfbfbf;
+}
+.format-topics .block_progress .futurenotattemptedcolour .progressBarCellContent {
+	background-color: #e6e6e6;
+}
+.format-topics .block_progress .futurenotattemptedcolour .progressBarCellContent:hover {
+	background-color: #bfbfbf;
+}
+
+.format-topics .block_progress .progressBarDiv .progressBarCell {
+	border: none;
+	box-sizing: border-box;
+	padding: 2px;
+}
+
+.format-topics .block_progress .progressBarDiv .progressBarCell:hover {
+	cursor: pointer;
+}
+
+.format-topics .block_progress .progressBarCellContent {
+	height: 28px;
+}
+
+.format-topics .block_progress .content .newlink {
+	padding-left: 23px !important;
+	padding-right: 23px !important;
+	border: none !important;
+}
+
+.format-topics .block_progress .content .newlink a {
+	border-top: 1px solid #e6e6e6;
+	background-image: url('[[pix:t/collapsed]]') !important;
+	padding: 12px 0 10px 25px !important;
+	font-size: 14px !important;
+	color: #333333;
+	font-weight: normal !important;
+}
+.format-topics .block_progress .content .newlink:hover {
+	background-color: transparent !important;
+}
+
+.format-topics .block_progress .content #progresscacherefresh a {
+	background-image: url('[[pix:e/restore_draft]]') !important;
+	background-size: 12px 12px;
+}
+.format-topics .block_progress .content .progressEventInfo_default {
+	color: #b9b9b9;
+	font-size: 14px;
+	text-align: left;
+	padding-left: 25px;
+	padding-bottom: 15px;
+}
+.format-topics .block_progress .content .cachelastupdate {
+	font-size: 10px;
+	color: #b9b9b9;
+}
+.format-flexpage .block_progress .content .cachelastupdate {
+	font-size: 7pt;
+	font-weigth: none;
+	color: #657ca8
+}
+
+/* #2760 - 25/09/2018 : couleur des carrés de la progress bar pour format modulaire */
+ .attemptedcolour {
+	background-color: #73A839;
+}
+.notattemptedcolour {
+	background-color: #C71C22;
+}
+.futurenotattemptedcolour {
+	background-color: #025187;
+}
+.progressoverviewmenus .felement {
+	float: inherit;
+}

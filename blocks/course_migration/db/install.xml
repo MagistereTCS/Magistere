@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="blocks/summary/db" VERSION="20150518" COMMENT="XMLDB file for Moodle blocks/summary"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="block_course_migration" COMMENT="block_course_migration">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="flexcourseid"/>
+        <FIELD NAME="flexcourseid" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="stdcourseid"/>
+        <FIELD NAME="stdcourseid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="flexcourseid" NEXT="status"/>
+        <FIELD NAME="status" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="stdcourseid" NEXT="logs"/>
+        <FIELD NAME="logs" TYPE="text" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="status" NEXT="startdate"/>
+        <FIELD NAME="startdate" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="logs" NEXT="enddate"/>
+        <FIELD NAME="enddate" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" PREVIOUS="startdate"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="u_flexstdid" TYPE="unique" FIELDS="flexcourseid,stdcourseid"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>

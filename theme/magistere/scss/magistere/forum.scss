@@ -1,0 +1,90 @@
+/* css des forum de la page view, parcours en mode topic */
+#page-mod-forum-view .aard_section_forumheaderlist tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+#page-mod-forum-view .aard_section_forumheaderlist tbody tr{
+  border-top: 1px solid #ececec;
+}
+
+#page-mod-forum-view .aard_section_forumheaderlist tbody tr:hover{
+  background-color: #E6F5FC;
+}
+
+#page-mod-forum-view .pagebar {
+  background-color: #fafafa;
+  position: relative;
+  bottom: -10px;
+  height: 25px;
+  left: -10px;
+  margin-right: -20px;
+  border-top: 1px solid #e6e6e6;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+#page-mod-forum-view .pagebar .left,
+#page-mod-forum-view .pagebar .right {
+  width: 25%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+#page-mod-forum-view .pagebar .left a i {
+  margin-right: 15px;
+}
+#page-mod-forum-view .pagebar .right a i {
+  margin-left: 15px;
+}
+
+#page-mod-forum-view .pagebar .center a,
+#page-mod-forum-view .pagebar .center .current-page{
+  display: inline-block;
+  width: 20px;
+}
+
+#page-mod-forum-view .pagebar .center .current-page {
+  background-color: #cbe7f3;
+}
+
+#page-mod-forum-view .pagebar a,
+#page-mod-forum-view .pagebar .center .current-page{
+  color: #0095db;
+}
+
+#page-mod-forum-view .pagebar .right {
+  text-align: right;
+}
+
+#page-mod-forum-view .pagebar .center {
+  width: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  #page-mod-forum-view .pagebar {
+    bottom: -24px;
+  }
+}
+
+/******** Bloc RECHERCHE FORUMS ********/
+
+.c1 input, .c0 label, .c1 input, .c1 select {
+  margin: 10px;
+}
+
+/* scroll bar for forum index */
+
+#page-mod-forum-index #region-main>div {
+  overflow-y: auto;
+}
+
+/*
+ * Formatage des blocks Aside en Recherche avancée
+ */
+#page-mod-forum-search #block-region-side-pre div.list_block .c1:first-child,
+#page-mod-forum-search #block-region-side-post div.list_block .c1:first-child{
+  margin-left: inherit;
+}

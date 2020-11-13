@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/indexation/db" VERSION="20180418" COMMENT="XMLDB file for Moodle local/indexation"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_indexation" COMMENT="indexation_moodle table" NEXT="local_indexation_domain">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="true" NEXT="courseid"/>
+        <FIELD NAME="courseid" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" COMMENT="course_id" PREVIOUS="id" NEXT="objectif"/>
+        <FIELD NAME="objectif" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="objectifs" PREVIOUS="courseid" NEXT="collectionid"/>
+        <FIELD NAME="collectionid" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false" COMMENT="collection" PREVIOUS="description" NEXT="tps_a_distance"/>
+        <FIELD NAME="tps_a_distance" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false" COMMENT="tps_a_distance" PREVIOUS="collection" NEXT="tps_en_presence"/>
+        <FIELD NAME="tps_en_presence" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false" COMMENT="tps_en_presence" PREVIOUS="tps_a_distance" NEXT="accompagnement"/>
+        <FIELD NAME="accompagnement" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="accompagnement" PREVIOUS="tps_en_presence" NEXT="origine"/>
+        <FIELD NAME="origin" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="origine" PREVIOUS="accompagnement" NEXT="liste_auteurs"/>
+        <FIELD NAME="domainid" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="domaine" PREVIOUS="origine" NEXT="liste_auteurs"/>
+        <FIELD NAME="authors" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="liste_auteurs" PREVIOUS="origine" NEXT="validation"/>
+        <FIELD NAME="validateby" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="validation" PREVIOUS="liste_auteurs" NEXT="derniere_maj"/>
+        <FIELD NAME="updatedate" TYPE="int" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="derniere_maj" PREVIOUS="validation" NEXT="departementid"/>
+        <FIELD NAME="departementid" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="false" PREVIOUS="updatedate" NEXT="origineespeid"/>
+        <FIELD NAME="originespeid" SEQUENCE="false" TYPE="int" NOTNULL="false" LENGTH="11" PREVIOUS="department" NEXT="contact_auteurs"/>
+        <FIELD NAME="academyid" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="false" PREVIOUS="contact_auteurs"/>
+        <FIELD NAME="contact" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="shared_offer" NEXT="academyid"/>
+        <FIELD NAME="entree_metier" SEQUENCE="false" TYPE="int" LENGTH="1" NOTNULL="false" PREVIOUS="academyid"/>
+        <FIELD NAME="year" TYPE="char" LENGTH="2" NOTNULL="false" SEQUENCE="false" PREVIOUS="entree_metier" NEXT="originegaiaid"/>
+        <FIELD NAME="codeorigineid" TYPE="int" LENGTH="11" NOTNULL="false" SEQUENCE="false" PREVIOUS="year" NEXT="title"/>
+        <FIELD NAME="title" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" PREVIOUS="codeorigineid" NEXT="version"/>
+        <FIELD NAME="version" TYPE="char" LENGTH="3" NOTNULL="false" SEQUENCE="false" PREVIOUS="title" NEXT="thumbnailid"/>
+        <FIELD NAME="thumbnailid" SEQUENCE="false" TYPE="char" LENGTH="40" NOTNULL="false" PREVIOUS="course_identification"/>
+        <FIELD NAME="certificatid" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="false" PREVIOUS="thumbnailid"/>
+        <FIELD NAME="videoid" SEQUENCE="false" TYPE="char" LENGTH="40" NOTNULL="false" PREVIOUS="certificatid"/>
+        <FIELD NAME="rythme_formation" SEQUENCE="false" TYPE="char" LENGTH="255" NOTNULL="false" PREVIOUS="videoid"/>
+        <FIELD NAME="startdate" SEQUENCE="false" TYPE="int" LENGTH="10" NOTNULL="false" PREVIOUS="rhythme_formation"/>
+        <FIELD NAME="enddate" SEQUENCE="false" TYPE="int" LENGTH="10" NOTNULL="false" PREVIOUS="enddate"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="collectionfk" TYPE="foreign" FIELDS="collectionid" REFTABLE="moodle_centralized.local_indexation_collections" REFFIELDS="id" COMMENT="fk to local_indexation_collections"/>
+        <KEY NAME="departementfk" TYPE="foreign" FIELDS="departementid" REFTABLE="t_departement" REFFIELDS="id" COMMENT="fk to t_departement"/>
+        <KEY NAME="origineespefk" TYPE="foreign" FIELDS="originespeid" REFTABLE="t_origine_espe" REFFIELDS="id" COMMENT="fk to t_origine_espe"/>
+        <KEY NAME="academyfk" TYPE="foreign" FIELDS="academyid" REFTABLE="t_academie" REFFIELDS="id" COMMENT="fk to t_academie"/>
+        <KEY NAME="codefk" TYPE="foreign" FIELDS="codeorigineid" REFTABLE="moodle_centralized.local_indexation_codes" REFFIELDS="id" COMMENT="fk to local_indexation_codes"/>
+        <KEY NAME="certificatfk" TYPE="foreign" FIELDS="certificatid" REFTABLE="moodle_centralized.local_indexation_certificats" REFFIELDS="id" COMMENT="fk to local_indexation_certificats"/>
+        <KEY NAME="domainfk" TYPE="foreign" FIELDS="domainid" REFTABLE="moodle_centralized.local_indexation_domains" REFFIELDS="id" COMMENT="fk to indexation_domain"/>
+      </KEYS>
+	  <INDEXES>
+		 <INDEX NAME="course_unicity" UNIQUE="true" FIELDS="courseid" COMMENT="course_unicity" />
+	  </INDEXES>
+    </TABLE>
+
+    <TABLE NAME="local_indexation_public" COMMENT="" PREVIOUS="local_indexation_index_level">
+        <FIELDS>
+            <FIELD NAME="id" SEQUENCE="true" TYPE="int" LENGTH="10" NOTNULL="false" NEXT="indexationid"/>
+            <FIELD NAME="indexationid" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="target_id"/>
+            <FIELD NAME="publicid" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="indexation_id"/>
+        </FIELDS>
+        <KEYS>
+            <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            <KEY NAME="indexationfk" TYPE="foreign" FIELDS="indexationid" REFTABLE="local_indexation" REFFIELDS="id" COMMENT="fk to local_indexation"/>
+            <KEY NAME="publicfk" TYPE="foreign" FIELDS="publicid" REFTABLE="moodle_centralized.local_indexation_publics" REFFIELDS="id" COMMENT="fk to local_indexation_public"/>
+        </KEYS>
+    </TABLE>
+
+    <TABLE NAME="local_indexation_keywords" COMMENT="" PREVIOUS="local_indexation_index_target">
+      <FIELDS>
+          <FIELD NAME="id" SEQUENCE="true" TYPE="int" LENGTH="10" NOTNULL="false" NEXT="indexationid"/>
+          <FIELD NAME="indexationid" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="keyword"/>
+          <FIELD NAME="keyword" SEQUENCE="false" TYPE="char" LENGTH="255" NOTNULL="true" PREVIOUS="indexation_id"/>
+      </FIELDS>
+      <KEYS>
+          <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+          <KEY NAME="indexationfk" TYPE="foreign" FIELDS="indexationid" REFTABLE="local_indexation" REFFIELDS="id" COMMENT="fk to local_indexation"/>
+      </KEYS>
+    </TABLE>
+
+    <TABLE NAME="local_indexation_notes" COMMENT="" PREVIOUS="local_indexation_keywords">
+      <FIELDS>
+          <FIELD NAME="id" SEQUENCE="true" TYPE="int" LENGTH="10" NOTNULL="false" NEXT="indexationid"/>
+          <FIELD NAME="indexationid" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" NEXT="keyword"/>
+          <FIELD NAME="version" SEQUENCE="false" TYPE="char" LENGTH="5" NOTNULL="true" PREVIOUS="indexation_id"/>
+          <FIELD NAME="timecreated" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="version"/>
+          <FIELD NAME="timemodified" SEQUENCE="false" TYPE="int" LENGTH="11" NOTNULL="true" PREVIOUS="timecreated"/>
+          <FIELD NAME="note" SEQUENCE="false" TYPE="text" NOTNULL="true" PREVIOUS="timecreated"/>
+      </FIELDS>
+      <KEYS>
+          <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+          <KEY NAME="indexationfk" TYPE="foreign" FIELDS="indexationid" REFTABLE="local_indexation" REFFIELDS="id" COMMENT="fk to local_indexation"/>
+      </KEYS>
+    </TABLE>
+
+  </TABLES>
+</XMLDB>

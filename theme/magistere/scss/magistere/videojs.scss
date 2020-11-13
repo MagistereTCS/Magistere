@@ -1,0 +1,36 @@
+div[id^="canoplayer_"].video-js,
+div[id^="canoplayer_"] .vjs-poster {
+  background-color: unset;
+}
+
+div[id^="canoplayer_"] .vjs-poster {
+  background-size: cover;
+}
+
+
+div[id^="canoplayer_"].videojs {
+  width: 100%;
+  height: unset;
+}
+
+div[id^="canoplayer_"] .vjs-text-track-display {
+  position: unset;
+}
+
+div[id^="canoplayer_"].video-js .vjs-tech {
+  position: unset;
+  width: 100%;
+}
+
+div[id^="canoplayer_"] .vjs-text-track-display > div{
+  position: unset;
+}
+
+div[id^="canoplayer_"] .vjs-text-track-display > div > div{
+  top: 80%;
+}
+
+// mtype_label
+.activity.label.modtype_label .no-overflow{
+  overflow: unset;
+}

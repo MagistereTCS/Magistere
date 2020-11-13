@@ -1,0 +1,46 @@
+/*
+ * Formatage de la page Participants
+ */
+.userlist table#participants td.c0,
+.userlist table#participants th.c1,
+.userlist table#participants th.c6,
+.userlist table#participants td.c6{
+  text-align: center;
+}
+
+#participants {
+  & input[id^="form_autocomplete_input"] {
+    width: 280px;
+    margin-right: 50px;
+  }
+
+  & .form-autocomplete-downarrow {
+    position: absolute;
+    top: 33px;
+    right: 55px;
+    left: unset;
+  }
+
+  & .inplaceeditable.inplaceeditable-autocomplete.inplaceeditingon a[href="#"] {
+    position: absolute;
+    right: 0px;
+  }
+
+  & .inplaceeditable.inplaceeditable-autocomplete.inplaceeditingon a:first-of-type {
+    right: 22px;
+  }
+
+  & td.c6 {
+    width: 125px;
+  }
+
+  & td.c1 img {
+    position: absolute;
+    overflow: hidden;
+    height: 35px;
+  }
+
+  & td.c1 p {
+    margin-left: 40px;
+  }
+}

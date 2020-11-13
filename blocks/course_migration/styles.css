@@ -1,0 +1,90 @@
+.block_course_migration ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.block_course_migration .cm_button p {
+    font-weight: normal;
+    color:#515151;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.block_course_migration .cm_button p:hover{
+    background-color: #c6d3dd;
+}
+
+.block_course_migration .cm_button p:hover a{
+    color: #55682f;
+}
+
+.block_course_migration .cm_button p:hover button{
+    color: #55682f;
+}
+
+.block_course_migration .cm_button p{
+	background-color: #d7e0e8;
+    display: block;
+    position: relative;
+}
+
+.block_course_migration .cm_button ul li p{
+    padding-left: 20px;
+}
+
+.block_course_migration .content>ul>li{
+    border-top: dotted;
+    border-width: 1px;
+}
+
+.block_course_migration .cm_button>li:first-child{
+    border:none;
+}
+
+.block_course_migration .cm_desc {
+	padding-left : 10px;
+}
+
+/* parcours section */
+.block_course_migration .header .title h2{
+    background-color: #95a5a6 !important;
+    color: #fff !important;
+}
+
+.block_course_migration .header .title h2:before{
+    background: url([[pix:theme|blocks/migration-cours]]) no-repeat left;
+    content: " ";
+    color: #fff;
+    padding: 0 !important;
+    height: 1.3em !important;
+    margin-left: -0.05em !important;
+    margin-right: 0.35em !important;
+}
+
+.block_course_migration .course_mig_link {
+	background: none!important;
+	border: none;
+	padding: 0!important;
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+/* parcours flexpage */
+.format-flexpage .block_course_migration .header .title h2{
+    color: #3d3d3d !important;
+    background-color: #fafafa !important;
+}
+
+.format-flexpage .block_course_migration .header .title h2:before {
+    content: " " !important;
+    width: 0;
+}
+

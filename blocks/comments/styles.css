@@ -1,0 +1,10 @@
+/* parcours section */
+.block_comments .header .title h2{
+    background-color: #1abc9c !important;
+    color: #fff;
+}
+
+.block_comments .header .title h2:before {
+    content: "\f086" !important;
+    color: #fff;
+}

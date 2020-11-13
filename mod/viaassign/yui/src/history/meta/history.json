@@ -1,0 +1,8 @@
+{
+    "moodle-mod_viaassign-history": {
+        "requires": [
+            "node",
+            "transition"
+        ]
+    }
+}

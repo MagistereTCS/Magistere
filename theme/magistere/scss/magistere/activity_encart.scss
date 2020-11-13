@@ -1,0 +1,109 @@
+
+/*
+	STYLE ENCART ACTIVITY
+*/
+
+.activity-encart-upline,
+.activity-encart-downline{
+  background-color: #ececec;
+  border: none;
+}
+
+.activity-encart-upline{
+  height: 2px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.activity-encart-downline {
+  height: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.activity-encart-title{
+  text-transform: uppercase;
+  color: #515151;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.activity-encart h2 {
+  font-family: 'open sans' !important;
+  color: #666666 !important;
+  font-size: 24px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.activity-encart-back-button {
+  background: url('[[pix:theme|general/back_arrow_activity]]') no-repeat 0 0;
+  padding-left: 25px;
+  display: inline-block;
+  line-height: 21px;
+  color: #208dd2;
+}
+
+.activity-encart-button {
+  background: url('[[pix:theme|general/arrow_activity]]') no-repeat 0 0;
+  background-position: right;
+  padding: 0 25px 0 0;
+  margin: 0 0 15px 0;
+  display: inline-block;
+  line-height: 21px;
+  margin-left: 15px;
+}
+
+.activity-encart-block {
+  position: relative;
+  min-height: 36px
+}
+
+.activity-encart-dashed-upline{
+  border: none;
+  border-bottom: dashed 1px;
+  border-color: #cecece;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.activity-encart-button span {
+  color: #208dd2;
+}
+
+.activity-encart.topics{
+  background-color: #fafafa;
+  position: relative;
+  top: -10px;
+  left: -10px;
+  box-sizing: content-box;
+  margin-right: -20px;
+  padding: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.activity-encart.topics div:first-child {
+  margin-bottom: 15px;
+}
+
+.activity-encart.topics a.activity-encart-backButton {
+  background: url('[[pix:theme|general/back_arrow_activity]]') no-repeat 0 0;
+  padding-left: 25px;
+  display: inline-block;
+  line-height: 21px;
+  color: #0095db;
+}
+
+.map_controls h3{
+  margin : 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.badgesubtitle{
+  margin : 10px;
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 15px;
+}
+#participantmap{
+  margin : 0 10px;
+}

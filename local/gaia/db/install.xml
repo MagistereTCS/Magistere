@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/gaia/db" VERSION="20130625" COMMENT="XMLDB file for Moodle local/gaia"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+    <TABLES>
+        <TABLE NAME="local_gaia_formations" COMMENT="sessions issues de gaia">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="table_name"/>
+                <FIELD NAME="table_name" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="dispositif_id"/>
+                <FIELD NAME="dispositif_id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="table_name" NEXT="dispositif_name"/>
+                <FIELD NAME="dispositif_name" TYPE="char" LENGTH="250" NOTNULL="true" SEQUENCE="false" PREVIOUS="dispositif_id" NEXT="module_id"/>
+                <FIELD NAME="module_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="dispositif_name" NEXT="module_name"/>
+                <FIELD NAME="module_name" TYPE="char" LENGTH="250" NOTNULL="true" SEQUENCE="false" PREVIOUS="module_id" NEXT="session_id"/>
+                <FIELD NAME="session_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="module_name" NEXT="group_number"/>
+                <FIELD NAME="group_number" TYPE="char" LENGTH="2" NOTNULL="true" SEQUENCE="false" PREVIOUS="session_id" NEXT="startdate"/>
+                <FIELD NAME="startdate" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="group_number" NEXT="enddate"/>
+                <FIELD NAME="enddate" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="startdate" NEXT="place_type"/>
+                <FIELD NAME="place_type" TYPE="char" LENGTH="1" NOTNULL="true" SEQUENCE="false" PREVIOUS="enddate" NEXT="formation_place"/>
+                <FIELD NAME="formation_place" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="place_type"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="uni_idx" TYPE="unique" FIELDS="table_name, dispositif_id, module_id, session_id"/>
+            </KEYS>
+            <INDEXES>
+            	<INDEX NAME="table_name_idx" UNIQUE="false" FIELDS="table_name"/>
+            	<INDEX NAME="dispositif_id_idx" UNIQUE="false" FIELDS="dispositif_id"/>
+                <INDEX NAME="session_id_idx" UNIQUE="false" FIELDS="session_id"/>
+                <INDEX NAME="module_id_idx" UNIQUE="false" FIELDS="module_id"/>
+            </INDEXES>
+        </TABLE>
+        <TABLE NAME="local_gaia_stagiaires" COMMENT="participants aux sessions gaia">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="table_name"/>
+                <FIELD NAME="table_name" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="session_id"/>
+                <FIELD NAME="session_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="table_name" NEXT="name"/>
+                <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="session_id" NEXT="firstname"/>
+                <FIELD NAME="firstname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="name" NEXT="email"/>
+                <FIELD NAME="email" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="firstname"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="uni_idx" TYPE="unique" FIELDS="table_name, session_id, email"/>
+            </KEYS>
+            <INDEXES>
+                <INDEX NAME="session_id_idx" UNIQUE="false" FIELDS="session_id"/>
+                <INDEX NAME="table_name_idx" UNIQUE="false" FIELDS="table_name"/>
+            </INDEXES>
+        </TABLE>
+        <TABLE NAME="local_gaia_intervenants" COMMENT="formateurs des sessions gaia">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="table_name"/>
+                <FIELD NAME="table_name" TYPE="char" LENGTH="20" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="module_id"/>
+                <FIELD NAME="module_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="table_name" NEXT="name"/>
+                <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="module_id" NEXT="firstname"/>
+                <FIELD NAME="firstname" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="name" NEXT="email"/>
+                <FIELD NAME="email" TYPE="char" LENGTH="255" NOTNULL="false" SEQUENCE="false" COMMENT="email academique, si present dans gaia" PREVIOUS="firstname"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="uni_idx" TYPE="unique" FIELDS="table_name, module_id, email"/>
+            </KEYS>
+            <INDEXES>
+                <INDEX NAME="module_id_idx" UNIQUE="false" FIELDS="module_id"/>
+                <INDEX NAME="table_name_idx" UNIQUE="false" FIELDS="table_name"/>
+            </INDEXES>
+        </TABLE>
+        <TABLE NAME="local_gaia_import_logs" COMMENT="table de log">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="filename"/>
+                <FIELD NAME="filename" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="message"/>
+                <FIELD NAME="message" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="filename" NEXT="date"/>
+                <FIELD NAME="date" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="message"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+            </KEYS>
+        </TABLE>
+        <TABLE NAME="local_gaia_session_course" COMMENT="OLD=parcours_sessiongaia - session synchronisee avec gaia">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="course_id"/>
+                <FIELD NAME="course_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="dispositif_id"/>
+                <FIELD NAME="dispositif_id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="course_id" NEXT="module_id"/>
+                <FIELD NAME="module_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="dispositif_id" NEXT="session_id"/>
+                <FIELD NAME="session_id" TYPE="int"  LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="module_id"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="uni_idx" TYPE="unique" FIELDS="dispositif_id, module_id, session_id"/>
+            </KEYS>
+            <INDEXES>
+                <INDEX NAME="course_id_idx" UNIQUE="false" FIELDS="course_id"/>
+                <INDEX NAME="gaia_idx" UNIQUE="false" FIELDS="dispositif_id, module_id, session_id"/>
+            </INDEXES>
+        </TABLE>
+        <TABLE NAME="local_gaia_session_via" COMMENT="OLD=via_sessiongaia - classe virtuelle synchronisee avec gaia">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="via_id"/>
+                <FIELD NAME="via_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="dispositif_id"/>
+                <FIELD NAME="dispositif_id" TYPE="char" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="via_id" NEXT="module_id"/>
+                <FIELD NAME="module_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="dispositif_id" NEXT="session_id"/>
+                <FIELD NAME="session_id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="module_id"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="uni_idx" TYPE="unique" FIELDS="dispositif_id, module_id, session_id"/>
+            </KEYS>
+            <INDEXES>
+                <INDEX NAME="activity_id_idx" UNIQUE="false" FIELDS="via_id"/>
+                <INDEX NAME="gaia_idx" UNIQUE="false" FIELDS="dispositif_id, module_id, session_id"/>
+            </INDEXES>
+        </TABLE>
+    </TABLES>
+</XMLDB>

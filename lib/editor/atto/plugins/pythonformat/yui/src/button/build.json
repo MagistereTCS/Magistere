@@ -1,0 +1,10 @@
+{
+  "name": "moodle-atto_pythonformat-button",
+  "builds": {
+    "moodle-atto_pythonformat-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

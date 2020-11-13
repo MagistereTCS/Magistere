@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="mod/viaassign/db" VERSION="20131220" COMMENT="XMLDB file for Moodle mod/viaassign"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="viaassign" COMMENT="This table saves information about an instance of mod_viaassign in a course.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="course" />
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="name" />
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="course" NEXT="intro" />
+        <FIELD NAME="intro" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="name" NEXT="introformat" />
+        <FIELD NAME="introformat" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="intro" NEXT="duedate" />
+        <FIELD NAME="duedate" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="introformat" NEXT="allowsubmissionsfromdate" />
+        <FIELD NAME="allowsubmissionsfromdate" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="duedate" NEXT="grade" />
+        <FIELD NAME="grade" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="allowsubmissionsformfate" NEXT="timemodified" />
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="grade" NEXT="timecreated" />
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="timemodified" NEXT="completionsubmit" />
+        <FIELD NAME="completionsubmit" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="timecreated" NEXT="userrole" />
+        <FIELD NAME="userrole" TYPE="text" NOTNULL="true" SEQUENCE="false" PREVIOUS="completionsubmit" NEXT="maxactivities" />
+        <FIELD NAME="maxactivities" TYPE="int" LENGTH="6" NOTNULL="true" DEFAULT="1" SEQUENCE="false" PREVIOUS="userrole" NEXT="maxduration" />
+        <FIELD NAME="maxduration" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="1" SEQUENCE="false" PREVIOUS="maxactivities" NEXT="maxusers" />
+        <FIELD NAME="maxusers" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="60" SEQUENCE="false" PREVIOUS="maxduration" NEXT="recordingmode" />
+        <FIELD NAME="recordingmode" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="maxusers" NEXT="isreplayallowed" />
+        <FIELD NAME="isreplayallowed" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="recordingmode" NEXT="waitingroomaccessmode" />
+        <FIELD NAME="waitingroomaccessmode" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="isreplayallowed" NEXT="roomtype" />
+        <FIELD NAME="roomtype" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="waitingroomaccessmode" NEXT="multimediaquality" />
+        <FIELD NAME="multimediaquality" TYPE="char" LENGTH="200" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="roomtype" NEXT="takepresence" />
+        <FIELD NAME="takepresence" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="multimediaquality" NEXT="minpresence" />
+        <FIELD NAME="minpresence" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="takepresence" NEXT="sendnotifications" />
+        <FIELD NAME="sendnotifications" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="minpresence" NEXT="sendstudentnotificationse" />
+        <FIELD NAME="sendstudentnotifications" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="1" SEQUENCE="false" PREVIOUS="sendnotifications" />
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id for this viaassignment instance." />
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="course" UNIQUE="false" FIELDS="course" COMMENT="The course this viaassignment instance belongs to." />
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="viaassign_submission" COMMENT="This table keeps information about student interactions with the mod/viaassign. This is limited to metadata about a student submission but does not include the submission itself which is stored by plugins.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" />
+        <FIELD NAME="viaassignid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="viaid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The time of the first student submission to this viaassignment." />
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The last time this viaassignment submission was modified by a student." />
+        <FIELD NAME="status" TYPE="char" LENGTH="10" NOTNULL="false" SEQUENCE="false" COMMENT="The status of this viaassignment submission. The current statuses are DRAFT and SUBMITTED." />
+        <FIELD NAME="groupid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The group id for team submissions" />
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id for this viaassignment submission." />
+        <KEY NAME="viaassignid" TYPE="foreign" FIELDS="id" REFTABLE="viaassign" REFFIELDS="id" COMMENT="The instance of mod_viaassign this submission belongs to." />
+        <KEY NAME="viaid" TYPE="foreign" FIELDS="id" REFTABLE="via" REFFIELDS="id" COMMENT="The instance of mod_viaassign this submission belongs to." />
+        <KEY NAME="userid" TYPE="foreign" FIELDS="id" REFTABLE="user" REFFIELDS="id" COMMENT="The instance of mod_viaassign this submission belongs to." />
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="userid" UNIQUE="false" FIELDS="userid" />
+        <INDEX NAME="viaassignid" UNIQUE="false" FIELDS="viaassignid" />
+        <INDEX NAME="viaid" UNIQUE="false" FIELDS="viaid" />
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="viaassign_grades" COMMENT="Grading information about a single viaassignment submission.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" />
+        <FIELD NAME="viaassign" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="viaid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The attempt number that this grade relates to" />
+        <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The time the viaassignment submission was first modified by a grader." />
+        <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The most recent modification time for the viaassignment submission by a grader." />
+        <FIELD NAME="grader" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="grade" TYPE="number" LENGTH="10" NOTNULL="false" DEFAULT="0" SEQUENCE="false" DECIMALS="5" COMMENT="The numerical grade for this viaassignment submission. Can be determined by scales/advancedgradingforms etc but will always be converted back to a floating point number." />
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="The unique id for this grade." />
+        <KEY NAME="viaassign" TYPE="foreign" FIELDS="viaassign" REFTABLE="viaassign" REFFIELDS="id" COMMENT="The viaassignment instance this grade belongs to." />
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="userid" UNIQUE="false" FIELDS="userid" COMMENT="The userid for the submission relating to this grade." />
+        <INDEX NAME="viaid" UNIQUE="false" FIELDS="viaid" />
+        <INDEX NAME="uniqueattemptgrade" UNIQUE="true" FIELDS="viaassign, userid, viaid" COMMENT="This is a grade for a unique attempt." />
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="viaassign_plugin_config" COMMENT="Config data for an instance of a plugin in an viaassignment.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" />
+        <FIELD NAME="viaassign" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="plugin" TYPE="char" LENGTH="28" NOTNULL="true" SEQUENCE="false" />
+        <FIELD NAME="subtype" TYPE="char" LENGTH="28" NOTNULL="true" SEQUENCE="false" />
+        <FIELD NAME="name" TYPE="char" LENGTH="28" NOTNULL="true" SEQUENCE="false" />
+        <FIELD NAME="value" TYPE="text" NOTNULL="false" SEQUENCE="false" COMMENT="The value of the config setting. Stored as text but can be interpreted by the plugin however it likes." />
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="Unique id to identify this plugin setting value." />
+        <KEY NAME="viaassign" TYPE="foreign" FIELDS="viaassign" REFTABLE="viaassign" REFFIELDS="id" COMMENT="The viaassignment instance this config value relates to." />
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="plugin" UNIQUE="false" FIELDS="plugin" COMMENT="The type of this plugin." />
+        <INDEX NAME="subtype" UNIQUE="false" FIELDS="subtype" COMMENT="The subtype of this plugin (viaassign_submission or viaassign_feedback)." />
+        <INDEX NAME="name" UNIQUE="false" FIELDS="name" COMMENT="The name of this plugin setting." />
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="viaassign_user_mapping" COMMENT="Map an viaassignment specific id number to a user">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" />
+        <FIELD NAME="viaassign" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" />
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" COMMENT="Unique ID for this user/viaassignment combination." />
+        <KEY NAME="viaassign" TYPE="foreign" FIELDS="viaassign" REFTABLE="viaassign" REFFIELDS="id" COMMENT="The viaassignment instance" />
+        <KEY NAME="user" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" COMMENT="The user to map to an id" />
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="viaassign_user_flags" COMMENT="List of flags that can be set for a single user in a single viaassignment.">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" />
+        <FIELD NAME="userid" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The id of the user these flags apply to." />
+        <FIELD NAME="viaassign" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="The viaassignment these flags apply to." />
+        <FIELD NAME="locked" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Student cannot make any changes to their submission if this flag is set." />
+        <FIELD NAME="mailed" TYPE="int" LENGTH="4" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="Has the student been sent a notification about this grade update?" />
+        <FIELD NAME="extensionduedate" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" COMMENT="An extension date viaassigned to an individual student." />
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id" />
+        <KEY NAME="userid" TYPE="foreign" FIELDS="userid" REFTABLE="user" REFFIELDS="id" COMMENT="The id field of the user table." />
+        <KEY NAME="viaassign" TYPE="foreign" FIELDS="viaassign" REFTABLE="viaassign" REFFIELDS="id" COMMENT="The viaassignment id these flags apply to." />
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="mailed" UNIQUE="false" FIELDS="mailed" COMMENT="Has this user been mailed yet?" />
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

@@ -1,0 +1,12 @@
+/* parcours section */
+.block_participants .header .title h2{
+    background-color: #95a5a6 !important;
+}
+
+.block_participants .header .title h2:before {
+    content: "\f0c0" !important;
+}
+
+#participantmap {
+    z-index: 0;
+}

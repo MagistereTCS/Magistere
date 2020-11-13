@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/bs_badge_pool/db" VERSION="20171205" COMMENT="XMLDB file for Moodle local/bs_badge_pool"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="local_maglib_monit_task" COMMENT="Stores information for pool badges">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true" NEXT="academy"/>
+        <FIELD NAME="academy" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" NEXT="classname" PREVIOUS="id"/>
+        <FIELD NAME="classname" TYPE="text" NOTNULL="true" SEQUENCE="false" NEXT="status" PREVIOUS="academy"/>
+        <FIELD NAME="status" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" NEXT="faildelay" PREVIOUS="classname"/>
+		<FIELD NAME="faildelay" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" NEXT="lastupdate" PREVIOUS="status"/>
+		<FIELD NAME="lastupdate" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" NEXT="ignore" PREVIOUS="faildelay"/>
+		<FIELD NAME="ignore" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false" PREVIOUS="lastupdate"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="hash" UNIQUE="true" FIELDS="academy,classname"/>
+      </INDEXES>
+    </TABLE>
+  </TABLES>
+</XMLDB>

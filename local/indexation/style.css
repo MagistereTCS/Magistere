@@ -1,0 +1,284 @@
+.tabs .tab {
+    display: inline;
+    height: 50px;
+    padding: 15px;
+}
+
+.tabs {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.tabs .tab:hover {
+    cursor: pointer;
+}
+
+.tabs .tab.selected {
+    border-bottom: 3px #0095db solid;
+    border-color: #0095db;
+}
+
+#region-main {
+    background-color: white;
+    padding: 0 20px;
+}
+
+#mform1 .fitemtitle, #mform1 .felement,
+#mform2 .fitemtitle, #mform2 .felement,
+#mform3 .fitemtitle, #mform3 .felement{
+    float: none;
+    margin: 0;
+}
+
+.felement input[type='text'],
+.felement textarea {
+    width: 100%;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.i-calendar {
+    float: left;
+    position: relative;
+    top: -45px;
+    left: 140px;
+}
+
+.felement input[name="startdate"],
+.felement input[name="enddate"] {
+    width: 150px;
+}
+
+.felement textarea {
+    height: 200px;
+}
+
+.fitemtitle {
+    width: 100% !important;
+}
+
+.fitemtitle em {
+    font-style: normal;
+    color: #7b7b7b;
+}
+
+#fgroup_id_tempspresence_group input {
+    width: 60px;
+    text-align: right;
+}
+
+.code_group .fitem {
+     float: left;
+     margin-right: 10px;
+     margin-bottom: 0;
+ }
+
+.code_group .col {
+    float: left;
+    height: 100px;
+}
+
+.code_group .col .subtitle{
+    display: block;
+    margin-left: 12px;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.code_group input[disabled="disabled"] {
+    margin: 0;
+}
+
+.code_group .felement {
+    margin-left: 0 !important;
+}
+
+.code_group .fitemtitle{
+    text-align: left !important;
+}
+
+.code_group select{
+    height: 32px;
+}
+
+.panel.version .fitemtitle {
+    text-align: left !important;
+}
+
+.panel.version .felement {
+    margin-left: 0;
+}
+
+.panel.version #fitem_id_fieldset {
+    display: none;
+}
+
+.oldnotelabel {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.oldnote {
+    background-color: #eee;
+    border: 1px solid #d9d9d9;
+    padding: 2px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.felement input[type='text'], .felement textarea {
+    margin-right: 0;
+    padding: 0;
+}
+
+#id_year, #id_origine, #id_intitule, #id_version {
+    margin: 0px;
+}
+
+#fitem_id_label_year, #fitem_id_label_intitule, #fitem_id_label_version {
+    margin-top: -30px;
+}
+
+#fitem_id_validateby {
+    clear: both;
+}
+
+#mform1 .fitemtitle,
+#mform2 .fitemtitle,
+#mform3 .fitemtitle{
+    text-align: left;
+}
+
+.btn-cancel {
+    background-color: #e6e6e6 !important;
+    color: #777 !important;
+}
+
+input[name="submitgeneral"] {
+    float: right;
+}
+
+
+/* adjust filepicker rendering... */
+.file-picker .fp-navbar {
+    min-height: initial;
+}
+
+.fp-toolbar .fp-tb-search {
+    width: auto;
+    height: auto;
+    max-height: 280px;
+}
+
+.file-picker .fp-content{
+    height: initial;
+    max-height: 244px;
+}
+
+#fitem_id_description .felement.fstatic{
+    background-color: #eee;
+    border: 1px #d9d9d9 solid;
+    margin-top: 10px;
+    padding: 4px 6px;
+}
+
+#id_head_title {
+    background-color: lightgrey;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.pagelayout-indexation #region-main .mform .helptooltip,
+.pagelayout-indexation #region-main .tabs .notification-badge{
+    padding-left: 5px;
+}
+
+.pagelayout-indexation #region-main .panel.organisme  h2 .helptooltip{
+    font-size: 0.6em;
+    vertical-align: text-top;
+}
+
+.pagelayout-indexation #region-main .mform .helptooltip,
+.pagelayout-indexation #region-main .mform .notification-badge,
+.pagelayout-indexation #region-main .mform .fa-stack-1x{
+    margin: 0;
+    font-size: 1em;
+    font-style: normal;
+}
+
+.pagelayout-indexation #region-main .notification-badge i{
+    vertical-align: middle;
+    color: #f06d7c;
+}
+
+.pagelayout-indexation #region-main .notification-badge .fa-stack-1x{
+    color: #fff;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+}
+
+.pagelayout-indexation #region-main .help-index{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+/*Thumbnail display*/
+#fgroup_id_thumbnailgroup,
+#fgroup_id_videogroup{
+    float: left;
+    width: 35%;
+}
+
+#thumbnail_img,
+#video_img{
+    margin-top: 30px;
+    float: right;
+    width: calc(65% - 10px);
+}
+
+#thumbnail_img img,
+#video_img img.video {
+    width: 178px;
+    height: 100px;
+}
+
+#video_img img.icon {
+    margin-top: 6px;
+    margin-left: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (max-width: 1200px) {
+    #fgroup_id_thumbnailgroup,
+    #fgroup_id_videogroup{
+        width: 50%;
+    }
+    #thumbnail_img,
+    #video_img{
+        width: calc(50% - 10px);
+    }
+}
+
+.panel.general .subtitle {
+    margin-left: 10px;
+    font-style: italic;
+    font-size: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.panel.general #fitem_id_intitule {
+    margin-bottom: 0px;
+}
+
+.pagelayout-indexation #region-main .img-container {
+    /* Never limit the container height here */
+    max-width: 100%;
+}
+
+.pagelayout-indexation #region-main .img-container img {
+    /* This is important */
+    width: 100%;
+}

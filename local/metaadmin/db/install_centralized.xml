@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XMLDB PATH="local/mail/db" VERSION="20120926" COMMENT="-"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd">
+  <TABLES>
+    <TABLE NAME="metaadmin_statsparticipants" COMMENT="-">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="academy"/>
+        <FIELD NAME="academy_user" TYPE="char" LENGTH="40" NOTNULL="true" SEQUENCE="false" PREVIOUS="id" NEXT="academy_enrol"/>
+        <FIELD NAME="academy_enrol" TYPE="char" LENGTH="40" NOTNULL="true" SEQUENCE="false" PREVIOUS="academy" NEXT="username"/>
+        <FIELD NAME="username" TYPE="char" LENGTH="100" NOTNULL="true" SEQUENCE="false" PREVIOUS="academy_enrol" NEXT="timeaccess"/>
+        <FIELD NAME="timeaccess" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" PREVIOUS="username" NEXT="rne"/>
+        <FIELD NAME="rne" TYPE="char" LENGTH="40" NOTNULL="true" SEQUENCE="false" PREVIOUS="timeaccess" NEXT="role"/>
+        <FIELD NAME="role" TYPE="char" LENGTH="40" NOTNULL="true" SEQUENCE="false" PREVIOUS="rne" NEXT="degre"/>
+        <FIELD NAME="degre" TYPE="char" LENGTH="2" NOTNULL="true" SEQUENCE="false" PREVIOUS="role" NEXT="public"/>
+        <FIELD NAME="public" TYPE="char" LENGTH="2" NOTNULL="true" SEQUENCE="false" PREVIOUS="degre" NEXT="index_year"/>
+        <FIELD NAME="index_year" TYPE="char" LENGTH="2" NOTNULL="true" SEQUENCE="false" PREVIOUS="public" NEXT="index_origine_gaia_id"/>
+        <FIELD NAME="index_origine_gaia_id" TYPE="int" LENGTH="11" NOTNULL="true" SEQUENCE="false" PREVIOUS="index_year" NEXT="index_title"/>
+        <FIELD NAME="index_title" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="index_origine_gaia_id"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+      <INDEXES>
+        <INDEX NAME="courseid" UNIQUE="false" FIELDS="courseid"/>
+      </INDEXES>
+    </TABLE>
+    <TABLE NAME="metaadmin_customview" COMMENT="-">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="user_id"/>
+        <FIELD NAME="user_id" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="user_academy"/>
+        <FIELD NAME="user_academy" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="user_id" NEXT="view_name"/>
+        <FIELD NAME="view_name" TYPE="char" LENGTH="255" NOTNULL="true" SEQUENCE="false" PREVIOUS="user_academy" NEXT="display_type"/>
+        <FIELD NAME="display_type" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" PREVIOUS="view_name" NEXT="trainee_calc"/>
+        <FIELD NAME="trainee_calc" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="display_type" NEXT="send_report"/>
+        <FIELD NAME="send_report" TYPE="int" LENGTH="2" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="trainee_calc" NEXT="frequency_report"/>
+        <FIELD NAME="frequency_report" TYPE="char" LENGTH="50" NOTNULL="false" SEQUENCE="false" PREVIOUS="send_report" NEXT="dayReport"/>
+        <FIELD NAME="day_report" TYPE="int" LENGTH="2" NOTNULL="false" SEQUENCE="false" PREVIOUS="frequency_report" NEXT="timesent"/>
+        <FIELD NAME="emails" TYPE="text" NOTNULL="false" SEQUENCE="false" PREVIOUS="day_report" NEXT="time_sent"/>
+        <FIELD NAME="last_send_time" TYPE="int" LENGTH="10" NOTNULL="false" DEFAULT="0" SEQUENCE="false" PREVIOUS="emails"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+    <TABLE NAME="metaadmin_customview_course" COMMENT="-">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="20" NOTNULL="true" SEQUENCE="true" NEXT="view_id"/>
+        <FIELD NAME="view_id" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="id" NEXT="course_id"/>
+        <FIELD NAME="course_id" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false" PREVIOUS="view_id" NEXT="course_academy"/>
+        <FIELD NAME="course_academy" TYPE="char" LENGTH="50" NOTNULL="true" SEQUENCE="false" PREVIOUS="course_id"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+        <KEY NAME="view_id" TYPE="foreign" FIELDS="view_id" REFTABLE="metaadmin_customview" REFFIELDS="id"/>
+      </KEYS>
+    </TABLE>
+  </TABLES>
+</XMLDB>
